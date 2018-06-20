@@ -1,37 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="hotelariaDSL" nsURI="hotelariaDSL" nsPrefix="hotelariaDSL">
-  <eClassifiers xsi:type="ecore:EClass" name="Super" eSuperTypes="#//Aplicacao">
+  <eClassifiers xsi:type="ecore:EClass" name="Super" abstract="true" eSuperTypes="#//Aplicacao">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nome" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="atributos" upperBound="-1"
         eType="#//Atributo"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Pessoa" abstract="true" eSuperTypes="#//Super">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nome_pessoa" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="telefone" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
-        iD="true"/>
-  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Pessoa" abstract="true" eSuperTypes="#//Super"/>
   <eClassifiers xsi:type="ecore:EClass" name="Hospede" eSuperTypes="#//Super #//Pessoa">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="conta" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numQuarto" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="contaBanco" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Recepcionista" eSuperTypes="#//Super #//Pessoa"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Quarto" eSuperTypes="#//Super">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numero" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="vagasTotal" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="vagasOcupadas" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Quarto" eSuperTypes="#//Super"/>
+  <eClassifiers xsi:type="ecore:EClass" name="QuartoSolteiro" eSuperTypes="#//Quarto #//Super"/>
+  <eClassifiers xsi:type="ecore:EClass" name="QuartoComunitario" eSuperTypes="#//Super #//Quarto"/>
+  <eClassifiers xsi:type="ecore:EClass" name="QuartoCasal" eSuperTypes="#//Super #//Quarto"/>
   <eClassifiers xsi:type="ecore:EClass" name="Aplicacao">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nome" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="TipoQuartoInvalido"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="titulo" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="classes" upperBound="-1"
+        eType="#//Super" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Atributo" eSuperTypes="#//Super">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nome" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nomeAtributo" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="tipo" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
 </ecore:EPackage>

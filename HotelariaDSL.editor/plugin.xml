@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated hotelariaDSL -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="hotelariaDSL.presentation.HotelariaDSLModelWizardID"
+            name="%_UI_HotelariaDSLModelWizard_label"
+            class="hotelariaDSL.presentation.HotelariaDSLModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/HotelariaDSLModelFile.gif">
+         <description>%_UI_HotelariaDSLModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated hotelariaDSL -->
+      <editor
+            id="hotelariaDSL.presentation.HotelariaDSLEditorID"
+            name="%_UI_HotelariaDSLEditor_label"
+            icon="icons/full/obj16/HotelariaDSLModelFile.gif"
+            extensions="hotelariadsl"
+            class="hotelariaDSL.presentation.HotelariaDSLEditor"
+            contributorClass="hotelariaDSL.presentation.HotelariaDSLActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
