@@ -118,29 +118,6 @@ public class HotelariaDSLItemProviderAdapterFactory extends HotelariaDSLAdapterF
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link hotelariaDSL.Quarto} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected QuartoItemProvider quartoItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link hotelariaDSL.Quarto}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createQuartoAdapter() {
-		if (quartoItemProvider == null) {
-			quartoItemProvider = new QuartoItemProvider(this);
-		}
-
-		return quartoItemProvider;
-	}
-
-	/**
 	 * This keeps track of the one adapter used for all {@link hotelariaDSL.QuartoSolteiro} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -379,7 +356,6 @@ public class HotelariaDSLItemProviderAdapterFactory extends HotelariaDSLAdapterF
 	public void dispose() {
 		if (hospedeItemProvider != null) hospedeItemProvider.dispose();
 		if (recepcionistaItemProvider != null) recepcionistaItemProvider.dispose();
-		if (quartoItemProvider != null) quartoItemProvider.dispose();
 		if (quartoSolteiroItemProvider != null) quartoSolteiroItemProvider.dispose();
 		if (quartoComunitarioItemProvider != null) quartoComunitarioItemProvider.dispose();
 		if (quartoCasalItemProvider != null) quartoCasalItemProvider.dispose();

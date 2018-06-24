@@ -204,7 +204,6 @@ public class HotelariaDSLValidator extends EObjectValidator {
 		// -> specify the condition that violates the constraint
 		// -> verify the diagnostic details, including severity, code, and message
 		// Ensure that you remove @generated or mark it @generated NOT
-		
 		boolean quartoC = false;
 		boolean quartoSCa = false;
 		

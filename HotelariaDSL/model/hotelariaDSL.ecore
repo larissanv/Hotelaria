@@ -11,7 +11,7 @@
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Recepcionista" eSuperTypes="#//Super"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Quarto" eSuperTypes="#//Super"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Quarto" abstract="true" eSuperTypes="#//Super"/>
   <eClassifiers xsi:type="ecore:EClass" name="QuartoSolteiro" eSuperTypes="#//Quarto"/>
   <eClassifiers xsi:type="ecore:EClass" name="QuartoComunitario" eSuperTypes="#//Quarto"/>
   <eClassifiers xsi:type="ecore:EClass" name="QuartoCasal" eSuperTypes="#//Quarto"/>

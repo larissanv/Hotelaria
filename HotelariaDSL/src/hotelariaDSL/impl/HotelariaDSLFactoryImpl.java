@@ -58,7 +58,6 @@ public class HotelariaDSLFactoryImpl extends EFactoryImpl implements HotelariaDS
 		switch (eClass.getClassifierID()) {
 			case HotelariaDSLPackage.HOSPEDE: return createHospede();
 			case HotelariaDSLPackage.RECEPCIONISTA: return createRecepcionista();
-			case HotelariaDSLPackage.QUARTO: return createQuarto();
 			case HotelariaDSLPackage.QUARTO_SOLTEIRO: return createQuartoSolteiro();
 			case HotelariaDSLPackage.QUARTO_COMUNITARIO: return createQuartoComunitario();
 			case HotelariaDSLPackage.QUARTO_CASAL: return createQuartoCasal();
@@ -88,16 +87,6 @@ public class HotelariaDSLFactoryImpl extends EFactoryImpl implements HotelariaDS
 	public Recepcionista createRecepcionista() {
 		RecepcionistaImpl recepcionista = new RecepcionistaImpl();
 		return recepcionista;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Quarto createQuarto() {
-		QuartoImpl quarto = new QuartoImpl();
-		return quarto;
 	}
 
 	/**

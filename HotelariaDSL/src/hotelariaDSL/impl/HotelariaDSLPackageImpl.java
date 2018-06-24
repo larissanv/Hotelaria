@@ -427,7 +427,7 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 
 		initEClass(recepcionistaEClass, Recepcionista.class, "Recepcionista", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(quartoEClass, Quarto.class, "Quarto", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(quartoEClass, Quarto.class, "Quarto", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(quartoSolteiroEClass, QuartoSolteiro.class, "QuartoSolteiro", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

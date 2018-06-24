@@ -40,15 +40,6 @@ public interface HotelariaDSLFactory extends EFactory {
 	Recepcionista createRecepcionista();
 
 	/**
-	 * Returns a new object of class '<em>Quarto</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Quarto</em>'.
-	 * @generated
-	 */
-	Quarto createQuarto();
-
-	/**
 	 * Returns a new object of class '<em>Quarto Solteiro</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

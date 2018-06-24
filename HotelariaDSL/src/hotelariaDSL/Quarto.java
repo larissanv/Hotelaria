@@ -10,7 +10,7 @@ package hotelariaDSL;
  *
  *
  * @see hotelariaDSL.HotelariaDSLPackage#getQuarto()
- * @model
+ * @model abstract="true"
  * @generated
  */
 public interface Quarto extends Super {

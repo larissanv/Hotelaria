@@ -192,11 +192,6 @@ public class AplicacaoItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(HotelariaDSLPackage.Literals.APLICACAO__CLASSES,
-				 HotelariaDSLFactory.eINSTANCE.createQuarto()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(HotelariaDSLPackage.Literals.APLICACAO__CLASSES,
 				 HotelariaDSLFactory.eINSTANCE.createQuartoSolteiro()));
 
 		newChildDescriptors.add

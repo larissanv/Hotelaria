@@ -14,7 +14,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class QuartoImpl extends SuperImpl implements Quarto {
+public abstract class QuartoImpl extends SuperImpl implements Quarto {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
