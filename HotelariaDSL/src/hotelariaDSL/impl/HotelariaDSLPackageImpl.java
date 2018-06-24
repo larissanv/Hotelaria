@@ -4,6 +4,7 @@ package hotelariaDSL.impl;
 
 import hotelariaDSL.Aplicacao;
 import hotelariaDSL.Atributo;
+import hotelariaDSL.Hospedagem;
 import hotelariaDSL.Hospede;
 import hotelariaDSL.HotelariaDSLFactory;
 import hotelariaDSL.HotelariaDSLPackage;
@@ -93,6 +94,13 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 	 * @generated
 	 */
 	private EClass atributoEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass hospedagemEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -313,6 +321,15 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getHospedagem() {
+		return hospedagemEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public HotelariaDSLFactory getHotelariaDSLFactory() {
 		return (HotelariaDSLFactory)getEFactoryInstance();
 	}
@@ -360,6 +377,8 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 		atributoEClass = createEClass(ATRIBUTO);
 		createEAttribute(atributoEClass, ATRIBUTO__NOME_ATRIBUTO);
 		createEAttribute(atributoEClass, ATRIBUTO__TIPO);
+
+		hospedagemEClass = createEClass(HOSPEDAGEM);
 	}
 
 	/**
@@ -396,6 +415,7 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 		quartoSolteiroEClass.getESuperTypes().add(this.getQuarto());
 		quartoComunitarioEClass.getESuperTypes().add(this.getQuarto());
 		quartoCasalEClass.getESuperTypes().add(this.getQuarto());
+		hospedagemEClass.getESuperTypes().add(this.getSuper());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(superEClass, Super.class, "Super", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -422,6 +442,8 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 		initEClass(atributoEClass, Atributo.class, "Atributo", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAtributo_NomeAtributo(), ecorePackage.getEString(), "nomeAtributo", null, 1, 1, Atributo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAtributo_Tipo(), ecorePackage.getEString(), "tipo", null, 1, 1, Atributo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(hospedagemEClass, Hospedagem.class, "Hospedagem", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

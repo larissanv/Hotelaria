@@ -94,6 +94,15 @@ public interface HotelariaDSLFactory extends EFactory {
 	Atributo createAtributo();
 
 	/**
+	 * Returns a new object of class '<em>Hospedagem</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Hospedagem</em>'.
+	 * @generated
+	 */
+	Hospedagem createHospedagem();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

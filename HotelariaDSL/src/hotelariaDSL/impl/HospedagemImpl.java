@@ -2,25 +2,25 @@
  */
 package hotelariaDSL.impl;
 
+import hotelariaDSL.Hospedagem;
 import hotelariaDSL.HotelariaDSLPackage;
-import hotelariaDSL.QuartoCasal;
 
 import org.eclipse.emf.ecore.EClass;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Quarto Casal</b></em>'.
+ * An implementation of the model object '<em><b>Hospedagem</b></em>'.
  * <!-- end-user-doc -->
  *
  * @generated
  */
-public class QuartoCasalImpl extends QuartoImpl implements QuartoCasal {
+public class HospedagemImpl extends SuperImpl implements Hospedagem {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected QuartoCasalImpl() {
+	protected HospedagemImpl() {
 		super();
 	}
 
@@ -31,7 +31,7 @@ public class QuartoCasalImpl extends QuartoImpl implements QuartoCasal {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return HotelariaDSLPackage.Literals.QUARTO_CASAL;
+		return HotelariaDSLPackage.Literals.HOSPEDAGEM;
 	}
 
-} //QuartoCasalImpl
+} //HospedagemImpl

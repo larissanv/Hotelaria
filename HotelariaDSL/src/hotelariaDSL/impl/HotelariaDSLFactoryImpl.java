@@ -64,6 +64,7 @@ public class HotelariaDSLFactoryImpl extends EFactoryImpl implements HotelariaDS
 			case HotelariaDSLPackage.QUARTO_CASAL: return createQuartoCasal();
 			case HotelariaDSLPackage.APLICACAO: return createAplicacao();
 			case HotelariaDSLPackage.ATRIBUTO: return createAtributo();
+			case HotelariaDSLPackage.HOSPEDAGEM: return createHospedagem();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -147,6 +148,16 @@ public class HotelariaDSLFactoryImpl extends EFactoryImpl implements HotelariaDS
 	public Atributo createAtributo() {
 		AtributoImpl atributo = new AtributoImpl();
 		return atributo;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Hospedagem createHospedagem() {
+		HospedagemImpl hospedagem = new HospedagemImpl();
+		return hospedagem;
 	}
 
 	/**

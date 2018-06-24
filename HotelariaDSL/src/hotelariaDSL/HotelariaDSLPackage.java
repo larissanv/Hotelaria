@@ -479,6 +479,52 @@ public interface HotelariaDSLPackage extends EPackage {
 	 */
 	int ATRIBUTO_OPERATION_COUNT = 0;
 
+	/**
+	 * The meta object id for the '{@link hotelariaDSL.impl.HospedagemImpl <em>Hospedagem</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see hotelariaDSL.impl.HospedagemImpl
+	 * @see hotelariaDSL.impl.HotelariaDSLPackageImpl#getHospedagem()
+	 * @generated
+	 */
+	int HOSPEDAGEM = 9;
+
+	/**
+	 * The feature id for the '<em><b>Nome</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPEDAGEM__NOME = SUPER__NOME;
+
+	/**
+	 * The feature id for the '<em><b>Atributos</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPEDAGEM__ATRIBUTOS = SUPER__ATRIBUTOS;
+
+	/**
+	 * The number of structural features of the '<em>Hospedagem</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPEDAGEM_FEATURE_COUNT = SUPER_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Hospedagem</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPEDAGEM_OPERATION_COUNT = SUPER_OPERATION_COUNT + 0;
+
 
 	/**
 	 * Returns the meta object for class '{@link hotelariaDSL.Super <em>Super</em>}'.
@@ -648,6 +694,16 @@ public interface HotelariaDSLPackage extends EPackage {
 	EAttribute getAtributo_Tipo();
 
 	/**
+	 * Returns the meta object for class '{@link hotelariaDSL.Hospedagem <em>Hospedagem</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Hospedagem</em>'.
+	 * @see hotelariaDSL.Hospedagem
+	 * @generated
+	 */
+	EClass getHospedagem();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -815,6 +871,16 @@ public interface HotelariaDSLPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute ATRIBUTO__TIPO = eINSTANCE.getAtributo_Tipo();
+
+		/**
+		 * The meta object literal for the '{@link hotelariaDSL.impl.HospedagemImpl <em>Hospedagem</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see hotelariaDSL.impl.HospedagemImpl
+		 * @see hotelariaDSL.impl.HotelariaDSLPackageImpl#getHospedagem()
+		 * @generated
+		 */
+		EClass HOSPEDAGEM = eINSTANCE.getHospedagem();
 
 	}
 
