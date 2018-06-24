@@ -7,7 +7,7 @@
     <semanticResources>../build.properties</semanticResources>
     <semanticResources>../plugin.properties</semanticResources>
     <semanticResources>../plugin.xml</semanticResources>
-    <semanticResources>../Exemplo.hotelariadsl</semanticResources>
+    <semanticResources>../My.hotelariadsl</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_taRn4Gi1EeioM67hH4ooxA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_tgWasGi1EeioM67hH4ooxA" name="hotelariaDSL" repPath="#_tciRsGi1EeioM67hH4ooxA">

@@ -5,12 +5,14 @@ package hotelariaDSL.provider;
 
 import hotelariaDSL.Hospedagem;
 
+import hotelariaDSL.HotelariaDSLPackage;
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 
 /**
@@ -41,8 +43,77 @@ public class HospedagemItemProvider extends SuperItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
+			addRecepcionistaPropertyDescriptor(object);
+			addHospedePropertyDescriptor(object);
+			addQuartoPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
+	}
+
+	/**
+	 * This adds a property descriptor for the Recepcionista feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addRecepcionistaPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Hospedagem_recepcionista_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Hospedagem_recepcionista_feature", "_UI_Hospedagem_type"),
+				 HotelariaDSLPackage.Literals.HOSPEDAGEM__RECEPCIONISTA,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Hospede feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addHospedePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Hospedagem_hospede_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Hospedagem_hospede_feature", "_UI_Hospedagem_type"),
+				 HotelariaDSLPackage.Literals.HOSPEDAGEM__HOSPEDE,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Quarto feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addQuartoPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Hospedagem_quarto_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Hospedagem_quarto_feature", "_UI_Hospedagem_type"),
+				 HotelariaDSLPackage.Literals.HOSPEDAGEM__QUARTO,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
 	}
 
 	/**

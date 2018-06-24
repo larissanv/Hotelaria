@@ -330,6 +330,33 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getHospedagem_Recepcionista() {
+		return (EReference)hospedagemEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getHospedagem_Hospede() {
+		return (EReference)hospedagemEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getHospedagem_Quarto() {
+		return (EReference)hospedagemEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public HotelariaDSLFactory getHotelariaDSLFactory() {
 		return (HotelariaDSLFactory)getEFactoryInstance();
 	}
@@ -379,6 +406,9 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 		createEAttribute(atributoEClass, ATRIBUTO__TIPO);
 
 		hospedagemEClass = createEClass(HOSPEDAGEM);
+		createEReference(hospedagemEClass, HOSPEDAGEM__RECEPCIONISTA);
+		createEReference(hospedagemEClass, HOSPEDAGEM__HOSPEDE);
+		createEReference(hospedagemEClass, HOSPEDAGEM__QUARTO);
 	}
 
 	/**
@@ -444,6 +474,9 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 		initEAttribute(getAtributo_Tipo(), ecorePackage.getEString(), "tipo", null, 1, 1, Atributo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(hospedagemEClass, Hospedagem.class, "Hospedagem", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getHospedagem_Recepcionista(), this.getRecepcionista(), null, "recepcionista", null, 1, 1, Hospedagem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getHospedagem_Hospede(), this.getHospede(), null, "hospede", null, 1, -1, Hospedagem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getHospedagem_Quarto(), this.getQuarto(), null, "quarto", null, 1, 1, Hospedagem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

@@ -508,13 +508,40 @@ public interface HotelariaDSLPackage extends EPackage {
 	int HOSPEDAGEM__ATRIBUTOS = SUPER__ATRIBUTOS;
 
 	/**
+	 * The feature id for the '<em><b>Recepcionista</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPEDAGEM__RECEPCIONISTA = SUPER_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Hospede</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPEDAGEM__HOSPEDE = SUPER_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Quarto</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPEDAGEM__QUARTO = SUPER_FEATURE_COUNT + 2;
+
+	/**
 	 * The number of structural features of the '<em>Hospedagem</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPEDAGEM_FEATURE_COUNT = SUPER_FEATURE_COUNT + 0;
+	int HOSPEDAGEM_FEATURE_COUNT = SUPER_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of operations of the '<em>Hospedagem</em>' class.
@@ -704,6 +731,39 @@ public interface HotelariaDSLPackage extends EPackage {
 	EClass getHospedagem();
 
 	/**
+	 * Returns the meta object for the reference '{@link hotelariaDSL.Hospedagem#getRecepcionista <em>Recepcionista</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Recepcionista</em>'.
+	 * @see hotelariaDSL.Hospedagem#getRecepcionista()
+	 * @see #getHospedagem()
+	 * @generated
+	 */
+	EReference getHospedagem_Recepcionista();
+
+	/**
+	 * Returns the meta object for the reference list '{@link hotelariaDSL.Hospedagem#getHospede <em>Hospede</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Hospede</em>'.
+	 * @see hotelariaDSL.Hospedagem#getHospede()
+	 * @see #getHospedagem()
+	 * @generated
+	 */
+	EReference getHospedagem_Hospede();
+
+	/**
+	 * Returns the meta object for the reference '{@link hotelariaDSL.Hospedagem#getQuarto <em>Quarto</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Quarto</em>'.
+	 * @see hotelariaDSL.Hospedagem#getQuarto()
+	 * @see #getHospedagem()
+	 * @generated
+	 */
+	EReference getHospedagem_Quarto();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -881,6 +941,30 @@ public interface HotelariaDSLPackage extends EPackage {
 		 * @generated
 		 */
 		EClass HOSPEDAGEM = eINSTANCE.getHospedagem();
+
+		/**
+		 * The meta object literal for the '<em><b>Recepcionista</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference HOSPEDAGEM__RECEPCIONISTA = eINSTANCE.getHospedagem_Recepcionista();
+
+		/**
+		 * The meta object literal for the '<em><b>Hospede</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference HOSPEDAGEM__HOSPEDE = eINSTANCE.getHospedagem_Hospede();
+
+		/**
+		 * The meta object literal for the '<em><b>Quarto</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference HOSPEDAGEM__QUARTO = eINSTANCE.getHospedagem_Quarto();
 
 	}
 

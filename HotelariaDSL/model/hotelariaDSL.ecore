@@ -29,5 +29,12 @@
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="tipo" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Hospedagem" eSuperTypes="#//Super"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Hospedagem" eSuperTypes="#//Super">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="recepcionista" lowerBound="1"
+        eType="#//Recepcionista"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hospede" lowerBound="1"
+        upperBound="-1" eType="#//Hospede"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="quarto" lowerBound="1"
+        eType="#//Quarto"/>
+  </eClassifiers>
 </ecore:EPackage>
