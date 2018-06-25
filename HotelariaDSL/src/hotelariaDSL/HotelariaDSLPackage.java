@@ -580,22 +580,22 @@ public interface HotelariaDSLPackage extends EPackage {
 	int ATRIBUTO = 8;
 
 	/**
-	 * The feature id for the '<em><b>Nome Atributo</b></em>' attribute.
+	 * The feature id for the '<em><b>Nome</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ATRIBUTO__NOME_ATRIBUTO = 0;
+	int ATRIBUTO__NOME = 0;
 
 	/**
-	 * The feature id for the '<em><b>Atributo</b></em>' reference list.
+	 * The feature id for the '<em><b>Tipo</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ATRIBUTO__ATRIBUTO = 1;
+	int ATRIBUTO__TIPO = 1;
 
 	/**
 	 * The number of structural features of the '<em>Atributo</em>' class.
@@ -773,26 +773,26 @@ public interface HotelariaDSLPackage extends EPackage {
 	EClass getAtributo();
 
 	/**
-	 * Returns the meta object for the attribute '{@link hotelariaDSL.Atributo#getNomeAtributo <em>Nome Atributo</em>}'.
+	 * Returns the meta object for the attribute '{@link hotelariaDSL.Atributo#getNome <em>Nome</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Nome Atributo</em>'.
-	 * @see hotelariaDSL.Atributo#getNomeAtributo()
+	 * @return the meta object for the attribute '<em>Nome</em>'.
+	 * @see hotelariaDSL.Atributo#getNome()
 	 * @see #getAtributo()
 	 * @generated
 	 */
-	EAttribute getAtributo_NomeAtributo();
+	EAttribute getAtributo_Nome();
 
 	/**
-	 * Returns the meta object for the reference list '{@link hotelariaDSL.Atributo#getAtributo <em>Atributo</em>}'.
+	 * Returns the meta object for the reference list '{@link hotelariaDSL.Atributo#getTipo <em>Tipo</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Atributo</em>'.
-	 * @see hotelariaDSL.Atributo#getAtributo()
+	 * @return the meta object for the reference list '<em>Tipo</em>'.
+	 * @see hotelariaDSL.Atributo#getTipo()
 	 * @see #getAtributo()
 	 * @generated
 	 */
-	EReference getAtributo_Atributo();
+	EReference getAtributo_Tipo();
 
 	/**
 	 * Returns the meta object for class '{@link hotelariaDSL.Hospedagem <em>Hospedagem</em>}'.
@@ -999,20 +999,20 @@ public interface HotelariaDSLPackage extends EPackage {
 		EClass ATRIBUTO = eINSTANCE.getAtributo();
 
 		/**
-		 * The meta object literal for the '<em><b>Nome Atributo</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Nome</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ATRIBUTO__NOME_ATRIBUTO = eINSTANCE.getAtributo_NomeAtributo();
+		EAttribute ATRIBUTO__NOME = eINSTANCE.getAtributo_Nome();
 
 		/**
-		 * The meta object literal for the '<em><b>Atributo</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Tipo</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ATRIBUTO__ATRIBUTO = eINSTANCE.getAtributo_Atributo();
+		EReference ATRIBUTO__TIPO = eINSTANCE.getAtributo_Tipo();
 
 		/**
 		 * The meta object literal for the '{@link hotelariaDSL.impl.HospedagemImpl <em>Hospedagem</em>}' class.

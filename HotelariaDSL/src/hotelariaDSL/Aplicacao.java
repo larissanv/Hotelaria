@@ -20,7 +20,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see hotelariaDSL.HotelariaDSLPackage#getAplicacao()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='TipoQuartoInvalido'"
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='HospedagemUnica'"
  * @generated
  */
 public interface Aplicacao extends EObject {

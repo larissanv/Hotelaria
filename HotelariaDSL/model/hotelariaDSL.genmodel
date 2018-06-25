@@ -26,8 +26,8 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hotelariaDSL.ecore#//Aplicacao/classes"/>
     </genClasses>
     <genClasses ecoreClass="hotelariaDSL.ecore#//Atributo">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hotelariaDSL.ecore#//Atributo/nomeAtributo"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference hotelariaDSL.ecore#//Atributo/atributo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hotelariaDSL.ecore#//Atributo/nome"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference hotelariaDSL.ecore#//Atributo/tipo"/>
     </genClasses>
     <genClasses image="false" ecoreClass="hotelariaDSL.ecore#//Hospedagem">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference hotelariaDSL.ecore#//Hospedagem/recepcionista"/>

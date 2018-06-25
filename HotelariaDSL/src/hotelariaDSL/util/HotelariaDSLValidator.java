@@ -189,43 +189,36 @@ public class HotelariaDSLValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(aplicacao, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(aplicacao, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(aplicacao, diagnostics, context);
-		if (result || diagnostics != null) result &= validateAplicacao_TipoQuartoInvalido(aplicacao, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAplicacao_HospedagemUnica(aplicacao, diagnostics, context);
 		return result;
 	}
 
 	/**
-	 * Validates the TipoQuartoInvalido constraint of '<em>Aplicacao</em>'.
+	 * Validates the HospedagemUnica constraint of '<em>Aplicacao</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated NOT
 	 */
-	public boolean validateAplicacao_TipoQuartoInvalido(Aplicacao aplicacao, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO implement the constraint
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		boolean hospedagemC = false;
-		boolean hospedagemP = false;
+	public boolean validateAplicacao_HospedagemUnica(Aplicacao aplicacao, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		int hospedagem = 0;
+		for (Super s : aplicacao.getClasses())
+			if (s instanceof Hospedagem)
+				hospedagem++;
 		
-		for(Super e : aplicacao.getClasses()) {
-			if(e instanceof HospedagemPago) {
-				hospedagemP = true;
-			}else
-			if(e instanceof HospedagemComunitario) {
-				hospedagemC = true;					
-			}
-		}
-		
-		if(hospedagemP && hospedagemC) {
+		if (hospedagem > 1) {
 			if (diagnostics != null) {
-				diagnostics.add(
-						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
-								new Object[] { "TipoHospedagemInvalido", "Conflito de tipos de hospedagem: tipo comunitário não deve coexistir com pago" },
-								new Object[] { aplicacao }, context));
+				diagnostics.add
+					(createDiagnostic
+						(Diagnostic.ERROR,
+						 DIAGNOSTIC_SOURCE,
+						 0,
+						 "_UI_GenericConstraint_diagnostic",
+						 new Object[] { "HospedagemUnica", getObjectLabel(aplicacao, context) },
+						 new Object[] { aplicacao },
+						 context));
 			}
 			return false;
 		}
-		
 		return true;
 	}
 

@@ -60,26 +60,26 @@ public class AtributoItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNomeAtributoPropertyDescriptor(object);
-			addAtributoPropertyDescriptor(object);
+			addNomePropertyDescriptor(object);
+			addTipoPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This adds a property descriptor for the Nome Atributo feature.
+	 * This adds a property descriptor for the Nome feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addNomeAtributoPropertyDescriptor(Object object) {
+	protected void addNomePropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Atributo_nomeAtributo_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Atributo_nomeAtributo_feature", "_UI_Atributo_type"),
-				 HotelariaDSLPackage.Literals.ATRIBUTO__NOME_ATRIBUTO,
+				 getString("_UI_Atributo_nome_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Atributo_nome_feature", "_UI_Atributo_type"),
+				 HotelariaDSLPackage.Literals.ATRIBUTO__NOME,
 				 true,
 				 false,
 				 false,
@@ -89,19 +89,19 @@ public class AtributoItemProvider
 	}
 
 	/**
-	 * This adds a property descriptor for the Atributo feature.
+	 * This adds a property descriptor for the Tipo feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addAtributoPropertyDescriptor(Object object) {
+	protected void addTipoPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Atributo_atributo_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Atributo_atributo_feature", "_UI_Atributo_type"),
-				 HotelariaDSLPackage.Literals.ATRIBUTO__ATRIBUTO,
+				 getString("_UI_Atributo_tipo_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Atributo_tipo_feature", "_UI_Atributo_type"),
+				 HotelariaDSLPackage.Literals.ATRIBUTO__TIPO,
 				 true,
 				 false,
 				 true,
@@ -129,7 +129,7 @@ public class AtributoItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Atributo)object).getNomeAtributo();
+		String label = ((Atributo)object).getNome();
 		return label == null || label.length() == 0 ?
 			getString("_UI_Atributo_type") :
 			getString("_UI_Atributo_type") + " " + label;
@@ -148,7 +148,7 @@ public class AtributoItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Atributo.class)) {
-			case HotelariaDSLPackage.ATRIBUTO__NOME_ATRIBUTO:
+			case HotelariaDSLPackage.ATRIBUTO__NOME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}
