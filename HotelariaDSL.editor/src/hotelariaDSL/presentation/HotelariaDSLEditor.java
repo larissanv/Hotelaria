@@ -157,7 +157,9 @@ import org.eclipse.emf.edit.ui.view.ExtendedPropertySheetPage;
 import hotelariaDSL.provider.HotelariaDSLItemProviderAdapterFactory;
 
 import org.eclipse.emf.ecore.provider.EcoreItemProviderAdapterFactory;
+
 import org.eclipse.ui.actions.WorkspaceModifyOperation;
+
 import org.eclipse.uml2.uml.edit.providers.UMLItemProviderAdapterFactory;
 
 

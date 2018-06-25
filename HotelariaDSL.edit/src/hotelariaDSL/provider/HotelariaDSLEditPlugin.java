@@ -5,7 +5,9 @@ package hotelariaDSL.provider;
 import org.eclipse.emf.common.EMFPlugin;
 
 import org.eclipse.emf.common.util.ResourceLocator;
+
 import org.eclipse.emf.ecore.provider.EcoreEditPlugin;
+
 import org.eclipse.uml2.uml.edit.UMLEditPlugin;
 
 /**
