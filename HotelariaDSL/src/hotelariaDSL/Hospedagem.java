@@ -4,7 +4,6 @@ package hotelariaDSL;
 
 import org.eclipse.emf.common.util.EList;
 
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Hospedagem</b></em>'.
@@ -20,11 +19,10 @@ import org.eclipse.emf.common.util.EList;
  * </ul>
  *
  * @see hotelariaDSL.HotelariaDSLPackage#getHospedagem()
- * @model
+ * @model abstract="true"
  * @generated
  */
 public interface Hospedagem extends Super {
-
 	/**
 	 * Returns the value of the '<em><b>Recepcionista</b></em>' reference.
 	 * <!-- begin-user-doc -->
@@ -92,4 +90,5 @@ public interface Hospedagem extends Super {
 	 * @generated
 	 */
 	void setQuarto(Quarto value);
+
 } // Hospedagem

@@ -2,25 +2,25 @@
  */
 package hotelariaDSL.impl;
 
+import hotelariaDSL.HospedagemComunitario;
 import hotelariaDSL.HotelariaDSLPackage;
-import hotelariaDSL.QuartoComunitario;
 
 import org.eclipse.emf.ecore.EClass;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Quarto Comunitario</b></em>'.
+ * An implementation of the model object '<em><b>Hospedagem Comunitario</b></em>'.
  * <!-- end-user-doc -->
  *
  * @generated
  */
-public class QuartoComunitarioImpl extends QuartoImpl implements QuartoComunitario {
+public class HospedagemComunitarioImpl extends HospedagemImpl implements HospedagemComunitario {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected QuartoComunitarioImpl() {
+	protected HospedagemComunitarioImpl() {
 		super();
 	}
 
@@ -31,7 +31,7 @@ public class QuartoComunitarioImpl extends QuartoImpl implements QuartoComunitar
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return HotelariaDSLPackage.Literals.QUARTO_COMUNITARIO;
+		return HotelariaDSLPackage.Literals.HOSPEDAGEM_COMUNITARIO;
 	}
 
-} //QuartoComunitarioImpl
+} //HospedagemComunitarioImpl

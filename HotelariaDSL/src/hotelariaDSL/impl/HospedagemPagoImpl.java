@@ -2,25 +2,25 @@
  */
 package hotelariaDSL.impl;
 
+import hotelariaDSL.HospedagemPago;
 import hotelariaDSL.HotelariaDSLPackage;
-import hotelariaDSL.QuartoSolteiro;
 
 import org.eclipse.emf.ecore.EClass;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Quarto Solteiro</b></em>'.
+ * An implementation of the model object '<em><b>Hospedagem Pago</b></em>'.
  * <!-- end-user-doc -->
  *
  * @generated
  */
-public class QuartoSolteiroImpl extends QuartoImpl implements QuartoSolteiro {
+public class HospedagemPagoImpl extends HospedagemImpl implements HospedagemPago {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected QuartoSolteiroImpl() {
+	protected HospedagemPagoImpl() {
 		super();
 	}
 
@@ -31,7 +31,7 @@ public class QuartoSolteiroImpl extends QuartoImpl implements QuartoSolteiro {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return HotelariaDSLPackage.Literals.QUARTO_SOLTEIRO;
+		return HotelariaDSLPackage.Literals.HOSPEDAGEM_PAGO;
 	}
 
-} //QuartoSolteiroImpl
+} //HospedagemPagoImpl

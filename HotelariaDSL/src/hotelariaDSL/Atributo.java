@@ -14,7 +14,6 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link hotelariaDSL.Atributo#getNomeAtributo <em>Nome Atributo</em>}</li>
- *   <li>{@link hotelariaDSL.Atributo#getTipo <em>Tipo</em>}</li>
  * </ul>
  *
  * @see hotelariaDSL.HotelariaDSLPackage#getAtributo()
@@ -47,31 +46,5 @@ public interface Atributo extends EObject {
 	 * @generated
 	 */
 	void setNomeAtributo(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Tipo</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Tipo</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Tipo</em>' attribute.
-	 * @see #setTipo(String)
-	 * @see hotelariaDSL.HotelariaDSLPackage#getAtributo_Tipo()
-	 * @model required="true"
-	 * @generated
-	 */
-	String getTipo();
-
-	/**
-	 * Sets the value of the '{@link hotelariaDSL.Atributo#getTipo <em>Tipo</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Tipo</em>' attribute.
-	 * @see #getTipo()
-	 * @generated
-	 */
-	void setTipo(String value);
 
 } // Atributo

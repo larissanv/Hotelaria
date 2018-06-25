@@ -93,27 +93,26 @@ public class HotelariaDSLSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case HotelariaDSLPackage.QUARTO_SOLTEIRO: {
-				QuartoSolteiro quartoSolteiro = (QuartoSolteiro)theEObject;
-				T result = caseQuartoSolteiro(quartoSolteiro);
-				if (result == null) result = caseQuarto(quartoSolteiro);
-				if (result == null) result = caseSuper(quartoSolteiro);
+			case HotelariaDSLPackage.HOSPEDAGEM_PAGO: {
+				HospedagemPago hospedagemPago = (HospedagemPago)theEObject;
+				T result = caseHospedagemPago(hospedagemPago);
+				if (result == null) result = caseHospedagem(hospedagemPago);
+				if (result == null) result = caseSuper(hospedagemPago);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case HotelariaDSLPackage.QUARTO_COMUNITARIO: {
-				QuartoComunitario quartoComunitario = (QuartoComunitario)theEObject;
-				T result = caseQuartoComunitario(quartoComunitario);
-				if (result == null) result = caseQuarto(quartoComunitario);
-				if (result == null) result = caseSuper(quartoComunitario);
+			case HotelariaDSLPackage.CATEGORIA_QUARTO: {
+				CategoriaQuarto categoriaQuarto = (CategoriaQuarto)theEObject;
+				T result = caseCategoriaQuarto(categoriaQuarto);
+				if (result == null) result = caseSuper(categoriaQuarto);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case HotelariaDSLPackage.QUARTO_CASAL: {
-				QuartoCasal quartoCasal = (QuartoCasal)theEObject;
-				T result = caseQuartoCasal(quartoCasal);
-				if (result == null) result = caseQuarto(quartoCasal);
-				if (result == null) result = caseSuper(quartoCasal);
+			case HotelariaDSLPackage.HOSPEDAGEM_COMUNITARIO: {
+				HospedagemComunitario hospedagemComunitario = (HospedagemComunitario)theEObject;
+				T result = caseHospedagemComunitario(hospedagemComunitario);
+				if (result == null) result = caseHospedagem(hospedagemComunitario);
+				if (result == null) result = caseSuper(hospedagemComunitario);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -201,47 +200,47 @@ public class HotelariaDSLSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Quarto Solteiro</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Hospedagem Pago</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Quarto Solteiro</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Hospedagem Pago</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseQuartoSolteiro(QuartoSolteiro object) {
+	public T caseHospedagemPago(HospedagemPago object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Quarto Comunitario</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Categoria Quarto</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Quarto Comunitario</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Categoria Quarto</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseQuartoComunitario(QuartoComunitario object) {
+	public T caseCategoriaQuarto(CategoriaQuarto object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Quarto Casal</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Hospedagem Comunitario</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Quarto Casal</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Hospedagem Comunitario</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseQuartoCasal(QuartoCasal object) {
+	public T caseHospedagemComunitario(HospedagemComunitario object) {
 		return null;
 	}
 

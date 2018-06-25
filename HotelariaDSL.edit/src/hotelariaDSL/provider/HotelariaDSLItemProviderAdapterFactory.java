@@ -118,72 +118,95 @@ public class HotelariaDSLItemProviderAdapterFactory extends HotelariaDSLAdapterF
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link hotelariaDSL.QuartoSolteiro} instances.
+	 * This keeps track of the one adapter used for all {@link hotelariaDSL.Quarto} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected QuartoSolteiroItemProvider quartoSolteiroItemProvider;
+	protected QuartoItemProvider quartoItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link hotelariaDSL.QuartoSolteiro}.
+	 * This creates an adapter for a {@link hotelariaDSL.Quarto}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createQuartoSolteiroAdapter() {
-		if (quartoSolteiroItemProvider == null) {
-			quartoSolteiroItemProvider = new QuartoSolteiroItemProvider(this);
+	public Adapter createQuartoAdapter() {
+		if (quartoItemProvider == null) {
+			quartoItemProvider = new QuartoItemProvider(this);
 		}
 
-		return quartoSolteiroItemProvider;
+		return quartoItemProvider;
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link hotelariaDSL.QuartoComunitario} instances.
+	 * This keeps track of the one adapter used for all {@link hotelariaDSL.HospedagemPago} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected QuartoComunitarioItemProvider quartoComunitarioItemProvider;
+	protected HospedagemPagoItemProvider hospedagemPagoItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link hotelariaDSL.QuartoComunitario}.
+	 * This creates an adapter for a {@link hotelariaDSL.HospedagemPago}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createQuartoComunitarioAdapter() {
-		if (quartoComunitarioItemProvider == null) {
-			quartoComunitarioItemProvider = new QuartoComunitarioItemProvider(this);
+	public Adapter createHospedagemPagoAdapter() {
+		if (hospedagemPagoItemProvider == null) {
+			hospedagemPagoItemProvider = new HospedagemPagoItemProvider(this);
 		}
 
-		return quartoComunitarioItemProvider;
+		return hospedagemPagoItemProvider;
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link hotelariaDSL.QuartoCasal} instances.
+	 * This keeps track of the one adapter used for all {@link hotelariaDSL.CategoriaQuarto} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected QuartoCasalItemProvider quartoCasalItemProvider;
+	protected CategoriaQuartoItemProvider categoriaQuartoItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link hotelariaDSL.QuartoCasal}.
+	 * This creates an adapter for a {@link hotelariaDSL.CategoriaQuarto}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createQuartoCasalAdapter() {
-		if (quartoCasalItemProvider == null) {
-			quartoCasalItemProvider = new QuartoCasalItemProvider(this);
+	public Adapter createCategoriaQuartoAdapter() {
+		if (categoriaQuartoItemProvider == null) {
+			categoriaQuartoItemProvider = new CategoriaQuartoItemProvider(this);
 		}
 
-		return quartoCasalItemProvider;
+		return categoriaQuartoItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link hotelariaDSL.HospedagemComunitario} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected HospedagemComunitarioItemProvider hospedagemComunitarioItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link hotelariaDSL.HospedagemComunitario}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createHospedagemComunitarioAdapter() {
+		if (hospedagemComunitarioItemProvider == null) {
+			hospedagemComunitarioItemProvider = new HospedagemComunitarioItemProvider(this);
+		}
+
+		return hospedagemComunitarioItemProvider;
 	}
 
 	/**
@@ -230,29 +253,6 @@ public class HotelariaDSLItemProviderAdapterFactory extends HotelariaDSLAdapterF
 		}
 
 		return atributoItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link hotelariaDSL.Hospedagem} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected HospedagemItemProvider hospedagemItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link hotelariaDSL.Hospedagem}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createHospedagemAdapter() {
-		if (hospedagemItemProvider == null) {
-			hospedagemItemProvider = new HospedagemItemProvider(this);
-		}
-
-		return hospedagemItemProvider;
 	}
 
 	/**
@@ -356,12 +356,12 @@ public class HotelariaDSLItemProviderAdapterFactory extends HotelariaDSLAdapterF
 	public void dispose() {
 		if (hospedeItemProvider != null) hospedeItemProvider.dispose();
 		if (recepcionistaItemProvider != null) recepcionistaItemProvider.dispose();
-		if (quartoSolteiroItemProvider != null) quartoSolteiroItemProvider.dispose();
-		if (quartoComunitarioItemProvider != null) quartoComunitarioItemProvider.dispose();
-		if (quartoCasalItemProvider != null) quartoCasalItemProvider.dispose();
+		if (quartoItemProvider != null) quartoItemProvider.dispose();
+		if (hospedagemPagoItemProvider != null) hospedagemPagoItemProvider.dispose();
+		if (categoriaQuartoItemProvider != null) categoriaQuartoItemProvider.dispose();
+		if (hospedagemComunitarioItemProvider != null) hospedagemComunitarioItemProvider.dispose();
 		if (aplicacaoItemProvider != null) aplicacaoItemProvider.dispose();
 		if (atributoItemProvider != null) atributoItemProvider.dispose();
-		if (hospedagemItemProvider != null) hospedagemItemProvider.dispose();
 	}
 
 }

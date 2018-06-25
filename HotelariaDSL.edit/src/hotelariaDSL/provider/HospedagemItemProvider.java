@@ -4,8 +4,8 @@ package hotelariaDSL.provider;
 
 
 import hotelariaDSL.Hospedagem;
-
 import hotelariaDSL.HotelariaDSLPackage;
+
 import java.util.Collection;
 import java.util.List;
 
@@ -114,17 +114,6 @@ public class HospedagemItemProvider extends SuperItemProvider {
 				 null,
 				 null,
 				 null));
-	}
-
-	/**
-	 * This returns Hospedagem.gif.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/Hospedagem"));
 	}
 
 	/**

@@ -4,14 +4,14 @@ package hotelariaDSL.impl;
 
 import hotelariaDSL.Aplicacao;
 import hotelariaDSL.Atributo;
+import hotelariaDSL.CategoriaQuarto;
 import hotelariaDSL.Hospedagem;
+import hotelariaDSL.HospedagemComunitario;
+import hotelariaDSL.HospedagemPago;
 import hotelariaDSL.Hospede;
 import hotelariaDSL.HotelariaDSLFactory;
 import hotelariaDSL.HotelariaDSLPackage;
 import hotelariaDSL.Quarto;
-import hotelariaDSL.QuartoCasal;
-import hotelariaDSL.QuartoComunitario;
-import hotelariaDSL.QuartoSolteiro;
 import hotelariaDSL.Recepcionista;
 import hotelariaDSL.Super;
 
@@ -65,21 +65,21 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass quartoSolteiroEClass = null;
+	private EClass hospedagemPagoEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass quartoComunitarioEClass = null;
+	private EClass categoriaQuartoEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass quartoCasalEClass = null;
+	private EClass hospedagemComunitarioEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -240,8 +240,8 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getQuartoSolteiro() {
-		return quartoSolteiroEClass;
+	public EReference getQuarto_Categorias() {
+		return (EReference)quartoEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -249,8 +249,8 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getQuartoComunitario() {
-		return quartoComunitarioEClass;
+	public EClass getHospedagemPago() {
+		return hospedagemPagoEClass;
 	}
 
 	/**
@@ -258,8 +258,17 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getQuartoCasal() {
-		return quartoCasalEClass;
+	public EClass getCategoriaQuarto() {
+		return categoriaQuartoEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getHospedagemComunitario() {
+		return hospedagemComunitarioEClass;
 	}
 
 	/**
@@ -305,15 +314,6 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 	 */
 	public EAttribute getAtributo_NomeAtributo() {
 		return (EAttribute)atributoEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getAtributo_Tipo() {
-		return (EAttribute)atributoEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -390,12 +390,13 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 		recepcionistaEClass = createEClass(RECEPCIONISTA);
 
 		quartoEClass = createEClass(QUARTO);
+		createEReference(quartoEClass, QUARTO__CATEGORIAS);
 
-		quartoSolteiroEClass = createEClass(QUARTO_SOLTEIRO);
+		hospedagemPagoEClass = createEClass(HOSPEDAGEM_PAGO);
 
-		quartoComunitarioEClass = createEClass(QUARTO_COMUNITARIO);
+		categoriaQuartoEClass = createEClass(CATEGORIA_QUARTO);
 
-		quartoCasalEClass = createEClass(QUARTO_CASAL);
+		hospedagemComunitarioEClass = createEClass(HOSPEDAGEM_COMUNITARIO);
 
 		aplicacaoEClass = createEClass(APLICACAO);
 		createEAttribute(aplicacaoEClass, APLICACAO__TITULO);
@@ -403,7 +404,6 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 
 		atributoEClass = createEClass(ATRIBUTO);
 		createEAttribute(atributoEClass, ATRIBUTO__NOME_ATRIBUTO);
-		createEAttribute(atributoEClass, ATRIBUTO__TIPO);
 
 		hospedagemEClass = createEClass(HOSPEDAGEM);
 		createEReference(hospedagemEClass, HOSPEDAGEM__RECEPCIONISTA);
@@ -442,28 +442,29 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 		hospedeEClass.getESuperTypes().add(this.getSuper());
 		recepcionistaEClass.getESuperTypes().add(this.getSuper());
 		quartoEClass.getESuperTypes().add(this.getSuper());
-		quartoSolteiroEClass.getESuperTypes().add(this.getQuarto());
-		quartoComunitarioEClass.getESuperTypes().add(this.getQuarto());
-		quartoCasalEClass.getESuperTypes().add(this.getQuarto());
+		hospedagemPagoEClass.getESuperTypes().add(this.getHospedagem());
+		categoriaQuartoEClass.getESuperTypes().add(this.getSuper());
+		hospedagemComunitarioEClass.getESuperTypes().add(this.getHospedagem());
 		hospedagemEClass.getESuperTypes().add(this.getSuper());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(superEClass, Super.class, "Super", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSuper_Nome(), ecorePackage.getEString(), "nome", null, 1, 1, Super.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getSuper_Atributos(), this.getAtributo(), null, "atributos", null, 0, -1, Super.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSuper_Atributos(), this.getAtributo(), null, "atributos", null, 0, -1, Super.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(hospedeEClass, Hospede.class, "Hospede", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getHospede_ContaBanco(), ecorePackage.getEString(), "contaBanco", null, 1, 1, Hospede.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(recepcionistaEClass, Recepcionista.class, "Recepcionista", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(quartoEClass, Quarto.class, "Quarto", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(quartoEClass, Quarto.class, "Quarto", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getQuarto_Categorias(), this.getCategoriaQuarto(), null, "categorias", null, 1, -1, Quarto.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(quartoSolteiroEClass, QuartoSolteiro.class, "QuartoSolteiro", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(hospedagemPagoEClass, HospedagemPago.class, "HospedagemPago", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(quartoComunitarioEClass, QuartoComunitario.class, "QuartoComunitario", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(categoriaQuartoEClass, CategoriaQuarto.class, "CategoriaQuarto", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(quartoCasalEClass, QuartoCasal.class, "QuartoCasal", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(hospedagemComunitarioEClass, HospedagemComunitario.class, "HospedagemComunitario", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(aplicacaoEClass, Aplicacao.class, "Aplicacao", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAplicacao_Titulo(), ecorePackage.getEString(), "titulo", null, 1, 1, Aplicacao.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -471,9 +472,8 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 
 		initEClass(atributoEClass, Atributo.class, "Atributo", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAtributo_NomeAtributo(), ecorePackage.getEString(), "nomeAtributo", null, 1, 1, Atributo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getAtributo_Tipo(), ecorePackage.getEString(), "tipo", null, 1, 1, Atributo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(hospedagemEClass, Hospedagem.class, "Hospedagem", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(hospedagemEClass, Hospedagem.class, "Hospedagem", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getHospedagem_Recepcionista(), this.getRecepcionista(), null, "recepcionista", null, 1, 1, Hospedagem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getHospedagem_Hospede(), this.getHospede(), null, "hospede", null, 1, -1, Hospedagem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getHospedagem_Quarto(), this.getQuarto(), null, "quarto", null, 1, 1, Hospedagem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -482,8 +482,25 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 		createResource(eNS_URI);
 
 		// Create annotations
+		// https://www.eclipse.org/emf/2002/GenModel
+		createGenModelAnnotations();
 		// http://www.eclipse.org/emf/2002/Ecore
 		createEcoreAnnotations();
+	}
+
+	/**
+	 * Initializes the annotations for <b>https://www.eclipse.org/emf/2002/GenModel</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createGenModelAnnotations() {
+		String source = "https://www.eclipse.org/emf/2002/GenModel";	
+		addAnnotation
+		  (this, 
+		   source, 
+		   new String[] {
+		   });
 	}
 
 	/**

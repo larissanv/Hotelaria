@@ -94,12 +94,12 @@ public class HotelariaDSLValidator extends EObjectValidator {
 				return validateRecepcionista((Recepcionista)value, diagnostics, context);
 			case HotelariaDSLPackage.QUARTO:
 				return validateQuarto((Quarto)value, diagnostics, context);
-			case HotelariaDSLPackage.QUARTO_SOLTEIRO:
-				return validateQuartoSolteiro((QuartoSolteiro)value, diagnostics, context);
-			case HotelariaDSLPackage.QUARTO_COMUNITARIO:
-				return validateQuartoComunitario((QuartoComunitario)value, diagnostics, context);
-			case HotelariaDSLPackage.QUARTO_CASAL:
-				return validateQuartoCasal((QuartoCasal)value, diagnostics, context);
+			case HotelariaDSLPackage.HOSPEDAGEM_PAGO:
+				return validateHospedagemPago((HospedagemPago)value, diagnostics, context);
+			case HotelariaDSLPackage.CATEGORIA_QUARTO:
+				return validateCategoriaQuarto((CategoriaQuarto)value, diagnostics, context);
+			case HotelariaDSLPackage.HOSPEDAGEM_COMUNITARIO:
+				return validateHospedagemComunitario((HospedagemComunitario)value, diagnostics, context);
 			case HotelariaDSLPackage.APLICACAO:
 				return validateAplicacao((Aplicacao)value, diagnostics, context);
 			case HotelariaDSLPackage.ATRIBUTO:
@@ -152,8 +152,8 @@ public class HotelariaDSLValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateQuartoSolteiro(QuartoSolteiro quartoSolteiro, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return validate_EveryDefaultConstraint(quartoSolteiro, diagnostics, context);
+	public boolean validateHospedagemPago(HospedagemPago hospedagemPago, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(hospedagemPago, diagnostics, context);
 	}
 
 	/**
@@ -161,8 +161,8 @@ public class HotelariaDSLValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateQuartoComunitario(QuartoComunitario quartoComunitario, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return validate_EveryDefaultConstraint(quartoComunitario, diagnostics, context);
+	public boolean validateCategoriaQuarto(CategoriaQuarto categoriaQuarto, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(categoriaQuarto, diagnostics, context);
 	}
 
 	/**
@@ -170,8 +170,8 @@ public class HotelariaDSLValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateQuartoCasal(QuartoCasal quartoCasal, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return validate_EveryDefaultConstraint(quartoCasal, diagnostics, context);
+	public boolean validateHospedagemComunitario(HospedagemComunitario hospedagemComunitario, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(hospedagemComunitario, diagnostics, context);
 	}
 
 	/**
@@ -200,30 +200,23 @@ public class HotelariaDSLValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateAplicacao_TipoQuartoInvalido(Aplicacao aplicacao, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO implement the constraint
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		boolean quartoC = false;
-		boolean quartoSCa = false;
+		boolean hospedagemC = false;
+		boolean hospedagemP = false;
 		
 		for(Super e : aplicacao.getClasses()) {
-			if(e instanceof QuartoComunitario) {
-				quartoC = true;
+			if(e instanceof HospedagemPago) {
+				hospedagemP = true;
 			}else
-			if(e instanceof QuartoSolteiro) {
-				quartoSCa = true;					
-			}else
-			if(e instanceof QuartoCasal) {
-				quartoSCa = true;
+			if(e instanceof HospedagemComunitario) {
+				hospedagemC = true;					
 			}
 		}
 		
-		if(quartoC && quartoSCa) {
+		if(hospedagemP && hospedagemC) {
 			if (diagnostics != null) {
 				diagnostics.add(
 						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
-								new Object[] { "TipoQuartoInvalido", "Conflito de tipos de quarto: tipo comunitário é exclusivo" },
+								new Object[] { "TipoHospedagemInvalido", "Conflito de tipos de hospedagem: tipo comunitário não deve coexistir com pago" },
 								new Object[] { aplicacao }, context));
 			}
 			return false;

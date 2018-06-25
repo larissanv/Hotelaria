@@ -192,22 +192,22 @@ public class AplicacaoItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(HotelariaDSLPackage.Literals.APLICACAO__CLASSES,
-				 HotelariaDSLFactory.eINSTANCE.createQuartoSolteiro()));
+				 HotelariaDSLFactory.eINSTANCE.createQuarto()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(HotelariaDSLPackage.Literals.APLICACAO__CLASSES,
-				 HotelariaDSLFactory.eINSTANCE.createQuartoComunitario()));
+				 HotelariaDSLFactory.eINSTANCE.createHospedagemPago()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(HotelariaDSLPackage.Literals.APLICACAO__CLASSES,
-				 HotelariaDSLFactory.eINSTANCE.createQuartoCasal()));
+				 HotelariaDSLFactory.eINSTANCE.createCategoriaQuarto()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(HotelariaDSLPackage.Literals.APLICACAO__CLASSES,
-				 HotelariaDSLFactory.eINSTANCE.createHospedagem()));
+				 HotelariaDSLFactory.eINSTANCE.createHospedagemComunitario()));
 	}
 
 	/**

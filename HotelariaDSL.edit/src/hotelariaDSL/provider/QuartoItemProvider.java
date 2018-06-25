@@ -3,6 +3,7 @@
 package hotelariaDSL.provider;
 
 
+import hotelariaDSL.HotelariaDSLPackage;
 import hotelariaDSL.Quarto;
 
 import java.util.Collection;
@@ -11,6 +12,7 @@ import java.util.List;
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 
 /**
@@ -41,8 +43,31 @@ public class QuartoItemProvider extends SuperItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
+			addCategoriasPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
+	}
+
+	/**
+	 * This adds a property descriptor for the Categorias feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addCategoriasPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Quarto_categorias_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Quarto_categorias_feature", "_UI_Quarto_type"),
+				 HotelariaDSLPackage.Literals.QUARTO__CATEGORIAS,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
 	}
 
 	/**

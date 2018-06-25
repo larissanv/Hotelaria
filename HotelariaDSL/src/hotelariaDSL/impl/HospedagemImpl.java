@@ -5,15 +5,20 @@ package hotelariaDSL.impl;
 import hotelariaDSL.Hospedagem;
 import hotelariaDSL.Hospede;
 import hotelariaDSL.HotelariaDSLPackage;
-
 import hotelariaDSL.Quarto;
 import hotelariaDSL.Recepcionista;
+
 import java.util.Collection;
+
 import org.eclipse.emf.common.notify.Notification;
+
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
+
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
 import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 
 /**
@@ -31,7 +36,7 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  *
  * @generated
  */
-public class HospedagemImpl extends SuperImpl implements Hospedagem {
+public abstract class HospedagemImpl extends SuperImpl implements Hospedagem {
 	/**
 	 * The cached value of the '{@link #getRecepcionista() <em>Recepcionista</em>}' reference.
 	 * <!-- begin-user-doc -->
@@ -41,6 +46,7 @@ public class HospedagemImpl extends SuperImpl implements Hospedagem {
 	 * @ordered
 	 */
 	protected Recepcionista recepcionista;
+
 	/**
 	 * The cached value of the '{@link #getHospede() <em>Hospede</em>}' reference list.
 	 * <!-- begin-user-doc -->
@@ -50,6 +56,7 @@ public class HospedagemImpl extends SuperImpl implements Hospedagem {
 	 * @ordered
 	 */
 	protected EList<Hospede> hospede;
+
 	/**
 	 * The cached value of the '{@link #getQuarto() <em>Quarto</em>}' reference.
 	 * <!-- begin-user-doc -->

@@ -3,7 +3,7 @@
 package hotelariaDSL.provider;
 
 
-import hotelariaDSL.QuartoCasal;
+import hotelariaDSL.CategoriaQuarto;
 
 import java.util.Collection;
 import java.util.List;
@@ -14,19 +14,19 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 
 /**
- * This is the item provider adapter for a {@link hotelariaDSL.QuartoCasal} object.
+ * This is the item provider adapter for a {@link hotelariaDSL.CategoriaQuarto} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class QuartoCasalItemProvider extends QuartoItemProvider {
+public class CategoriaQuartoItemProvider extends SuperItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public QuartoCasalItemProvider(AdapterFactory adapterFactory) {
+	public CategoriaQuartoItemProvider(AdapterFactory adapterFactory) {
 		super(adapterFactory);
 	}
 
@@ -46,14 +46,14 @@ public class QuartoCasalItemProvider extends QuartoItemProvider {
 	}
 
 	/**
-	 * This returns QuartoCasal.gif.
+	 * This returns CategoriaQuarto.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/QuartoCasal"));
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/CategoriaQuarto"));
 	}
 
 	/**
@@ -64,10 +64,10 @@ public class QuartoCasalItemProvider extends QuartoItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((QuartoCasal)object).getNome();
+		String label = ((CategoriaQuarto)object).getNome();
 		return label == null || label.length() == 0 ?
-			getString("_UI_QuartoCasal_type") :
-			getString("_UI_QuartoCasal_type") + " " + label;
+			getString("_UI_CategoriaQuarto_type") :
+			getString("_UI_CategoriaQuarto_type") + " " + label;
 	}
 	
 

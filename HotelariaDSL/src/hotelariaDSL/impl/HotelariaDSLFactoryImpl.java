@@ -58,12 +58,12 @@ public class HotelariaDSLFactoryImpl extends EFactoryImpl implements HotelariaDS
 		switch (eClass.getClassifierID()) {
 			case HotelariaDSLPackage.HOSPEDE: return createHospede();
 			case HotelariaDSLPackage.RECEPCIONISTA: return createRecepcionista();
-			case HotelariaDSLPackage.QUARTO_SOLTEIRO: return createQuartoSolteiro();
-			case HotelariaDSLPackage.QUARTO_COMUNITARIO: return createQuartoComunitario();
-			case HotelariaDSLPackage.QUARTO_CASAL: return createQuartoCasal();
+			case HotelariaDSLPackage.QUARTO: return createQuarto();
+			case HotelariaDSLPackage.HOSPEDAGEM_PAGO: return createHospedagemPago();
+			case HotelariaDSLPackage.CATEGORIA_QUARTO: return createCategoriaQuarto();
+			case HotelariaDSLPackage.HOSPEDAGEM_COMUNITARIO: return createHospedagemComunitario();
 			case HotelariaDSLPackage.APLICACAO: return createAplicacao();
 			case HotelariaDSLPackage.ATRIBUTO: return createAtributo();
-			case HotelariaDSLPackage.HOSPEDAGEM: return createHospedagem();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -94,9 +94,9 @@ public class HotelariaDSLFactoryImpl extends EFactoryImpl implements HotelariaDS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public QuartoSolteiro createQuartoSolteiro() {
-		QuartoSolteiroImpl quartoSolteiro = new QuartoSolteiroImpl();
-		return quartoSolteiro;
+	public Quarto createQuarto() {
+		QuartoImpl quarto = new QuartoImpl();
+		return quarto;
 	}
 
 	/**
@@ -104,9 +104,9 @@ public class HotelariaDSLFactoryImpl extends EFactoryImpl implements HotelariaDS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public QuartoComunitario createQuartoComunitario() {
-		QuartoComunitarioImpl quartoComunitario = new QuartoComunitarioImpl();
-		return quartoComunitario;
+	public HospedagemPago createHospedagemPago() {
+		HospedagemPagoImpl hospedagemPago = new HospedagemPagoImpl();
+		return hospedagemPago;
 	}
 
 	/**
@@ -114,9 +114,19 @@ public class HotelariaDSLFactoryImpl extends EFactoryImpl implements HotelariaDS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public QuartoCasal createQuartoCasal() {
-		QuartoCasalImpl quartoCasal = new QuartoCasalImpl();
-		return quartoCasal;
+	public CategoriaQuarto createCategoriaQuarto() {
+		CategoriaQuartoImpl categoriaQuarto = new CategoriaQuartoImpl();
+		return categoriaQuarto;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HospedagemComunitario createHospedagemComunitario() {
+		HospedagemComunitarioImpl hospedagemComunitario = new HospedagemComunitarioImpl();
+		return hospedagemComunitario;
 	}
 
 	/**
@@ -137,16 +147,6 @@ public class HotelariaDSLFactoryImpl extends EFactoryImpl implements HotelariaDS
 	public Atributo createAtributo() {
 		AtributoImpl atributo = new AtributoImpl();
 		return atributo;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Hospedagem createHospedagem() {
-		HospedagemImpl hospedagem = new HospedagemImpl();
-		return hospedagem;
 	}
 
 	/**

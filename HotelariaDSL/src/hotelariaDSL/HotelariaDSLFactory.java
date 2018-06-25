@@ -40,31 +40,40 @@ public interface HotelariaDSLFactory extends EFactory {
 	Recepcionista createRecepcionista();
 
 	/**
-	 * Returns a new object of class '<em>Quarto Solteiro</em>'.
+	 * Returns a new object of class '<em>Quarto</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Quarto Solteiro</em>'.
+	 * @return a new object of class '<em>Quarto</em>'.
 	 * @generated
 	 */
-	QuartoSolteiro createQuartoSolteiro();
+	Quarto createQuarto();
 
 	/**
-	 * Returns a new object of class '<em>Quarto Comunitario</em>'.
+	 * Returns a new object of class '<em>Hospedagem Pago</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Quarto Comunitario</em>'.
+	 * @return a new object of class '<em>Hospedagem Pago</em>'.
 	 * @generated
 	 */
-	QuartoComunitario createQuartoComunitario();
+	HospedagemPago createHospedagemPago();
 
 	/**
-	 * Returns a new object of class '<em>Quarto Casal</em>'.
+	 * Returns a new object of class '<em>Categoria Quarto</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Quarto Casal</em>'.
+	 * @return a new object of class '<em>Categoria Quarto</em>'.
 	 * @generated
 	 */
-	QuartoCasal createQuartoCasal();
+	CategoriaQuarto createCategoriaQuarto();
+
+	/**
+	 * Returns a new object of class '<em>Hospedagem Comunitario</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Hospedagem Comunitario</em>'.
+	 * @generated
+	 */
+	HospedagemComunitario createHospedagemComunitario();
 
 	/**
 	 * Returns a new object of class '<em>Aplicacao</em>'.
@@ -83,15 +92,6 @@ public interface HotelariaDSLFactory extends EFactory {
 	 * @generated
 	 */
 	Atributo createAtributo();
-
-	/**
-	 * Returns a new object of class '<em>Hospedagem</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Hospedagem</em>'.
-	 * @generated
-	 */
-	Hospedagem createHospedagem();
 
 	/**
 	 * Returns the package supported by this factory.

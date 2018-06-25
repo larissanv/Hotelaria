@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="hotelariaDSL" nsURI="hotelariaDSL" nsPrefix="hotelariaDSL">
+  <eAnnotations source="https://www.eclipse.org/emf/2002/GenModel"/>
   <eClassifiers xsi:type="ecore:EClass" name="Super" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nome" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="atributos" upperBound="-1"
-        eType="#//Atributo"/>
+        eType="#//Atributo" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Hospede" eSuperTypes="#//Super">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="contaBanco" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Recepcionista" eSuperTypes="#//Super"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Quarto" abstract="true" eSuperTypes="#//Super"/>
-  <eClassifiers xsi:type="ecore:EClass" name="QuartoSolteiro" eSuperTypes="#//Quarto"/>
-  <eClassifiers xsi:type="ecore:EClass" name="QuartoComunitario" eSuperTypes="#//Quarto"/>
-  <eClassifiers xsi:type="ecore:EClass" name="QuartoCasal" eSuperTypes="#//Quarto"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Quarto" eSuperTypes="#//Super">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="categorias" lowerBound="1"
+        upperBound="-1" eType="#//CategoriaQuarto"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="HospedagemPago" eSuperTypes="#//Hospedagem"/>
+  <eClassifiers xsi:type="ecore:EClass" name="CategoriaQuarto" eSuperTypes="#//Super"/>
+  <eClassifiers xsi:type="ecore:EClass" name="HospedagemComunitario" eSuperTypes="#//Hospedagem"/>
   <eClassifiers xsi:type="ecore:EClass" name="Aplicacao">
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
       <details key="constraints" value="TipoQuartoInvalido"/>
@@ -27,9 +31,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="Atributo">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nomeAtributo" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tipo" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Hospedagem" eSuperTypes="#//Super">
+  <eClassifiers xsi:type="ecore:EClass" name="Hospedagem" abstract="true" eSuperTypes="#//Super">
     <eStructuralFeatures xsi:type="ecore:EReference" name="recepcionista" lowerBound="1"
         eType="#//Recepcionista"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="hospede" lowerBound="1"

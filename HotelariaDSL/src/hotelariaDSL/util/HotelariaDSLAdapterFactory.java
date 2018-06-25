@@ -84,16 +84,16 @@ public class HotelariaDSLAdapterFactory extends AdapterFactoryImpl {
 				return createQuartoAdapter();
 			}
 			@Override
-			public Adapter caseQuartoSolteiro(QuartoSolteiro object) {
-				return createQuartoSolteiroAdapter();
+			public Adapter caseHospedagemPago(HospedagemPago object) {
+				return createHospedagemPagoAdapter();
 			}
 			@Override
-			public Adapter caseQuartoComunitario(QuartoComunitario object) {
-				return createQuartoComunitarioAdapter();
+			public Adapter caseCategoriaQuarto(CategoriaQuarto object) {
+				return createCategoriaQuartoAdapter();
 			}
 			@Override
-			public Adapter caseQuartoCasal(QuartoCasal object) {
-				return createQuartoCasalAdapter();
+			public Adapter caseHospedagemComunitario(HospedagemComunitario object) {
+				return createHospedagemComunitarioAdapter();
 			}
 			@Override
 			public Adapter caseAplicacao(Aplicacao object) {
@@ -184,44 +184,44 @@ public class HotelariaDSLAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link hotelariaDSL.QuartoSolteiro <em>Quarto Solteiro</em>}'.
+	 * Creates a new adapter for an object of class '{@link hotelariaDSL.HospedagemPago <em>Hospedagem Pago</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see hotelariaDSL.QuartoSolteiro
+	 * @see hotelariaDSL.HospedagemPago
 	 * @generated
 	 */
-	public Adapter createQuartoSolteiroAdapter() {
+	public Adapter createHospedagemPagoAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link hotelariaDSL.QuartoComunitario <em>Quarto Comunitario</em>}'.
+	 * Creates a new adapter for an object of class '{@link hotelariaDSL.CategoriaQuarto <em>Categoria Quarto</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see hotelariaDSL.QuartoComunitario
+	 * @see hotelariaDSL.CategoriaQuarto
 	 * @generated
 	 */
-	public Adapter createQuartoComunitarioAdapter() {
+	public Adapter createCategoriaQuartoAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link hotelariaDSL.QuartoCasal <em>Quarto Casal</em>}'.
+	 * Creates a new adapter for an object of class '{@link hotelariaDSL.HospedagemComunitario <em>Hospedagem Comunitario</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see hotelariaDSL.QuartoCasal
+	 * @see hotelariaDSL.HospedagemComunitario
 	 * @generated
 	 */
-	public Adapter createQuartoCasalAdapter() {
+	public Adapter createHospedagemComunitarioAdapter() {
 		return null;
 	}
 

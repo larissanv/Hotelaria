@@ -51,17 +51,17 @@ public interface Super extends EObject {
 	void setNome(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Atributos</b></em>' reference list.
+	 * Returns the value of the '<em><b>Atributos</b></em>' containment reference list.
 	 * The list contents are of type {@link hotelariaDSL.Atributo}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Atributos</em>' reference list isn't clear,
+	 * If the meaning of the '<em>Atributos</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Atributos</em>' reference list.
+	 * @return the value of the '<em>Atributos</em>' containment reference list.
 	 * @see hotelariaDSL.HotelariaDSLPackage#getSuper_Atributos()
-	 * @model
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<Atributo> getAtributos();

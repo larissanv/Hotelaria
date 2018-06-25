@@ -76,7 +76,7 @@ public interface HotelariaDSLPackage extends EPackage {
 	int SUPER__NOME = 0;
 
 	/**
-	 * The feature id for the '<em><b>Atributos</b></em>' reference list.
+	 * The feature id for the '<em><b>Atributos</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -122,7 +122,7 @@ public interface HotelariaDSLPackage extends EPackage {
 	int HOSPEDE__NOME = SUPER__NOME;
 
 	/**
-	 * The feature id for the '<em><b>Atributos</b></em>' reference list.
+	 * The feature id for the '<em><b>Atributos</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -177,7 +177,7 @@ public interface HotelariaDSLPackage extends EPackage {
 	int RECEPCIONISTA__NOME = SUPER__NOME;
 
 	/**
-	 * The feature id for the '<em><b>Atributos</b></em>' reference list.
+	 * The feature id for the '<em><b>Atributos</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -223,7 +223,7 @@ public interface HotelariaDSLPackage extends EPackage {
 	int QUARTO__NOME = SUPER__NOME;
 
 	/**
-	 * The feature id for the '<em><b>Atributos</b></em>' reference list.
+	 * The feature id for the '<em><b>Atributos</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -232,13 +232,22 @@ public interface HotelariaDSLPackage extends EPackage {
 	int QUARTO__ATRIBUTOS = SUPER__ATRIBUTOS;
 
 	/**
+	 * The feature id for the '<em><b>Categorias</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUARTO__CATEGORIAS = SUPER_FEATURE_COUNT + 0;
+
+	/**
 	 * The number of structural features of the '<em>Quarto</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int QUARTO_FEATURE_COUNT = SUPER_FEATURE_COUNT + 0;
+	int QUARTO_FEATURE_COUNT = SUPER_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Quarto</em>' class.
@@ -250,14 +259,14 @@ public interface HotelariaDSLPackage extends EPackage {
 	int QUARTO_OPERATION_COUNT = SUPER_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link hotelariaDSL.impl.QuartoSolteiroImpl <em>Quarto Solteiro</em>}' class.
+	 * The meta object id for the '{@link hotelariaDSL.impl.HospedagemImpl <em>Hospedagem</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see hotelariaDSL.impl.QuartoSolteiroImpl
-	 * @see hotelariaDSL.impl.HotelariaDSLPackageImpl#getQuartoSolteiro()
+	 * @see hotelariaDSL.impl.HospedagemImpl
+	 * @see hotelariaDSL.impl.HotelariaDSLPackageImpl#getHospedagem()
 	 * @generated
 	 */
-	int QUARTO_SOLTEIRO = 4;
+	int HOSPEDAGEM = 9;
 
 	/**
 	 * The feature id for the '<em><b>Nome</b></em>' attribute.
@@ -266,44 +275,71 @@ public interface HotelariaDSLPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUARTO_SOLTEIRO__NOME = QUARTO__NOME;
+	int HOSPEDAGEM__NOME = SUPER__NOME;
 
 	/**
-	 * The feature id for the '<em><b>Atributos</b></em>' reference list.
+	 * The feature id for the '<em><b>Atributos</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int QUARTO_SOLTEIRO__ATRIBUTOS = QUARTO__ATRIBUTOS;
+	int HOSPEDAGEM__ATRIBUTOS = SUPER__ATRIBUTOS;
 
 	/**
-	 * The number of structural features of the '<em>Quarto Solteiro</em>' class.
+	 * The feature id for the '<em><b>Recepcionista</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int QUARTO_SOLTEIRO_FEATURE_COUNT = QUARTO_FEATURE_COUNT + 0;
+	int HOSPEDAGEM__RECEPCIONISTA = SUPER_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of operations of the '<em>Quarto Solteiro</em>' class.
+	 * The feature id for the '<em><b>Hospede</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int QUARTO_SOLTEIRO_OPERATION_COUNT = QUARTO_OPERATION_COUNT + 0;
+	int HOSPEDAGEM__HOSPEDE = SUPER_FEATURE_COUNT + 1;
 
 	/**
-	 * The meta object id for the '{@link hotelariaDSL.impl.QuartoComunitarioImpl <em>Quarto Comunitario</em>}' class.
+	 * The feature id for the '<em><b>Quarto</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see hotelariaDSL.impl.QuartoComunitarioImpl
-	 * @see hotelariaDSL.impl.HotelariaDSLPackageImpl#getQuartoComunitario()
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPEDAGEM__QUARTO = SUPER_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of structural features of the '<em>Hospedagem</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPEDAGEM_FEATURE_COUNT = SUPER_FEATURE_COUNT + 3;
+
+	/**
+	 * The number of operations of the '<em>Hospedagem</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPEDAGEM_OPERATION_COUNT = SUPER_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link hotelariaDSL.impl.HospedagemPagoImpl <em>Hospedagem Pago</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see hotelariaDSL.impl.HospedagemPagoImpl
+	 * @see hotelariaDSL.impl.HotelariaDSLPackageImpl#getHospedagemPago()
 	 * @generated
 	 */
-	int QUARTO_COMUNITARIO = 5;
+	int HOSPEDAGEM_PAGO = 4;
 
 	/**
 	 * The feature id for the '<em><b>Nome</b></em>' attribute.
@@ -312,44 +348,71 @@ public interface HotelariaDSLPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUARTO_COMUNITARIO__NOME = QUARTO__NOME;
+	int HOSPEDAGEM_PAGO__NOME = HOSPEDAGEM__NOME;
 
 	/**
-	 * The feature id for the '<em><b>Atributos</b></em>' reference list.
+	 * The feature id for the '<em><b>Atributos</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int QUARTO_COMUNITARIO__ATRIBUTOS = QUARTO__ATRIBUTOS;
+	int HOSPEDAGEM_PAGO__ATRIBUTOS = HOSPEDAGEM__ATRIBUTOS;
 
 	/**
-	 * The number of structural features of the '<em>Quarto Comunitario</em>' class.
+	 * The feature id for the '<em><b>Recepcionista</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int QUARTO_COMUNITARIO_FEATURE_COUNT = QUARTO_FEATURE_COUNT + 0;
+	int HOSPEDAGEM_PAGO__RECEPCIONISTA = HOSPEDAGEM__RECEPCIONISTA;
 
 	/**
-	 * The number of operations of the '<em>Quarto Comunitario</em>' class.
+	 * The feature id for the '<em><b>Hospede</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int QUARTO_COMUNITARIO_OPERATION_COUNT = QUARTO_OPERATION_COUNT + 0;
+	int HOSPEDAGEM_PAGO__HOSPEDE = HOSPEDAGEM__HOSPEDE;
 
 	/**
-	 * The meta object id for the '{@link hotelariaDSL.impl.QuartoCasalImpl <em>Quarto Casal</em>}' class.
+	 * The feature id for the '<em><b>Quarto</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see hotelariaDSL.impl.QuartoCasalImpl
-	 * @see hotelariaDSL.impl.HotelariaDSLPackageImpl#getQuartoCasal()
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPEDAGEM_PAGO__QUARTO = HOSPEDAGEM__QUARTO;
+
+	/**
+	 * The number of structural features of the '<em>Hospedagem Pago</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPEDAGEM_PAGO_FEATURE_COUNT = HOSPEDAGEM_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Hospedagem Pago</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPEDAGEM_PAGO_OPERATION_COUNT = HOSPEDAGEM_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link hotelariaDSL.impl.CategoriaQuartoImpl <em>Categoria Quarto</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see hotelariaDSL.impl.CategoriaQuartoImpl
+	 * @see hotelariaDSL.impl.HotelariaDSLPackageImpl#getCategoriaQuarto()
 	 * @generated
 	 */
-	int QUARTO_CASAL = 6;
+	int CATEGORIA_QUARTO = 5;
 
 	/**
 	 * The feature id for the '<em><b>Nome</b></em>' attribute.
@@ -358,34 +421,107 @@ public interface HotelariaDSLPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUARTO_CASAL__NOME = QUARTO__NOME;
+	int CATEGORIA_QUARTO__NOME = SUPER__NOME;
 
 	/**
-	 * The feature id for the '<em><b>Atributos</b></em>' reference list.
+	 * The feature id for the '<em><b>Atributos</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int QUARTO_CASAL__ATRIBUTOS = QUARTO__ATRIBUTOS;
+	int CATEGORIA_QUARTO__ATRIBUTOS = SUPER__ATRIBUTOS;
 
 	/**
-	 * The number of structural features of the '<em>Quarto Casal</em>' class.
+	 * The number of structural features of the '<em>Categoria Quarto</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int QUARTO_CASAL_FEATURE_COUNT = QUARTO_FEATURE_COUNT + 0;
+	int CATEGORIA_QUARTO_FEATURE_COUNT = SUPER_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of operations of the '<em>Quarto Casal</em>' class.
+	 * The number of operations of the '<em>Categoria Quarto</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int QUARTO_CASAL_OPERATION_COUNT = QUARTO_OPERATION_COUNT + 0;
+	int CATEGORIA_QUARTO_OPERATION_COUNT = SUPER_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link hotelariaDSL.impl.HospedagemComunitarioImpl <em>Hospedagem Comunitario</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see hotelariaDSL.impl.HospedagemComunitarioImpl
+	 * @see hotelariaDSL.impl.HotelariaDSLPackageImpl#getHospedagemComunitario()
+	 * @generated
+	 */
+	int HOSPEDAGEM_COMUNITARIO = 6;
+
+	/**
+	 * The feature id for the '<em><b>Nome</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPEDAGEM_COMUNITARIO__NOME = HOSPEDAGEM__NOME;
+
+	/**
+	 * The feature id for the '<em><b>Atributos</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPEDAGEM_COMUNITARIO__ATRIBUTOS = HOSPEDAGEM__ATRIBUTOS;
+
+	/**
+	 * The feature id for the '<em><b>Recepcionista</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPEDAGEM_COMUNITARIO__RECEPCIONISTA = HOSPEDAGEM__RECEPCIONISTA;
+
+	/**
+	 * The feature id for the '<em><b>Hospede</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPEDAGEM_COMUNITARIO__HOSPEDE = HOSPEDAGEM__HOSPEDE;
+
+	/**
+	 * The feature id for the '<em><b>Quarto</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPEDAGEM_COMUNITARIO__QUARTO = HOSPEDAGEM__QUARTO;
+
+	/**
+	 * The number of structural features of the '<em>Hospedagem Comunitario</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPEDAGEM_COMUNITARIO_FEATURE_COUNT = HOSPEDAGEM_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Hospedagem Comunitario</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPEDAGEM_COMUNITARIO_OPERATION_COUNT = HOSPEDAGEM_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link hotelariaDSL.impl.AplicacaoImpl <em>Aplicacao</em>}' class.
@@ -453,22 +589,13 @@ public interface HotelariaDSLPackage extends EPackage {
 	int ATRIBUTO__NOME_ATRIBUTO = 0;
 
 	/**
-	 * The feature id for the '<em><b>Tipo</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ATRIBUTO__TIPO = 1;
-
-	/**
 	 * The number of structural features of the '<em>Atributo</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ATRIBUTO_FEATURE_COUNT = 2;
+	int ATRIBUTO_FEATURE_COUNT = 1;
 
 	/**
 	 * The number of operations of the '<em>Atributo</em>' class.
@@ -478,79 +605,6 @@ public interface HotelariaDSLPackage extends EPackage {
 	 * @ordered
 	 */
 	int ATRIBUTO_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link hotelariaDSL.impl.HospedagemImpl <em>Hospedagem</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see hotelariaDSL.impl.HospedagemImpl
-	 * @see hotelariaDSL.impl.HotelariaDSLPackageImpl#getHospedagem()
-	 * @generated
-	 */
-	int HOSPEDAGEM = 9;
-
-	/**
-	 * The feature id for the '<em><b>Nome</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPEDAGEM__NOME = SUPER__NOME;
-
-	/**
-	 * The feature id for the '<em><b>Atributos</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPEDAGEM__ATRIBUTOS = SUPER__ATRIBUTOS;
-
-	/**
-	 * The feature id for the '<em><b>Recepcionista</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPEDAGEM__RECEPCIONISTA = SUPER_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Hospede</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPEDAGEM__HOSPEDE = SUPER_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Quarto</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPEDAGEM__QUARTO = SUPER_FEATURE_COUNT + 2;
-
-	/**
-	 * The number of structural features of the '<em>Hospedagem</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPEDAGEM_FEATURE_COUNT = SUPER_FEATURE_COUNT + 3;
-
-	/**
-	 * The number of operations of the '<em>Hospedagem</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPEDAGEM_OPERATION_COUNT = SUPER_OPERATION_COUNT + 0;
 
 
 	/**
@@ -575,10 +629,10 @@ public interface HotelariaDSLPackage extends EPackage {
 	EAttribute getSuper_Nome();
 
 	/**
-	 * Returns the meta object for the reference list '{@link hotelariaDSL.Super#getAtributos <em>Atributos</em>}'.
+	 * Returns the meta object for the containment reference list '{@link hotelariaDSL.Super#getAtributos <em>Atributos</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Atributos</em>'.
+	 * @return the meta object for the containment reference list '<em>Atributos</em>'.
 	 * @see hotelariaDSL.Super#getAtributos()
 	 * @see #getSuper()
 	 * @generated
@@ -627,34 +681,45 @@ public interface HotelariaDSLPackage extends EPackage {
 	EClass getQuarto();
 
 	/**
-	 * Returns the meta object for class '{@link hotelariaDSL.QuartoSolteiro <em>Quarto Solteiro</em>}'.
+	 * Returns the meta object for the reference list '{@link hotelariaDSL.Quarto#getCategorias <em>Categorias</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Quarto Solteiro</em>'.
-	 * @see hotelariaDSL.QuartoSolteiro
+	 * @return the meta object for the reference list '<em>Categorias</em>'.
+	 * @see hotelariaDSL.Quarto#getCategorias()
+	 * @see #getQuarto()
 	 * @generated
 	 */
-	EClass getQuartoSolteiro();
+	EReference getQuarto_Categorias();
 
 	/**
-	 * Returns the meta object for class '{@link hotelariaDSL.QuartoComunitario <em>Quarto Comunitario</em>}'.
+	 * Returns the meta object for class '{@link hotelariaDSL.HospedagemPago <em>Hospedagem Pago</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Quarto Comunitario</em>'.
-	 * @see hotelariaDSL.QuartoComunitario
+	 * @return the meta object for class '<em>Hospedagem Pago</em>'.
+	 * @see hotelariaDSL.HospedagemPago
 	 * @generated
 	 */
-	EClass getQuartoComunitario();
+	EClass getHospedagemPago();
 
 	/**
-	 * Returns the meta object for class '{@link hotelariaDSL.QuartoCasal <em>Quarto Casal</em>}'.
+	 * Returns the meta object for class '{@link hotelariaDSL.CategoriaQuarto <em>Categoria Quarto</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Quarto Casal</em>'.
-	 * @see hotelariaDSL.QuartoCasal
+	 * @return the meta object for class '<em>Categoria Quarto</em>'.
+	 * @see hotelariaDSL.CategoriaQuarto
 	 * @generated
 	 */
-	EClass getQuartoCasal();
+	EClass getCategoriaQuarto();
+
+	/**
+	 * Returns the meta object for class '{@link hotelariaDSL.HospedagemComunitario <em>Hospedagem Comunitario</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Hospedagem Comunitario</em>'.
+	 * @see hotelariaDSL.HospedagemComunitario
+	 * @generated
+	 */
+	EClass getHospedagemComunitario();
 
 	/**
 	 * Returns the meta object for class '{@link hotelariaDSL.Aplicacao <em>Aplicacao</em>}'.
@@ -708,17 +773,6 @@ public interface HotelariaDSLPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getAtributo_NomeAtributo();
-
-	/**
-	 * Returns the meta object for the attribute '{@link hotelariaDSL.Atributo#getTipo <em>Tipo</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Tipo</em>'.
-	 * @see hotelariaDSL.Atributo#getTipo()
-	 * @see #getAtributo()
-	 * @generated
-	 */
-	EAttribute getAtributo_Tipo();
 
 	/**
 	 * Returns the meta object for class '{@link hotelariaDSL.Hospedagem <em>Hospedagem</em>}'.
@@ -805,7 +859,7 @@ public interface HotelariaDSLPackage extends EPackage {
 		EAttribute SUPER__NOME = eINSTANCE.getSuper_Nome();
 
 		/**
-		 * The meta object literal for the '<em><b>Atributos</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Atributos</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -851,34 +905,42 @@ public interface HotelariaDSLPackage extends EPackage {
 		EClass QUARTO = eINSTANCE.getQuarto();
 
 		/**
-		 * The meta object literal for the '{@link hotelariaDSL.impl.QuartoSolteiroImpl <em>Quarto Solteiro</em>}' class.
+		 * The meta object literal for the '<em><b>Categorias</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see hotelariaDSL.impl.QuartoSolteiroImpl
-		 * @see hotelariaDSL.impl.HotelariaDSLPackageImpl#getQuartoSolteiro()
 		 * @generated
 		 */
-		EClass QUARTO_SOLTEIRO = eINSTANCE.getQuartoSolteiro();
+		EReference QUARTO__CATEGORIAS = eINSTANCE.getQuarto_Categorias();
 
 		/**
-		 * The meta object literal for the '{@link hotelariaDSL.impl.QuartoComunitarioImpl <em>Quarto Comunitario</em>}' class.
+		 * The meta object literal for the '{@link hotelariaDSL.impl.HospedagemPagoImpl <em>Hospedagem Pago</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see hotelariaDSL.impl.QuartoComunitarioImpl
-		 * @see hotelariaDSL.impl.HotelariaDSLPackageImpl#getQuartoComunitario()
+		 * @see hotelariaDSL.impl.HospedagemPagoImpl
+		 * @see hotelariaDSL.impl.HotelariaDSLPackageImpl#getHospedagemPago()
 		 * @generated
 		 */
-		EClass QUARTO_COMUNITARIO = eINSTANCE.getQuartoComunitario();
+		EClass HOSPEDAGEM_PAGO = eINSTANCE.getHospedagemPago();
 
 		/**
-		 * The meta object literal for the '{@link hotelariaDSL.impl.QuartoCasalImpl <em>Quarto Casal</em>}' class.
+		 * The meta object literal for the '{@link hotelariaDSL.impl.CategoriaQuartoImpl <em>Categoria Quarto</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see hotelariaDSL.impl.QuartoCasalImpl
-		 * @see hotelariaDSL.impl.HotelariaDSLPackageImpl#getQuartoCasal()
+		 * @see hotelariaDSL.impl.CategoriaQuartoImpl
+		 * @see hotelariaDSL.impl.HotelariaDSLPackageImpl#getCategoriaQuarto()
 		 * @generated
 		 */
-		EClass QUARTO_CASAL = eINSTANCE.getQuartoCasal();
+		EClass CATEGORIA_QUARTO = eINSTANCE.getCategoriaQuarto();
+
+		/**
+		 * The meta object literal for the '{@link hotelariaDSL.impl.HospedagemComunitarioImpl <em>Hospedagem Comunitario</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see hotelariaDSL.impl.HospedagemComunitarioImpl
+		 * @see hotelariaDSL.impl.HotelariaDSLPackageImpl#getHospedagemComunitario()
+		 * @generated
+		 */
+		EClass HOSPEDAGEM_COMUNITARIO = eINSTANCE.getHospedagemComunitario();
 
 		/**
 		 * The meta object literal for the '{@link hotelariaDSL.impl.AplicacaoImpl <em>Aplicacao</em>}' class.
@@ -923,14 +985,6 @@ public interface HotelariaDSLPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute ATRIBUTO__NOME_ATRIBUTO = eINSTANCE.getAtributo_NomeAtributo();
-
-		/**
-		 * The meta object literal for the '<em><b>Tipo</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute ATRIBUTO__TIPO = eINSTANCE.getAtributo_Tipo();
 
 		/**
 		 * The meta object literal for the '{@link hotelariaDSL.impl.HospedagemImpl <em>Hospedagem</em>}' class.

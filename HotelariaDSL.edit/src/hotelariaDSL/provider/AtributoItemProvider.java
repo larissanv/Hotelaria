@@ -61,7 +61,6 @@ public class AtributoItemProvider
 			super.getPropertyDescriptors(object);
 
 			addNomeAtributoPropertyDescriptor(object);
-			addTipoPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -80,28 +79,6 @@ public class AtributoItemProvider
 				 getString("_UI_Atributo_nomeAtributo_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_Atributo_nomeAtributo_feature", "_UI_Atributo_type"),
 				 HotelariaDSLPackage.Literals.ATRIBUTO__NOME_ATRIBUTO,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Tipo feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addTipoPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Atributo_tipo_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Atributo_tipo_feature", "_UI_Atributo_type"),
-				 HotelariaDSLPackage.Literals.ATRIBUTO__TIPO,
 				 true,
 				 false,
 				 false,
@@ -149,7 +126,6 @@ public class AtributoItemProvider
 
 		switch (notification.getFeatureID(Atributo.class)) {
 			case HotelariaDSLPackage.ATRIBUTO__NOME_ATRIBUTO:
-			case HotelariaDSLPackage.ATRIBUTO__TIPO:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}
