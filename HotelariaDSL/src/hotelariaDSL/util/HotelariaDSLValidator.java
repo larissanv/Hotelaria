@@ -223,6 +223,8 @@ public class HotelariaDSLValidator extends EObjectValidator {
 		}
 		
 		return true;
+		
+		
 	}
 
 	/**

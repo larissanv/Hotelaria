@@ -2,7 +2,9 @@
  */
 package hotelariaDSL;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.uml2.uml.Type;
 
 /**
  * <!-- begin-user-doc -->
@@ -14,6 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link hotelariaDSL.Atributo#getNomeAtributo <em>Nome Atributo</em>}</li>
+ *   <li>{@link hotelariaDSL.Atributo#getAtributo <em>Atributo</em>}</li>
  * </ul>
  *
  * @see hotelariaDSL.HotelariaDSLPackage#getAtributo()
@@ -46,5 +49,21 @@ public interface Atributo extends EObject {
 	 * @generated
 	 */
 	void setNomeAtributo(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Atributo</b></em>' reference list.
+	 * The list contents are of type {@link org.eclipse.uml2.uml.Type}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Atributo</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Atributo</em>' reference list.
+	 * @see hotelariaDSL.HotelariaDSLPackage#getAtributo_Atributo()
+	 * @model required="true"
+	 * @generated
+	 */
+	EList<Type> getAtributo();
 
 } // Atributo

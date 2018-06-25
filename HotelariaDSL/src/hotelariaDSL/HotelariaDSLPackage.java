@@ -589,13 +589,22 @@ public interface HotelariaDSLPackage extends EPackage {
 	int ATRIBUTO__NOME_ATRIBUTO = 0;
 
 	/**
+	 * The feature id for the '<em><b>Atributo</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATRIBUTO__ATRIBUTO = 1;
+
+	/**
 	 * The number of structural features of the '<em>Atributo</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ATRIBUTO_FEATURE_COUNT = 1;
+	int ATRIBUTO_FEATURE_COUNT = 2;
 
 	/**
 	 * The number of operations of the '<em>Atributo</em>' class.
@@ -773,6 +782,17 @@ public interface HotelariaDSLPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getAtributo_NomeAtributo();
+
+	/**
+	 * Returns the meta object for the reference list '{@link hotelariaDSL.Atributo#getAtributo <em>Atributo</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Atributo</em>'.
+	 * @see hotelariaDSL.Atributo#getAtributo()
+	 * @see #getAtributo()
+	 * @generated
+	 */
+	EReference getAtributo_Atributo();
 
 	/**
 	 * Returns the meta object for class '{@link hotelariaDSL.Hospedagem <em>Hospedagem</em>}'.
@@ -985,6 +1005,14 @@ public interface HotelariaDSLPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute ATRIBUTO__NOME_ATRIBUTO = eINSTANCE.getAtributo_NomeAtributo();
+
+		/**
+		 * The meta object literal for the '<em><b>Atributo</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ATRIBUTO__ATRIBUTO = eINSTANCE.getAtributo_Atributo();
 
 		/**
 		 * The meta object literal for the '{@link hotelariaDSL.impl.HospedagemImpl <em>Hospedagem</em>}' class.

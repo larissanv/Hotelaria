@@ -5,6 +5,8 @@ package hotelariaDSL.provider;
 import org.eclipse.emf.common.EMFPlugin;
 
 import org.eclipse.emf.common.util.ResourceLocator;
+import org.eclipse.emf.ecore.provider.EcoreEditPlugin;
+import org.eclipse.uml2.uml.edit.UMLEditPlugin;
 
 /**
  * This is the central singleton for the HotelariaDSL edit plugin.
@@ -38,6 +40,8 @@ public final class HotelariaDSLEditPlugin extends EMFPlugin {
 	public HotelariaDSLEditPlugin() {
 		super
 		  (new ResourceLocator [] {
+		     EcoreEditPlugin.INSTANCE,
+		     UMLEditPlugin.INSTANCE,
 		   });
 	}
 

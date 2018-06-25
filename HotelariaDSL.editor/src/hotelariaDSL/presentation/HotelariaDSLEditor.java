@@ -156,7 +156,9 @@ import org.eclipse.emf.edit.ui.view.ExtendedPropertySheetPage;
 
 import hotelariaDSL.provider.HotelariaDSLItemProviderAdapterFactory;
 
+import org.eclipse.emf.ecore.provider.EcoreItemProviderAdapterFactory;
 import org.eclipse.ui.actions.WorkspaceModifyOperation;
+import org.eclipse.uml2.uml.edit.providers.UMLItemProviderAdapterFactory;
 
 
 /**
@@ -699,6 +701,8 @@ public class HotelariaDSLEditor
 
 		adapterFactory.addAdapterFactory(new ResourceItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new HotelariaDSLItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new EcoreItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new UMLItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new ReflectiveItemProviderAdapterFactory());
 
 		// Create the command stack that will notify this editor as commands are executed.

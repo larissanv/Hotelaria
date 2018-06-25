@@ -23,7 +23,10 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.EValidator;
 
+import org.eclipse.emf.ecore.EcorePackage;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
+import org.eclipse.uml2.types.TypesPackage;
+import org.eclipse.uml2.uml.UMLPackage;
 
 /**
  * <!-- begin-user-doc -->
@@ -147,6 +150,11 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 		HotelariaDSLPackageImpl theHotelariaDSLPackage = (HotelariaDSLPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof HotelariaDSLPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new HotelariaDSLPackageImpl());
 
 		isInited = true;
+
+		// Initialize simple dependencies
+		EcorePackage.eINSTANCE.eClass();
+		TypesPackage.eINSTANCE.eClass();
+		UMLPackage.eINSTANCE.eClass();
 
 		// Create package meta-data objects
 		theHotelariaDSLPackage.createPackageContents();
@@ -321,6 +329,15 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getAtributo_Atributo() {
+		return (EReference)atributoEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getHospedagem() {
 		return hospedagemEClass;
 	}
@@ -404,6 +421,7 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 
 		atributoEClass = createEClass(ATRIBUTO);
 		createEAttribute(atributoEClass, ATRIBUTO__NOME_ATRIBUTO);
+		createEReference(atributoEClass, ATRIBUTO__ATRIBUTO);
 
 		hospedagemEClass = createEClass(HOSPEDAGEM);
 		createEReference(hospedagemEClass, HOSPEDAGEM__RECEPCIONISTA);
@@ -433,6 +451,9 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 		setName(eNAME);
 		setNsPrefix(eNS_PREFIX);
 		setNsURI(eNS_URI);
+
+		// Obtain other dependent packages
+		UMLPackage theUMLPackage = (UMLPackage)EPackage.Registry.INSTANCE.getEPackage(UMLPackage.eNS_URI);
 
 		// Create type parameters
 
@@ -472,6 +493,7 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 
 		initEClass(atributoEClass, Atributo.class, "Atributo", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAtributo_NomeAtributo(), ecorePackage.getEString(), "nomeAtributo", null, 1, 1, Atributo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAtributo_Atributo(), theUMLPackage.getType(), null, "atributo", null, 1, -1, Atributo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(hospedagemEClass, Hospedagem.class, "Hospedagem", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getHospedagem_Recepcionista(), this.getRecepcionista(), null, "recepcionista", null, 1, 1, Hospedagem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

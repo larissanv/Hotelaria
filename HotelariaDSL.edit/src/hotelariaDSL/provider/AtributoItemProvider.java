@@ -61,6 +61,7 @@ public class AtributoItemProvider
 			super.getPropertyDescriptors(object);
 
 			addNomeAtributoPropertyDescriptor(object);
+			addAtributoPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -83,6 +84,28 @@ public class AtributoItemProvider
 				 false,
 				 false,
 				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Atributo feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addAtributoPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Atributo_atributo_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Atributo_atributo_feature", "_UI_Atributo_type"),
+				 HotelariaDSLPackage.Literals.ATRIBUTO__ATRIBUTO,
+				 true,
+				 false,
+				 true,
+				 null,
 				 null,
 				 null));
 	}
