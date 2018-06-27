@@ -7,7 +7,7 @@
 [file (aHospedagem.nome, false, 'UTF-8')]
 
 
-public class [aHospedagem.nome.toUpperFirst()/] extends Super {
+public abstract class [aHospedagem.nome.toUpperFirst()/] extends Super {
 
 	[for (p: Atributo | aHospedagem.atributos) separator('\n')]
      private [p.tipo/] [p.nome/];
