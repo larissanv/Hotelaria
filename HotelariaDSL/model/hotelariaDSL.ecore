@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="hotelariaDSL" nsURI="hotelariaDSL" nsPrefix="hotelariaDSL">
-  <eAnnotations source="https://www.eclipse.org/emf/2002/GenModel"/>
   <eClassifiers xsi:type="ecore:EClass" name="Super" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nome" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="atributos" upperBound="-1"
@@ -30,13 +29,12 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Atributo">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nome" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="tipo" lowerBound="1" upperBound="-1"
-        eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Type"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tipo" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Hospedagem" abstract="true" eSuperTypes="#//Super">
     <eStructuralFeatures xsi:type="ecore:EReference" name="recepcionista" lowerBound="1"
         eType="#//Recepcionista"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="hospede" lowerBound="1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hospedes" lowerBound="1"
         upperBound="-1" eType="#//Hospede"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="quarto" lowerBound="1"
         eType="#//Quarto"/>
