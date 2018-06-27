@@ -1,0 +1,20 @@
+[comment encoding = UTF-8 /]
+[module gHospedagemPago('hotelariaDSL')]
+
+
+[template public gHospedagemPago(aHospedagemPago : HospedagemPago)]
+
+[file (aHospedagemPago.nome, false, 'UTF-8')]
+
+
+public class [aHospedagemPago.nome.toUpperFirst()/] extends Super {
+
+	[for (p: Atributo | aHospedagemPago.atributos) separator('\n')]
+     private [p.tipo/] [p.nome/];
+    [/for]
+
+}
+
+
+[/file]
+[/template]

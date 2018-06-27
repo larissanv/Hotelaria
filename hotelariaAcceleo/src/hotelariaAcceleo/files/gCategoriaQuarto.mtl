@@ -1,0 +1,19 @@
+[comment encoding = UTF-8 /]
+[module gCategoriaQuarto('hotelariaDSL')]
+
+
+[template public gCategoriaQuarto(aCategoriaQuarto : CategoriaQuarto)]
+
+[file (aCategoriaQuarto.nome, false, 'UTF-8')]
+
+public class [aCategoriaQuarto.nome.toUpperFirst()/] extends Super {
+
+	[for (p: Atributo | aCategoriaQuarto.atributos) separator('\n')]
+     private [p.tipo/] [p.nome/];
+    [/for]
+
+}
+
+
+[/file]
+[/template]

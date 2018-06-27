@@ -1,0 +1,17 @@
+[comment encoding = UTF-8 /]
+[module gAtributo('hotelariaDSL')]
+
+
+[template public gAtributo(anAtributo : Atributo)]
+
+[file (anAtributo.nome, false, 'UTF-8')]
+
+public class [anAtributo.nome.toUpperFirst()/] {
+
+	private String [anAtributo.nome/];
+	private String [anAtributo.tipo/];
+
+}
+
+[/file]
+[/template]

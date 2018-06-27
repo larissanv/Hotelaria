@@ -1,0 +1,20 @@
+[comment encoding = UTF-8 /]
+[module gHospedagemComunitario('hotelariaDSL')]
+
+
+[template public gHospedagemComunitario(aHospedagemComunitario : HospedagemComunitario)]
+
+[file (aHospedagemComunitario.nome, false, 'UTF-8')]
+
+
+public class [aHospedagemComunitario.nome.toUpperFirst()/] extends Super {
+
+	[for (p: Atributo | aHospedagemComunitario.atributos) separator('\n')]
+     private [p.tipo/] [p.nome/];
+    [/for]
+
+}
+
+
+[/file]
+[/template]

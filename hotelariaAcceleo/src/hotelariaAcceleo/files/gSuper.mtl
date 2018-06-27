@@ -1,0 +1,36 @@
+[comment encoding = UTF-8 /]
+[module gSuper('hotelariaDSL')]
+
+
+[template public gSuper(aSuper : Super)]
+
+[file (aSuper.nome, false, 'UTF-8')]
+
+
+public abstract class [aSuper.nome.toUpperFirst()/] {
+
+   [for (p: Atributo | aSuper.atributos) separator('\n')]
+     private [p.tipo/] [p.nome/];
+   [/for]
+ 
+[comment]   [for (p: Property | aClass.attribute) separator('\n')]
+     public [p.type.name/] get[p.name.toUpperFirst()/]() {
+       return this.[p.name/];
+     }
+   [/for]
+ 
+   [for (o: Operation | aClass.ownedOperation) separator('\n')]
+     public [o.type.name/] [o.name/]() {
+       // TODO should be implemented
+     }
+   [/for]
+   }[/comment]
+
+
+
+
+}
+
+
+[/file]
+[/template]

@@ -1,0 +1,19 @@
+[comment encoding = UTF-8 /]
+[module gQuarto('hotelariaDSL')]
+
+
+[template public gQuarto(aQuarto : Quarto)]
+
+[file (aQuarto.nome, false, 'UTF-8')]
+
+public class [aQuarto.nome.toUpperFirst()/] extends Super {
+
+	[for (p: Atributo | aQuarto.atributos) separator('\n')]
+     private [p.tipo/] [p.nome/];
+    [/for]
+
+}
+
+
+[/file]
+[/template]

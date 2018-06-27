@@ -1,0 +1,19 @@
+[comment encoding = UTF-8 /]
+[module gRecepcionista('hotelariaDSL')]
+
+
+[template public gRecepcionista(aRecepcionista : Recepcionista)]
+
+[file (aRecepcionista.nome, false, 'UTF-8')]
+
+public class [aRecepcionista.nome.toUpperFirst()/] extends Super {
+
+	[for (p: Atributo | aRecepcionista.atributos) separator('\n')]
+     private [p.tipo/] [p.nome/];
+    [/for]
+
+}
+
+
+[/file]
+[/template]
