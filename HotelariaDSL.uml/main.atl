@@ -1,0 +1,197 @@
+-- @nsURI UML=http://www.eclipse.org/uml2/5.0.0/UML
+-- @path UML=platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore
+-- @path Hotel=/HotelariaDSL/model/hotelariaDSL.ecore
+
+module main;
+create OUT : UML from IN : Hotel;
+
+
+rule Hotel2UML { 
+	from 	
+		d : Hotel!Aplicacao		
+	using {--cria os pacotes a partir de uma lista de nomes
+		pkgNames : OrderedSet(String) = OrderedSet{'control', 'model', 'persistence'};
+		pkgs : OrderedSet(UML!Package) = pkgNames->collect( p | thisModule.NewPackage(p) );
+		}		
+	to
+		m : UML!Model (
+			name <- d.titulo	--define o nome do Model		
+				
+		)
+	do {
+		--para testar, em cada pacote, coloquei uma classe para cada feature em domain
+		--agora vc tem que criar as classes certas de acordo com as regras na minha tese
+		
+		pkgs->at(2).packagedElement <- d.classes->collect( f | thisModule.CreateModelClasses(f) );
+		--pkgs->at(2).packagedElement <- d.classes->collect( f | thisModule.CreateModelClassesQuarto(f) );
+		
+		--pkgs->at(2).packagedElement <- d.classes->collect( f | thisModule.CreateModelCategorias(f) );
+		--pkgs->at(2).packagedElement <- d.classes->collect( f | thisModule.CreateModelClassesHospede(f) );
+		--pkgs->at(2).packagedElement <- d.classes->collect( f | thisModule.CreateModelClassesQuarto(f) );
+		--pkgs->at(1).packagedElement <- d.classes->collect( f | thisModule.CreateModelClasses(f) );
+		--pkgs->at(2).packagedElement <- d.classes->collect( f | thisModule.CreateModelClasses(f) );
+		
+		m.packagedElement <- pkgs;	
+	}
+	
+}
+
+
+
+--Cria um pacote a partir de uma String
+lazy rule NewPackage {
+	from 
+		nm : String
+	to
+		pkg : UML!Package (
+			name <- nm
+		)	
+}
+
+--Cria uma classe a partir de uma feature
+lazy rule CreateModelClasses{ 
+	from 	
+		h : Hotel!Hospede--,		
+		--q : Hotel!Quarto
+	to
+		c : UML!Class (
+			name <- h.nome,
+			
+			ownedAttribute <- h.atributos -> collect(a | thisModule.CreateModelAtributes(a))--,
+			--isAbstract <- true
+			--ownedAttribute <- q. -> collect(a | thisModule.CreateModelAtributes(a))--,
+			
+			
+		)
+}
+lazy rule CreateModelClassQuarto{ 
+	from 	
+		h : Hotel!Quarto
+	to
+		c : UML!Class (
+			ownedAttribute <- h.categorias -> collect(a | thisModule.CreateModelCategorias(a))
+			--ownedOperation <- f.operations -> collect(o | thisModule.CreateModelOperations(o))
+		)
+}
+
+lazy rule CreateModelCategorias{ 
+	from 	
+		a : Hotel!CategoriaQuarto
+	to
+		p : UML!Class (
+		name <- a.nome		
+		)
+}
+
+--lazy rule CreateModelClassesHospede { 
+	--from 	
+		--h : Hotel!Hospede
+	--to
+		--c : UML!Class (
+			--name <- h.nome,
+			--attribute <- h.atributos
+			--ownedAttribute <- h.atributos -> collect(a | thisModule.CreateModelAtributes(a)) --,
+			--ownedOperation <- f.operations -> collect(o | thisModule.CreateModelOperations(o))
+		--)
+--}
+
+
+lazy rule CreateModelClassesRecepcionista { 
+	from 	
+		f : Hotel!Recepcionista
+	to
+		c : UML!Class (
+			name <- f.nome,
+			ownedAttribute <- f.atributos -> collect(a | thisModule.CreateModelAtributes(a)) --,
+			--ownedOperation <- f.operations -> collect(o | thisModule.CreateModelOperations(o))
+		)
+}
+
+ rule CreateModelClassesQuarto { 
+	from 	
+		f : Hotel!Quarto
+	to
+		c : UML!Class (
+			name <- f.nome,
+			ownedAttribute <- f.atributos -> collect(a | thisModule.CreateModelAtributes(a)) --,
+			--ownedAttribute <- f.categorias -> collect(a | thisModule.CreateModelCategorias(a))	
+			--ownedOperation <- f.operations -> collect(o | thisModule.CreateModelOperations(o))
+			
+		)
+}
+
+
+lazy rule CreateModelClassesHospedagem { 
+	from 	
+		f : Hotel!Hospedagem
+	to
+		c : UML!Class (
+			name <- f.nome,			
+			ownedAttribute <- f.quarto -> collect(a | thisModule.CreateModelAtributesQuarto(a)) ,
+			ownedAttribute <- f.recepcionista -> collect(a | thisModule.CreateModelAtributesRecepcionista(a)) ,
+			
+			isAbstract <- true --,			
+			--attribute <- f.atributos,
+			--ownedAttribute <- f.hospede -> collect(a | thisModule.CreateModelAtributesHospede(a)), 
+		)
+}
+lazy rule CreateModelAtributesRecepcionista{ 
+	from 	
+		f : Hotel!Recepcionista
+	to
+		c : UML!Property (
+			name <- f.nome--,			
+			--ownedAttribute <- f.atributos -> collect(a | thisModule.CreateModelAtributes(a)) --,
+			
+		)
+}
+
+lazy rule CreateModel{ 
+	from 	
+		f : Hotel!Recepcionista
+	to
+		c : UML!Property (
+			name <- f.nome--,			
+			--ownedAttribute <- f.atributos -> collect(a | thisModule.CreateModelAtributes(a)) --,
+			
+		)
+}
+
+lazy rule CreateModelAtributesQuarto { 
+	from 	
+		f : Hotel!Quarto
+	to
+		c : UML!Property (
+			name <- f.nome--,			
+			--type <- "Quarto"
+			--ownedAttribute <- f.atributos -> collect(a | thisModule.CreateModelAtributes(a)) --,
+			--ownedAttribute <- f.categorias -> collect(a | thisModule.CreateModelCategorias(a))	
+			--ownedOperation <- f.operations -> collect(o | thisModule.CreateModelOperations(o))	
+		)
+}
+
+
+
+
+lazy rule CreateModelAtributes{ 
+	from 	
+		a : Hotel!Atributo
+	to
+		p : UML!Property (
+				name <-  a.nome,				
+				type <- a.tipo
+				--datatype <- a.tipo
+		)
+}
+
+
+
+--lazy rule CreateUMLType { 
+	--from 	
+		--p : String
+	--to
+		--a : UML!Type (
+		--name <- p.name
+		--)
+		
+--}

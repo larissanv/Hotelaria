@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hotelariaDSL:Aplicacao xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hotelariaDSL="hotelariaDSL" titulo="hotel comunitario">
+  <classes xsi:type="hotelariaDSL:Hospede" nome="hospede1" contaBanco="123">
+    <atributos nome="nome"/>
+  </classes>
+  <classes xsi:type="hotelariaDSL:Quarto" nome="quarto1" categorias="//@classes.4"/>
+  <classes xsi:type="hotelariaDSL:Recepcionista" nome="recepcionista">
+    <atributos nome="documento"/>
+  </classes>
+  <classes xsi:type="hotelariaDSL:CategoriaQuarto" nome="solteiro"/>
+  <classes xsi:type="hotelariaDSL:CategoriaQuarto" nome="casal"/>
+  <classes xsi:type="hotelariaDSL:HospedagemComunitario" nome="hospedagem" recepcionista="//@classes.2" hospede="//@classes.0" quarto="//@classes.1"/>
+  <classes xsi:type="hotelariaDSL:CategoriaQuarto" nome="familia"/>
+</hotelariaDSL:Aplicacao>

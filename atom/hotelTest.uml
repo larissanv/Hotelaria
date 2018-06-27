@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/5.0.0/UML platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore">
+  <uml:Model xmi:id="_P9nbMHlAEeiMA60JOAZ_gw" name="hotel comunitario">
+    <packagedElement xmi:type="uml:Package" xmi:id="_P9nbMXlAEeiMA60JOAZ_gw" name="control"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_P9nbMnlAEeiMA60JOAZ_gw" name="model">
+      <packagedElement xmi:type="uml:Class" xmi:id="_P9nbM3lAEeiMA60JOAZ_gw" name="hospede1">
+        <ownedAttribute xmi:id="_P9nbNHlAEeiMA60JOAZ_gw" name="nome"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_P9nbNXlAEeiMA60JOAZ_gw" name="quarto1"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_P9nbNnlAEeiMA60JOAZ_gw" name="recepcionista">
+        <ownedAttribute xmi:id="_P9nbN3lAEeiMA60JOAZ_gw" name="documento"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_P9nbOHlAEeiMA60JOAZ_gw" name="solteiro"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_P9nbOXlAEeiMA60JOAZ_gw" name="casal"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_P9nbOnlAEeiMA60JOAZ_gw" name="hospedagem"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_P9nbO3lAEeiMA60JOAZ_gw" name="familia"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_P9nbPHlAEeiMA60JOAZ_gw" name="persistence"/>
+  </uml:Model>
+  <uml:Class xmi:id="_P9nbPXlAEeiMA60JOAZ_gw" name="quarto1"/>
+</xmi:XMI>

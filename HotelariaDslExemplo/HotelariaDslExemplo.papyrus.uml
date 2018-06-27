@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_5pWTcHk1EeiLhMY_KjP-GA" name="HotelariaDslExemplo">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_6IcqQHk1EeiLhMY_KjP-GA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_F7YQUHk3EeiLhMY_KjP-GA" name="Funcionario">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_R3DYIHk3EeiLhMY_KjP-GA" name="nome" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_dIWGMHk3EeiLhMY_KjP-GA" name="Hospede">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_dIWGMXk3EeiLhMY_KjP-GA" name="nome">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_hZpjUHk3EeiLhMY_KjP-GA" name="nome" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_sqoIUHk3EeiLhMY_KjP-GA" name="Hospedagem" isAbstract="true">
+    <generalization xmi:type="uml:Generalization" xmi:id="_eDnCUHk8EeiMA60JOAZ_gw" general="_JKuu8Hk8EeiMA60JOAZ_gw"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_n9Zx8Hk8EeiMA60JOAZ_gw" general="_Hi2yMHk8EeiMA60JOAZ_gw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_xM8c8Hk3EeiLhMY_KjP-GA" name="hospede" visibility="private" type="_dIWGMHk3EeiLhMY_KjP-GA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_9_uL4Hk3EeiLhMY_KjP-GA" name="funcionario" visibility="private" type="_F7YQUHk3EeiLhMY_KjP-GA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="__ZI5EHk7EeiMA60JOAZ_gw" name="quarto" visibility="private" type="_J_71cHk4EeiLhMY_KjP-GA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_J_71cHk4EeiLhMY_KjP-GA" name="Quarto">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Uep3EHk4EeiLhMY_KjP-GA" name="nome" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_DnAvEHk5EeiLhMY_KjP-GA" name="categoria" visibility="private" type="_bljoUHk4EeiLhMY_KjP-GA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_bljoUHk4EeiLhMY_KjP-GA" name="CategoriaQuarto">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_tvgQQHk4EeiLhMY_KjP-GA" name="nome" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0MOUsHk7EeiMA60JOAZ_gw"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_2mKnkHk7EeiMA60JOAZ_gw"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_30IPgHk7EeiMA60JOAZ_gw"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Hi2yMHk8EeiMA60JOAZ_gw" name="HospedagemComunitario"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JKuu8Hk8EeiMA60JOAZ_gw" name="HospedagemPago"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_rHxcMHk8EeiMA60JOAZ_gw"/>
+</uml:Model>

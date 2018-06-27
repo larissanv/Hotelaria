@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_YqQmwHk2EeiLhMY_KjP-GA" type="PapyrusUMLClassDiagram" name="NewClassDiagramHotelaria" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_F7flEHk3EeiLhMY_KjP-GA" type="Class_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_F7flEnk3EeiLhMY_KjP-GA" type="Class_NameLabel"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_F7flE3k3EeiLhMY_KjP-GA" type="Class_FloatingNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_F7flFHk3EeiLhMY_KjP-GA" y="15"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_F7iBUHk3EeiLhMY_KjP-GA" type="Class_AttributeCompartment">
+      <children xmi:type="notation:Shape" xmi:id="_R3n_4Hk3EeiLhMY_KjP-GA" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="HotelariaDslExemplo.papyrus.uml#_R3DYIHk3EeiLhMY_KjP-GA"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_R3n_4Xk3EeiLhMY_KjP-GA"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_F7iBUXk3EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_F7iBUnk3EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_F7iBU3k3EeiLhMY_KjP-GA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F7iBVHk3EeiLhMY_KjP-GA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_F7iBVXk3EeiLhMY_KjP-GA" type="Class_OperationCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_F7iBVnk3EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_F7iBV3k3EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_F7iBWHk3EeiLhMY_KjP-GA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F7iBWXk3EeiLhMY_KjP-GA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_F7iBWnk3EeiLhMY_KjP-GA" type="Class_NestedClassifierCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_F7iBW3k3EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_F7iBXHk3EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_F7iBXXk3EeiLhMY_KjP-GA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F7iBXnk3EeiLhMY_KjP-GA"/>
+    </children>
+    <element xmi:type="uml:Class" href="HotelariaDslExemplo.papyrus.uml#_F7YQUHk3EeiLhMY_KjP-GA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F7flEXk3EeiLhMY_KjP-GA" x="560" y="60" width="161" height="140"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_eL7DEHk3EeiLhMY_KjP-GA" type="Class_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_eL7DEnk3EeiLhMY_KjP-GA" type="Class_NameLabel"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_eL7DE3k3EeiLhMY_KjP-GA" type="Class_FloatingNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_eL9fUHk3EeiLhMY_KjP-GA" y="15"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_eL9fUXk3EeiLhMY_KjP-GA" type="Class_AttributeCompartment">
+      <children xmi:type="notation:Shape" xmi:id="_haVf0Hk3EeiLhMY_KjP-GA" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="HotelariaDslExemplo.papyrus.uml#_hZpjUHk3EeiLhMY_KjP-GA"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_haVf0Xk3EeiLhMY_KjP-GA"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_eL9fUnk3EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_eL9fU3k3EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_eL9fVHk3EeiLhMY_KjP-GA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eL9fVXk3EeiLhMY_KjP-GA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_eL9fVnk3EeiLhMY_KjP-GA" type="Class_OperationCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_eL9fV3k3EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_eL_7kHk3EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_eL_7kXk3EeiLhMY_KjP-GA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eL_7knk3EeiLhMY_KjP-GA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_eL_7k3k3EeiLhMY_KjP-GA" type="Class_NestedClassifierCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_eL_7lHk3EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_eL_7lXk3EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_eL_7lnk3EeiLhMY_KjP-GA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eL_7l3k3EeiLhMY_KjP-GA"/>
+    </children>
+    <element xmi:type="uml:Class" href="HotelariaDslExemplo.papyrus.uml#_dIWGMHk3EeiLhMY_KjP-GA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eL7DEXk3EeiLhMY_KjP-GA" x="60" y="60" width="221" height="160"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_sqqkkHk3EeiLhMY_KjP-GA" type="Class_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_sqtA0Hk3EeiLhMY_KjP-GA" type="Class_NameLabel"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_sqtA0Xk3EeiLhMY_KjP-GA" type="Class_FloatingNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_sqtA0nk3EeiLhMY_KjP-GA" y="15"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_sqvdEHk3EeiLhMY_KjP-GA" type="Class_AttributeCompartment">
+      <children xmi:type="notation:Shape" xmi:id="_xNjg8Hk3EeiLhMY_KjP-GA" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="HotelariaDslExemplo.papyrus.uml#_xM8c8Hk3EeiLhMY_KjP-GA"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_xNjg8Xk3EeiLhMY_KjP-GA"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="__a1iMHk7EeiMA60JOAZ_gw" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="HotelariaDslExemplo.papyrus.uml#__ZI5EHk7EeiMA60JOAZ_gw"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="__a1iMXk7EeiMA60JOAZ_gw"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_-AVP4Hk3EeiLhMY_KjP-GA" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="HotelariaDslExemplo.papyrus.uml#_9_uL4Hk3EeiLhMY_KjP-GA"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-AVP4Xk3EeiLhMY_KjP-GA"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_sqvdEXk3EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_sqvdEnk3EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_sqvdE3k3EeiLhMY_KjP-GA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sqvdFHk3EeiLhMY_KjP-GA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_sqvdFXk3EeiLhMY_KjP-GA" type="Class_OperationCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_sqvdFnk3EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_sqvdF3k3EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_sqvdGHk3EeiLhMY_KjP-GA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sqvdGXk3EeiLhMY_KjP-GA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_sqvdGnk3EeiLhMY_KjP-GA" type="Class_NestedClassifierCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_sqvdG3k3EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_sqvdHHk3EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_sqvdHXk3EeiLhMY_KjP-GA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sqvdHnk3EeiLhMY_KjP-GA"/>
+    </children>
+    <element xmi:type="uml:Class" href="HotelariaDslExemplo.papyrus.uml#_sqoIUHk3EeiLhMY_KjP-GA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sqqkkXk3EeiLhMY_KjP-GA" x="300" y="200" width="241" height="160"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_KAAt8Hk4EeiLhMY_KjP-GA" type="Class_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_KAAt8nk4EeiLhMY_KjP-GA" type="Class_NameLabel"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_KAAt83k4EeiLhMY_KjP-GA" type="Class_FloatingNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_KAAt9Hk4EeiLhMY_KjP-GA" y="15"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_KAAt9Xk4EeiLhMY_KjP-GA" type="Class_AttributeCompartment">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_T4DxIHk4EeiLhMY_KjP-GA" source="PapyrusCSSForceValue">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_T4GNYHk4EeiLhMY_KjP-GA" key="collapsed" value="true"/>
+      </eAnnotations>
+      <children xmi:type="notation:Shape" xmi:id="_UfVzkHk4EeiLhMY_KjP-GA" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="HotelariaDslExemplo.papyrus.uml#_Uep3EHk4EeiLhMY_KjP-GA"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UfVzkXk4EeiLhMY_KjP-GA"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_DnvH0Hk5EeiLhMY_KjP-GA" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="HotelariaDslExemplo.papyrus.uml#_DnAvEHk5EeiLhMY_KjP-GA"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_DnvH0Xk5EeiLhMY_KjP-GA"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_KAAt9nk4EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_KAAt93k4EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_KAAt-Hk4EeiLhMY_KjP-GA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KAAt-Xk4EeiLhMY_KjP-GA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_KADKMHk4EeiLhMY_KjP-GA" type="Class_OperationCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_KADKMXk4EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_KADKMnk4EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_KADKM3k4EeiLhMY_KjP-GA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KADKNHk4EeiLhMY_KjP-GA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_KADKNXk4EeiLhMY_KjP-GA" type="Class_NestedClassifierCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_KADKNnk4EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_KADKN3k4EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_KADKOHk4EeiLhMY_KjP-GA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KADKOXk4EeiLhMY_KjP-GA"/>
+    </children>
+    <element xmi:type="uml:Class" href="HotelariaDslExemplo.papyrus.uml#_J_71cHk4EeiLhMY_KjP-GA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KAAt8Xk4EeiLhMY_KjP-GA" x="800" y="100" width="200" height="140"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_blmEkHk4EeiLhMY_KjP-GA" type="Class_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_blog0Hk4EeiLhMY_KjP-GA" type="Class_NameLabel"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_blog0Xk4EeiLhMY_KjP-GA" type="Class_FloatingNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_blog0nk4EeiLhMY_KjP-GA" y="15"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_blog03k4EeiLhMY_KjP-GA" type="Class_AttributeCompartment">
+      <children xmi:type="notation:Shape" xmi:id="_twHUQHk4EeiLhMY_KjP-GA" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="HotelariaDslExemplo.papyrus.uml#_tvgQQHk4EeiLhMY_KjP-GA"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_twHUQXk4EeiLhMY_KjP-GA"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_blog1Hk4EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_blog1Xk4EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_blog1nk4EeiLhMY_KjP-GA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_blog13k4EeiLhMY_KjP-GA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_blog2Hk4EeiLhMY_KjP-GA" type="Class_OperationCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_blog2Xk4EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_blog2nk4EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_blog23k4EeiLhMY_KjP-GA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_blog3Hk4EeiLhMY_KjP-GA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_blog3Xk4EeiLhMY_KjP-GA" type="Class_NestedClassifierCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_blog3nk4EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_blog33k4EeiLhMY_KjP-GA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_blog4Hk4EeiLhMY_KjP-GA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_blog4Xk4EeiLhMY_KjP-GA"/>
+    </children>
+    <element xmi:type="uml:Class" href="HotelariaDslExemplo.papyrus.uml#_bljoUHk4EeiLhMY_KjP-GA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_blmEkXk4EeiLhMY_KjP-GA" x="940" y="460" width="140"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_HjPzwHk8EeiMA60JOAZ_gw" type="Class_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_HjSQAHk8EeiMA60JOAZ_gw" type="Class_NameLabel"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_HjS3EHk8EeiMA60JOAZ_gw" type="Class_FloatingNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_HjS3EXk8EeiMA60JOAZ_gw" y="15"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_HjTeIHk8EeiMA60JOAZ_gw" type="Class_AttributeCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_HjUFMHk8EeiMA60JOAZ_gw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_HjUFMXk8EeiMA60JOAZ_gw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_HjUFMnk8EeiMA60JOAZ_gw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HjUFM3k8EeiMA60JOAZ_gw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_HjUFNHk8EeiMA60JOAZ_gw" type="Class_OperationCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_HjUFNXk8EeiMA60JOAZ_gw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_HjUFNnk8EeiMA60JOAZ_gw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_HjUFN3k8EeiMA60JOAZ_gw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HjUFOHk8EeiMA60JOAZ_gw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_HjUsQHk8EeiMA60JOAZ_gw" type="Class_NestedClassifierCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_HjUsQXk8EeiMA60JOAZ_gw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_HjUsQnk8EeiMA60JOAZ_gw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_HjUsQ3k8EeiMA60JOAZ_gw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HjUsRHk8EeiMA60JOAZ_gw"/>
+    </children>
+    <element xmi:type="uml:Class" href="HotelariaDslExemplo.papyrus.uml#_Hi2yMHk8EeiMA60JOAZ_gw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HjPzwXk8EeiMA60JOAZ_gw" x="280" y="560"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_JKyZUHk8EeiMA60JOAZ_gw" type="Class_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_JKzncHk8EeiMA60JOAZ_gw" type="Class_NameLabel"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_JK0OgHk8EeiMA60JOAZ_gw" type="Class_FloatingNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_JK0OgXk8EeiMA60JOAZ_gw" y="15"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_JK0Ognk8EeiMA60JOAZ_gw" type="Class_AttributeCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_JK0Og3k8EeiMA60JOAZ_gw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_JK0OhHk8EeiMA60JOAZ_gw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_JK0OhXk8EeiMA60JOAZ_gw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JK0Ohnk8EeiMA60JOAZ_gw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_JK01kHk8EeiMA60JOAZ_gw" type="Class_OperationCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_JK01kXk8EeiMA60JOAZ_gw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_JK01knk8EeiMA60JOAZ_gw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_JK01k3k8EeiMA60JOAZ_gw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JK01lHk8EeiMA60JOAZ_gw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_JK1coHk8EeiMA60JOAZ_gw" type="Class_NestedClassifierCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_JK1coXk8EeiMA60JOAZ_gw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_JK1conk8EeiMA60JOAZ_gw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_JK1co3k8EeiMA60JOAZ_gw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JK1cpHk8EeiMA60JOAZ_gw"/>
+    </children>
+    <element xmi:type="uml:Class" href="HotelariaDslExemplo.papyrus.uml#_JKuu8Hk8EeiMA60JOAZ_gw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JKyZUXk8EeiMA60JOAZ_gw" x="520" y="560"/>
+  </children>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_YqQmwXk2EeiLhMY_KjP-GA" name="diagram_compatibility_version" stringValue="1.3.0"/>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_YqQmwnk2EeiLhMY_KjP-GA"/>
+  <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_YqQmw3k2EeiLhMY_KjP-GA" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
+    <owner xmi:type="uml:Model" href="HotelariaDslExemplo.papyrus.uml#_5pWTcHk1EeiLhMY_KjP-GA"/>
+  </styles>
+  <element xmi:type="uml:Model" href="HotelariaDslExemplo.papyrus.uml#_5pWTcHk1EeiLhMY_KjP-GA"/>
+  <edges xmi:type="notation:Connector" xmi:id="_0NpRAHk7EeiMA60JOAZ_gw" type="Association_Edge" source="_KAAt8Hk4EeiLhMY_KjP-GA" target="_blmEkHk4EeiLhMY_KjP-GA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_0N0QIHk7EeiMA60JOAZ_gw" type="Association_StereotypeLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_-5cFUHk7EeiMA60JOAZ_gw" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_0N0QIXk7EeiMA60JOAZ_gw" y="-19"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_0N03MHk7EeiMA60JOAZ_gw" type="Association_NameLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_-61McHk7EeiMA60JOAZ_gw" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_0N1eQHk7EeiMA60JOAZ_gw" x="1" y="18"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_0N1eQXk7EeiMA60JOAZ_gw" type="Association_TargetRoleLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_-8VBQHk7EeiMA60JOAZ_gw" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_0N1eQnk7EeiMA60JOAZ_gw" x="36" y="-19"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_0N2FUHk7EeiMA60JOAZ_gw" type="Association_SourceRoleLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_-98x4Hk7EeiMA60JOAZ_gw" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_0N2FUXk7EeiMA60JOAZ_gw" x="-38" y="17"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_0N2FUnk7EeiMA60JOAZ_gw" type="Association_SourceMultiplicityLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_-_NWIHk7EeiMA60JOAZ_gw" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_0N2FU3k7EeiMA60JOAZ_gw" x="37" y="18"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_0N2sYHk7EeiMA60JOAZ_gw" type="Association_TargetMultiplicityLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="__AVXgHk7EeiMA60JOAZ_gw" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_0N2sYXk7EeiMA60JOAZ_gw" x="-38" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_0Np4EHk7EeiMA60JOAZ_gw"/>
+    <element xmi:type="uml:Association" href="HotelariaDslExemplo.papyrus.uml#_0MOUsHk7EeiMA60JOAZ_gw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_0Np4EXk7EeiMA60JOAZ_gw" points="[800, 180, -643984, -643984]$[660, 300, -643984, -643984]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0XzSkHk7EeiMA60JOAZ_gw" id="(0.5,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0XzSkXk7EeiMA60JOAZ_gw" id="(0.42857142857142855,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_2mNq4Hk7EeiMA60JOAZ_gw" type="Association_Edge" source="_F7flEHk3EeiLhMY_KjP-GA" target="_sqqkkHk3EeiLhMY_KjP-GA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_2mO5AHk7EeiMA60JOAZ_gw" type="Association_StereotypeLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_4wS80Hk7EeiMA60JOAZ_gw" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_2mO5AXk7EeiMA60JOAZ_gw" y="-19"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_2mPgEHk7EeiMA60JOAZ_gw" type="Association_NameLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_4xsD8Hk7EeiMA60JOAZ_gw" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_2mPgEXk7EeiMA60JOAZ_gw" x="-2" y="17"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_2mPgEnk7EeiMA60JOAZ_gw" type="Association_TargetRoleLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_4zKqoHk7EeiMA60JOAZ_gw" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_2mPgE3k7EeiMA60JOAZ_gw" x="41" y="-19"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_2mQHIHk7EeiMA60JOAZ_gw" type="Association_SourceRoleLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_40YyoHk7EeiMA60JOAZ_gw" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_2mQHIXk7EeiMA60JOAZ_gw" x="-42" y="17"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_2mQHInk7EeiMA60JOAZ_gw" type="Association_SourceMultiplicityLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_41zH4Hk7EeiMA60JOAZ_gw" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_2mQHI3k7EeiMA60JOAZ_gw" x="40" y="18"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_2mQuMHk7EeiMA60JOAZ_gw" type="Association_TargetMultiplicityLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_420bkHk7EeiMA60JOAZ_gw" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_2mQuMXk7EeiMA60JOAZ_gw" x="-40" y="-19"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_2mNq4Xk7EeiMA60JOAZ_gw"/>
+    <element xmi:type="uml:Association" href="HotelariaDslExemplo.papyrus.uml#_2mKnkHk7EeiMA60JOAZ_gw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2mNq4nk7EeiMA60JOAZ_gw" points="[560, 140, -643984, -643984]$[380, 240, -643984, -643984]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2rTmQHk7EeiMA60JOAZ_gw" id="(0.0,0.5714285714285714)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2rUNUHk7EeiMA60JOAZ_gw" id="(0.4149377593360996,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_30LS0Hk7EeiMA60JOAZ_gw" type="Association_Edge" source="_eL7DEHk3EeiLhMY_KjP-GA" target="_sqqkkHk3EeiLhMY_KjP-GA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_30Mg8Hk7EeiMA60JOAZ_gw" type="Association_StereotypeLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_44SbMHk7EeiMA60JOAZ_gw" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_30Mg8Xk7EeiMA60JOAZ_gw" x="1" y="-18"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_30NIAHk7EeiMA60JOAZ_gw" type="Association_NameLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_45gjMHk7EeiMA60JOAZ_gw" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_30NIAXk7EeiMA60JOAZ_gw" x="1" y="18"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_30NIAnk7EeiMA60JOAZ_gw" type="Association_TargetRoleLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_46qZwHk7EeiMA60JOAZ_gw" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_30NIA3k7EeiMA60JOAZ_gw" x="30" y="-18"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_30NIBHk7EeiMA60JOAZ_gw" type="Association_SourceRoleLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_47x0EHk7EeiMA60JOAZ_gw" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_30NIBXk7EeiMA60JOAZ_gw" x="-30" y="18"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_30NvEHk7EeiMA60JOAZ_gw" type="Association_SourceMultiplicityLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_49BxQHk7EeiMA60JOAZ_gw" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_30NvEXk7EeiMA60JOAZ_gw" x="31" y="18"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_30NvEnk7EeiMA60JOAZ_gw" type="Association_TargetMultiplicityLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_4-kpYHk7EeiMA60JOAZ_gw" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_30NvE3k7EeiMA60JOAZ_gw" x="-31" y="-18"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_30LS0Xk7EeiMA60JOAZ_gw"/>
+    <element xmi:type="uml:Association" href="HotelariaDslExemplo.papyrus.uml#_30IPgHk7EeiMA60JOAZ_gw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_30LS0nk7EeiMA60JOAZ_gw" points="[280, 140, -643984, -643984]$[400, 240, -643984, -643984]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_34IlwHk7EeiMA60JOAZ_gw" id="(1.0,0.5)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_34IlwXk7EeiMA60JOAZ_gw" id="(0.4979253112033195,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_eE6C0Hk8EeiMA60JOAZ_gw" type="Generalization_Edge" source="_sqqkkHk3EeiLhMY_KjP-GA" target="_JKyZUHk8EeiMA60JOAZ_gw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_eE74AHk8EeiMA60JOAZ_gw" type="Generalization_StereotypeLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_e7qEoHk8EeiMA60JOAZ_gw" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_eE74AXk8EeiMA60JOAZ_gw" x="1" y="38"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_eE6C0Xk8EeiMA60JOAZ_gw"/>
+    <element xmi:type="uml:Generalization" href="HotelariaDslExemplo.papyrus.uml#_eDnCUHk8EeiMA60JOAZ_gw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eE6C0nk8EeiMA60JOAZ_gw" points="[440, 220, -643984, -643984]$[540, 300, -643984, -643984]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eIBoQHk8EeiMA60JOAZ_gw" id="(0.5809128630705395,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eICPUHk8EeiMA60JOAZ_gw" id="(0.5,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_n-U_AHk8EeiMA60JOAZ_gw" type="Generalization_Edge" source="_sqqkkHk3EeiLhMY_KjP-GA" target="_HjPzwHk8EeiMA60JOAZ_gw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_n-VmEHk8EeiMA60JOAZ_gw" type="Generalization_StereotypeLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_ovdhAHk8EeiMA60JOAZ_gw" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_n-WNIHk8EeiMA60JOAZ_gw" x="1" y="38"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_n-U_AXk8EeiMA60JOAZ_gw"/>
+    <element xmi:type="uml:Generalization" href="HotelariaDslExemplo.papyrus.uml#_n9Zx8Hk8EeiMA60JOAZ_gw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_n-U_Ank8EeiMA60JOAZ_gw" points="[420, 360, -643984, -643984]$[240, 540, -643984, -643984]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oBF_IHk8EeiMA60JOAZ_gw" id="(0.4979253112033195,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oBF_IXk8EeiMA60JOAZ_gw" id="(0.375,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_rH2UsHk8EeiMA60JOAZ_gw" type="Association_Edge" source="_sqqkkHk3EeiLhMY_KjP-GA" target="_KAAt8Hk4EeiLhMY_KjP-GA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_rH4J4Hk8EeiMA60JOAZ_gw" type="Association_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_rH4J4Xk8EeiMA60JOAZ_gw" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_rH4J4nk8EeiMA60JOAZ_gw" type="Association_NameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_rH4J43k8EeiMA60JOAZ_gw" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_rH4w8Hk8EeiMA60JOAZ_gw" type="Association_TargetRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_rH4w8Xk8EeiMA60JOAZ_gw" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_rH4w8nk8EeiMA60JOAZ_gw" type="Association_SourceRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_rH4w83k8EeiMA60JOAZ_gw" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_rH4w9Hk8EeiMA60JOAZ_gw" type="Association_SourceMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_rH4w9Xk8EeiMA60JOAZ_gw" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_rH5YAHk8EeiMA60JOAZ_gw" type="Association_TargetMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_rH5YAXk8EeiMA60JOAZ_gw" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_rH2UsXk8EeiMA60JOAZ_gw"/>
+    <element xmi:type="uml:Association" href="HotelariaDslExemplo.papyrus.uml#_rHxcMHk8EeiMA60JOAZ_gw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rH2Usnk8EeiMA60JOAZ_gw" points="[540, 300, -643984, -643984]$[800, 200, -643984, -643984]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rL1c0Hk8EeiMA60JOAZ_gw" id="(0.995850622406639,0.625)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rL1c0Xk8EeiMA60JOAZ_gw" id="(0.0,0.7142857142857143)"/>
+  </edges>
+</notation:Diagram>

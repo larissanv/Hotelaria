@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/5.0.0/UML platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore" xmi:id="_BIBzgHZtEei4LNsE4I3aaw" name="clinicas">
+  <packagedElement xmi:type="uml:Package" xmi:id="_BIBzgXZtEei4LNsE4I3aaw" name="control"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_BIBzgnZtEei4LNsE4I3aaw" name="model">
+    <packagedElement xmi:type="uml:Class" xmi:id="_BIBzg3ZtEei4LNsE4I3aaw" name="AtParticular"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_BIBzhHZtEei4LNsE4I3aaw" name="Paciente"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_BIBzhXZtEei4LNsE4I3aaw" name="ExameRealizado"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_BIBzhnZtEei4LNsE4I3aaw" name="Exame"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_BIBzh3ZtEei4LNsE4I3aaw" name="Tratamento"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_BIBziHZtEei4LNsE4I3aaw" name="PlanoSaude"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_BIBziXZtEei4LNsE4I3aaw" name="Responsavel"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_BIBzinZtEei4LNsE4I3aaw" name="Atendimento"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_BIBzi3ZtEei4LNsE4I3aaw" name="AtPublico"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_BIBzjHZtEei4LNsE4I3aaw" name="ExameValorado"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_BIBzjXZtEei4LNsE4I3aaw" name="ExameGratuito"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_BIBzjnZtEei4LNsE4I3aaw" name="Especialista"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_BIBzj3ZtEei4LNsE4I3aaw" name="persistence"/>
+</uml:Model>
