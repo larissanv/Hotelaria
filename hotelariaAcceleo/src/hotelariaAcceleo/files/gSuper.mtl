@@ -4,33 +4,38 @@
 
 [template public gSuper(aSuper : Super)]
 
-[file (aSuper.nome + '.java', false, 'UTF-8')]
+[file ('Super.java', false, 'UTF-8')]
 
 
-public abstract class [aSuper.nome.toUpperFirst()/] {
+package hotelaria;
 
-   [for (p: Atributo | aSuper.atributos) separator('\n')]
-     private [p.tipo/] [p.nome/];
-   [/for]
- 
-[comment]   [for (p: Property | aClass.attribute) separator('\n')]
-     public [p.type.name/] get[p.name.toUpperFirst()/]() {
-       return this.[p.name/];
-     }
-   [/for]
- 
-   [for (o: Operation | aClass.ownedOperation) separator('\n')]
-     public [o.type.name/] [o.name/]() {
-       // TODO should be implemented
-     }
-   [/for]
-   }[/comment]
+import java.util.List;
 
+public class Super {
 
-
+	String nome;
+	private List<Atributo> atributos;
+	
+	public Super(String nome, List<Atributo> atributos) {
+		super();
+		this.nome = nome;
+		this.atributos = atributos;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public List<Atributo> getAtributos() {
+		return atributos;
+	}
+	public void setAtributos(List<Atributo> atributos) {
+		this.atributos = atributos;
+	}	
 
 }
-
 
 [/file]
 [/template]

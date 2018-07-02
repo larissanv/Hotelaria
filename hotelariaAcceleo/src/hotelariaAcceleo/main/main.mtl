@@ -1,0 +1,33 @@
+[comment encoding = UTF-8 /]
+[module main('hotelariaDSL')/]
+[import hotelariaAcceleo::files::gAtributo/]
+[import hotelariaAcceleo::files::gCategoriaQuarto/]
+[import hotelariaAcceleo::files::gHospedagem/]
+[import hotelariaAcceleo::files::gHospedagemComunitario/]
+[import hotelariaAcceleo::files::gHospedagemPago/]
+[import hotelariaAcceleo::files::gHospede/]
+[import hotelariaAcceleo::files::gQuarto/]
+[import hotelariaAcceleo::files::gRecepcionista/]
+[import hotelariaAcceleo::files::gSuper/]
+
+
+[template public main(aSuper : Super)]
+
+[comment @main/]
+
+[for (aSuper : Super | aSuper.classes)]
+	[gAtributo(aSuper)/]
+	[gSuper(aSuper)/]
+	[gRecepcionista(aSuper)/]
+	[gQuarto(aSuper)/]
+	[gCategoriaQuarto(aSuper)/]
+	[gHospede(aSuper)/]
+	[gHospedagem(aSuper)/]
+	[gHospedagemComunitario(aSuper)/]
+	[gHospedagemPago(aSuper)/]
+	[gAplicacao(aSuper)/]
+
+
+[/for]
+
+[/template]
