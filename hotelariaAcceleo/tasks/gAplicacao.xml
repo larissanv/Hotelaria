@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="gAplicacao" name="hotelariaAcceleo">
-    <property name="ECLIPSE_HOME" value="../../../../../eclipse"/>
+    <property name="ECLIPSE_HOME" value="../../../../../../../opt/eclipse_mf"/>
     <property name="ECLIPSE_WORKSPACE" value="../../../../../eclipse-workspace"/>
 
     <!-- The classpath with only the dependencies used by the project -->

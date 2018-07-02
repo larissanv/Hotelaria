@@ -4,18 +4,24 @@ import java.util.List;
 
 public class Quarto extends Super{
 
-	List<CategoriaQuarto> categorias;
+	CategoriaQuarto categorias;
 
-	public Quarto(String nome, List<Atributo> atributos, List<CategoriaQuarto> categorias) {
-		super(nome, atributos);
+	public Quarto(CategoriaQuarto categorias) {
+		super();
 		this.categorias = categorias;
 	}
 
-	public List<CategoriaQuarto> getCategorias() {
+	public Quarto() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public CategoriaQuarto getCategorias() {
 		return categorias;
 	}
 
-	public void setCategorias(List<CategoriaQuarto> categorias) {
+	public void setCategorias(CategoriaQuarto categorias) {
 		this.categorias = categorias;
-	}	
+	}
+
 }

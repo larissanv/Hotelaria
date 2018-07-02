@@ -14,7 +14,7 @@ import org.eclipse.emf.common.util.EList;
  * </p>
  * <ul>
  *   <li>{@link hotelariaDSL.Hospedagem#getRecepcionista <em>Recepcionista</em>}</li>
- *   <li>{@link hotelariaDSL.Hospedagem#getHospede <em>Hospede</em>}</li>
+ *   <li>{@link hotelariaDSL.Hospedagem#getHospedes <em>Hospedes</em>}</li>
  *   <li>{@link hotelariaDSL.Hospedagem#getQuarto <em>Quarto</em>}</li>
  * </ul>
  *
@@ -50,20 +50,20 @@ public interface Hospedagem extends Super {
 	void setRecepcionista(Recepcionista value);
 
 	/**
-	 * Returns the value of the '<em><b>Hospede</b></em>' reference list.
+	 * Returns the value of the '<em><b>Hospedes</b></em>' reference list.
 	 * The list contents are of type {@link hotelariaDSL.Hospede}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Hospede</em>' reference list isn't clear,
+	 * If the meaning of the '<em>Hospedes</em>' reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Hospede</em>' reference list.
-	 * @see hotelariaDSL.HotelariaDSLPackage#getHospedagem_Hospede()
+	 * @return the value of the '<em>Hospedes</em>' reference list.
+	 * @see hotelariaDSL.HotelariaDSLPackage#getHospedagem_Hospedes()
 	 * @model required="true"
 	 * @generated
 	 */
-	EList<Hospede> getHospede();
+	EList<Hospede> getHospedes();
 
 	/**
 	 * Returns the value of the '<em><b>Quarto</b></em>' reference.

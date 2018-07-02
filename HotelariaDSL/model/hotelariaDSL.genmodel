@@ -3,7 +3,6 @@
     xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/HotelariaDSL/src" modelPluginID="HotelariaDSL"
     modelName="HotelariaDSL" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
-    usedGenPackages="../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.eclipse.uml2.types/model/Types.genmodel#//types ../../org.eclipse.uml2.uml/model/UML.genmodel#//uml"
     operationReflection="true" importOrganizing="true">
   <foreignModel>hotelariaDSL.ecore</foreignModel>
   <genPackages prefix="HotelariaDSL" disposableProviderFactory="true" ecorePackage="hotelariaDSL.ecore#/">
@@ -27,11 +26,11 @@
     </genClasses>
     <genClasses ecoreClass="hotelariaDSL.ecore#//Atributo">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hotelariaDSL.ecore#//Atributo/nome"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference hotelariaDSL.ecore#//Atributo/tipo"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EAttribute hotelariaDSL.ecore#//Atributo/tipo"/>
     </genClasses>
     <genClasses image="false" ecoreClass="hotelariaDSL.ecore#//Hospedagem">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference hotelariaDSL.ecore#//Hospedagem/recepcionista"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference hotelariaDSL.ecore#//Hospedagem/hospede"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference hotelariaDSL.ecore#//Hospedagem/hospedes"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference hotelariaDSL.ecore#//Hospedagem/quarto"/>
     </genClasses>
   </genPackages>
