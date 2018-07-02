@@ -4,7 +4,7 @@
 
 [template public gCategoriaQuarto(aCategoriaQuarto : CategoriaQuarto)]
 
-[file (aCategoriaQuarto.nome, false, 'UTF-8')]
+[file (aCategoriaQuarto.nome  + '.java', false, 'UTF-8')]
 
 public class [aCategoriaQuarto.nome.toUpperFirst()/] extends Super {
 

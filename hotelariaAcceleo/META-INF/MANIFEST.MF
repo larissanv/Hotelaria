@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Acceleo HotelariaAcceleo Module Runtime Plug-in
-Bundle-SymbolicName: hotelariaAcceleo
+Bundle-SymbolicName: HotelariaAcceleo
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: hotelariaAcceleo.Activator
 Bundle-Vendor: Eclipse Modeling Project

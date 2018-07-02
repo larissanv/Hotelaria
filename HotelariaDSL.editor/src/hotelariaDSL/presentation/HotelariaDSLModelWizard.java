@@ -71,9 +71,7 @@ import org.eclipse.ui.part.ISetSelectionTarget;
 
 import hotelariaDSL.HotelariaDSLFactory;
 import hotelariaDSL.HotelariaDSLPackage;
-import hotelariaDSL.provider.HotelariaDSLEditPlugin;
-
-
+import hotelariaDSL.provider.HotelariaEditPlugin;
 import org.eclipse.core.runtime.Path;
 
 import org.eclipse.jface.viewers.ISelection;
@@ -99,7 +97,7 @@ public class HotelariaDSLModelWizard extends Wizard implements INewWizard {
 	 * @generated
 	 */
 	public static final List<String> FILE_EXTENSIONS =
-		Collections.unmodifiableList(Arrays.asList(HotelariaDSLEditorPlugin.INSTANCE.getString("_UI_HotelariaDSLEditorFilenameExtensions").split("\\s*,\\s*")));
+		Collections.unmodifiableList(Arrays.asList(HotelariaEditorPlugin.INSTANCE.getString("_UI_HotelariaDSLEditorFilenameExtensions").split("\\s*,\\s*")));
 
 	/**
 	 * A formatted list of supported file extensions, suitable for display.
@@ -108,7 +106,7 @@ public class HotelariaDSLModelWizard extends Wizard implements INewWizard {
 	 * @generated
 	 */
 	public static final String FORMATTED_FILE_EXTENSIONS =
-		HotelariaDSLEditorPlugin.INSTANCE.getString("_UI_HotelariaDSLEditorFilenameExtensions").replaceAll("\\s*,\\s*", ", ");
+		HotelariaEditorPlugin.INSTANCE.getString("_UI_HotelariaDSLEditorFilenameExtensions").replaceAll("\\s*,\\s*", ", ");
 
 	/**
 	 * This caches an instance of the model package.
@@ -175,8 +173,8 @@ public class HotelariaDSLModelWizard extends Wizard implements INewWizard {
 	public void init(IWorkbench workbench, IStructuredSelection selection) {
 		this.workbench = workbench;
 		this.selection = selection;
-		setWindowTitle(HotelariaDSLEditorPlugin.INSTANCE.getString("_UI_Wizard_label"));
-		setDefaultPageImageDescriptor(ExtendedImageRegistry.INSTANCE.getImageDescriptor(HotelariaDSLEditorPlugin.INSTANCE.getImage("full/wizban/NewHotelariaDSL")));
+		setWindowTitle(HotelariaEditorPlugin.INSTANCE.getString("_UI_Wizard_label"));
+		setDefaultPageImageDescriptor(ExtendedImageRegistry.INSTANCE.getImageDescriptor(HotelariaEditorPlugin.INSTANCE.getImage("full/wizban/NewHotelariaDSL")));
 	}
 
 	/**
@@ -259,7 +257,7 @@ public class HotelariaDSLModelWizard extends Wizard implements INewWizard {
 							resource.save(options);
 						}
 						catch (Exception exception) {
-							HotelariaDSLEditorPlugin.INSTANCE.log(exception);
+							HotelariaEditorPlugin.INSTANCE.log(exception);
 						}
 						finally {
 							progressMonitor.done();
@@ -292,14 +290,14 @@ public class HotelariaDSLModelWizard extends Wizard implements INewWizard {
 					 workbench.getEditorRegistry().getDefaultEditor(modelFile.getFullPath().toString()).getId());					 	 
 			}
 			catch (PartInitException exception) {
-				MessageDialog.openError(workbenchWindow.getShell(), HotelariaDSLEditorPlugin.INSTANCE.getString("_UI_OpenEditorError_label"), exception.getMessage());
+				MessageDialog.openError(workbenchWindow.getShell(), HotelariaEditorPlugin.INSTANCE.getString("_UI_OpenEditorError_label"), exception.getMessage());
 				return false;
 			}
 
 			return true;
 		}
 		catch (Exception exception) {
-			HotelariaDSLEditorPlugin.INSTANCE.log(exception);
+			HotelariaEditorPlugin.INSTANCE.log(exception);
 			return false;
 		}
 	}
@@ -333,7 +331,7 @@ public class HotelariaDSLModelWizard extends Wizard implements INewWizard {
 				String extension = new Path(getFileName()).getFileExtension();
 				if (extension == null || !FILE_EXTENSIONS.contains(extension)) {
 					String key = FILE_EXTENSIONS.size() > 1 ? "_WARN_FilenameExtensions" : "_WARN_FilenameExtension";
-					setErrorMessage(HotelariaDSLEditorPlugin.INSTANCE.getString(key, new Object [] { FORMATTED_FILE_EXTENSIONS }));
+					setErrorMessage(HotelariaEditorPlugin.INSTANCE.getString(key, new Object [] { FORMATTED_FILE_EXTENSIONS }));
 					return false;
 				}
 				return true;
@@ -395,8 +393,7 @@ public class HotelariaDSLModelWizard extends Wizard implements INewWizard {
 		 * @generated
 		 */
 		public void createControl(Composite parent) {
-			Composite composite = new Composite(parent, SWT.NONE);
-			{
+			Composite composite = new Composite(parent, SWT.NONE); {
 				GridLayout layout = new GridLayout();
 				layout.numColumns = 1;
 				layout.verticalSpacing = 12;
@@ -411,7 +408,7 @@ public class HotelariaDSLModelWizard extends Wizard implements INewWizard {
 
 			Label containerLabel = new Label(composite, SWT.LEFT);
 			{
-				containerLabel.setText(HotelariaDSLEditorPlugin.INSTANCE.getString("_UI_ModelObject"));
+				containerLabel.setText(HotelariaEditorPlugin.INSTANCE.getString("_UI_ModelObject"));
 
 				GridData data = new GridData();
 				data.horizontalAlignment = GridData.FILL;
@@ -437,7 +434,7 @@ public class HotelariaDSLModelWizard extends Wizard implements INewWizard {
 
 			Label encodingLabel = new Label(composite, SWT.LEFT);
 			{
-				encodingLabel.setText(HotelariaDSLEditorPlugin.INSTANCE.getString("_UI_XMLEncoding"));
+				encodingLabel.setText(HotelariaEditorPlugin.INSTANCE.getString("_UI_XMLEncoding"));
 
 				GridData data = new GridData();
 				data.horizontalAlignment = GridData.FILL;
@@ -536,10 +533,10 @@ public class HotelariaDSLModelWizard extends Wizard implements INewWizard {
 		 */
 		protected String getLabel(String typeName) {
 			try {
-				return HotelariaDSLEditPlugin.INSTANCE.getString("_UI_" + typeName + "_type");
+				return HotelariaEditPlugin.INSTANCE.getString("_UI_" + typeName + "_type");
 			}
 			catch(MissingResourceException mre) {
-				HotelariaDSLEditorPlugin.INSTANCE.log(mre);
+				HotelariaEditorPlugin.INSTANCE.log(mre);
 			}
 			return typeName;
 		}
@@ -552,7 +549,7 @@ public class HotelariaDSLModelWizard extends Wizard implements INewWizard {
 		protected Collection<String> getEncodings() {
 			if (encodings == null) {
 				encodings = new ArrayList<String>();
-				for (StringTokenizer stringTokenizer = new StringTokenizer(HotelariaDSLEditorPlugin.INSTANCE.getString("_UI_XMLEncodingChoices")); stringTokenizer.hasMoreTokens(); ) {
+				for (StringTokenizer stringTokenizer = new StringTokenizer(HotelariaEditorPlugin.INSTANCE.getString("_UI_XMLEncodingChoices")); stringTokenizer.hasMoreTokens(); ) {
 					encodings.add(stringTokenizer.nextToken());
 				}
 			}
@@ -571,9 +568,9 @@ public class HotelariaDSLModelWizard extends Wizard implements INewWizard {
 		// Create a page, set the title, and the initial model file name.
 		//
 		newFileCreationPage = new HotelariaDSLModelWizardNewFileCreationPage("Whatever", selection);
-		newFileCreationPage.setTitle(HotelariaDSLEditorPlugin.INSTANCE.getString("_UI_HotelariaDSLModelWizard_label"));
-		newFileCreationPage.setDescription(HotelariaDSLEditorPlugin.INSTANCE.getString("_UI_HotelariaDSLModelWizard_description"));
-		newFileCreationPage.setFileName(HotelariaDSLEditorPlugin.INSTANCE.getString("_UI_HotelariaDSLEditorFilenameDefaultBase") + "." + FILE_EXTENSIONS.get(0));
+		newFileCreationPage.setTitle(HotelariaEditorPlugin.INSTANCE.getString("_UI_HotelariaDSLModelWizard_label"));
+		newFileCreationPage.setDescription(HotelariaEditorPlugin.INSTANCE.getString("_UI_HotelariaDSLModelWizard_description"));
+		newFileCreationPage.setFileName(HotelariaEditorPlugin.INSTANCE.getString("_UI_HotelariaDSLEditorFilenameDefaultBase") + "." + FILE_EXTENSIONS.get(0));
 		addPage(newFileCreationPage);
 
 		// Try and get the resource selection to determine a current directory for the file dialog.
@@ -599,7 +596,7 @@ public class HotelariaDSLModelWizard extends Wizard implements INewWizard {
 
 					// Make up a unique new name here.
 					//
-					String defaultModelBaseFilename = HotelariaDSLEditorPlugin.INSTANCE.getString("_UI_HotelariaDSLEditorFilenameDefaultBase");
+					String defaultModelBaseFilename = HotelariaEditorPlugin.INSTANCE.getString("_UI_HotelariaDSLEditorFilenameDefaultBase");
 					String defaultModelFilenameExtension = FILE_EXTENSIONS.get(0);
 					String modelFilename = defaultModelBaseFilename + "." + defaultModelFilenameExtension;
 					for (int i = 1; ((IContainer)selectedResource).findMember(modelFilename) != null; ++i) {
@@ -610,8 +607,8 @@ public class HotelariaDSLModelWizard extends Wizard implements INewWizard {
 			}
 		}
 		initialObjectCreationPage = new HotelariaDSLModelWizardInitialObjectCreationPage("Whatever2");
-		initialObjectCreationPage.setTitle(HotelariaDSLEditorPlugin.INSTANCE.getString("_UI_HotelariaDSLModelWizard_label"));
-		initialObjectCreationPage.setDescription(HotelariaDSLEditorPlugin.INSTANCE.getString("_UI_Wizard_initial_object_description"));
+		initialObjectCreationPage.setTitle(HotelariaEditorPlugin.INSTANCE.getString("_UI_HotelariaDSLModelWizard_label"));
+		initialObjectCreationPage.setDescription(HotelariaEditorPlugin.INSTANCE.getString("_UI_Wizard_initial_object_description"));
 		addPage(initialObjectCreationPage);
 	}
 

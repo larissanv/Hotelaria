@@ -218,7 +218,7 @@ public class AplicacaoItemProvider
 	 */
 	@Override
 	public ResourceLocator getResourceLocator() {
-		return HotelariaDSLEditPlugin.INSTANCE;
+		return HotelariaEditPlugin.INSTANCE;
 	}
 
 }

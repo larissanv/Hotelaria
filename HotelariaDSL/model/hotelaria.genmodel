@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/HotelariaDSL/src" modelPluginID="HotelariaDSL"
+    modelName="Hotelaria" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>hotelariaDSL.ecore</foreignModel>
+  <genPackages prefix="HotelariaDSL" disposableProviderFactory="true" ecorePackage="hotelariaDSL.ecore#/">
+    <genClasses image="false" ecoreClass="hotelariaDSL.ecore#//Super">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hotelariaDSL.ecore#//Super/nome"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hotelariaDSL.ecore#//Super/atributos"/>
+    </genClasses>
+    <genClasses ecoreClass="hotelariaDSL.ecore#//Hospede">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hotelariaDSL.ecore#//Hospede/contaBanco"/>
+    </genClasses>
+    <genClasses ecoreClass="hotelariaDSL.ecore#//Recepcionista"/>
+    <genClasses ecoreClass="hotelariaDSL.ecore#//Quarto">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference hotelariaDSL.ecore#//Quarto/categorias"/>
+    </genClasses>
+    <genClasses ecoreClass="hotelariaDSL.ecore#//HospedagemPago"/>
+    <genClasses ecoreClass="hotelariaDSL.ecore#//CategoriaQuarto"/>
+    <genClasses ecoreClass="hotelariaDSL.ecore#//HospedagemComunitario"/>
+    <genClasses ecoreClass="hotelariaDSL.ecore#//Aplicacao">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hotelariaDSL.ecore#//Aplicacao/titulo"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hotelariaDSL.ecore#//Aplicacao/classes"/>
+    </genClasses>
+    <genClasses ecoreClass="hotelariaDSL.ecore#//Atributo">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hotelariaDSL.ecore#//Atributo/nome"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hotelariaDSL.ecore#//Atributo/tipo"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="hotelariaDSL.ecore#//Hospedagem">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference hotelariaDSL.ecore#//Hospedagem/recepcionista"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference hotelariaDSL.ecore#//Hospedagem/hospedes"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference hotelariaDSL.ecore#//Hospedagem/quarto"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

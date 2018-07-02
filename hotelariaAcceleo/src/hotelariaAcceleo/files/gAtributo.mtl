@@ -4,7 +4,7 @@
 
 [template public gAtributo(anAtributo : Atributo)]
 
-[file (anAtributo.nome, false, 'UTF-8')]
+[file (anAtributo.nome  + '.java', false, 'UTF-8')]
 
 public class [anAtributo.nome.toUpperFirst()/] {
 

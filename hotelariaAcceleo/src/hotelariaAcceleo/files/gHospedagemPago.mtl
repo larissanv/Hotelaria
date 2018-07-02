@@ -4,10 +4,10 @@
 
 [template public gHospedagemPago(aHospedagemPago : HospedagemPago)]
 
-[file (aHospedagemPago.nome, false, 'UTF-8')]
+[file (aHospedagemPago.nome  + '.java', false, 'UTF-8')]
 
 
-public class [aHospedagemPago.nome.toUpperFirst()/] extends Super {
+public class [aHospedagemPago.nome.toUpperFirst()/] extends Hospedagem {
 
 	[for (p: Atributo | aHospedagemPago.atributos) separator('\n')]
      private [p.tipo/] [p.nome/];

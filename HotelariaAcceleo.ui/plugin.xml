@@ -6,16 +6,16 @@
             adaptable="true"
             objectClass="org.eclipse.core.resources.IFile"
             nameFilter="*.hotelariadsl"
-            id="HotelariaAcceleo.ui.popupMenus.contribution.IFile">
+            id="hotelariaAcceleo.ui.popupMenus.contribution.IFile">
          <menu id="org.eclipse.acceleo.module.menu" label="Acceleo Model to Text" path="additionsAcceleo">
                <groupMarker name="acceleo"/> 
          </menu>
          <action
-               class="HotelariaAcceleo.ui.popupMenus.AcceleoGenerateAction"
+               class="hotelariaAcceleo.ui.popupMenus.AcceleoGenerateHotelariaAcceleotojavaAction"
                enablesFor="+"
-               id="HotelariaAcceleo.ui.popupMenus.acceleoGenerateAction"
+               id="hotelariaAcceleo.ui.popupMenus.acceleoGenerateHotelariaAcceleotojavaAction"
                icon="icons/default.gif"
-               label="Generate "
+               label="Generate HotelariaAcceleo to java"
                menubarPath="org.eclipse.acceleo.module.menu/acceleo"/>
       </objectContribution>
    </extension>

@@ -296,13 +296,13 @@ public interface HotelariaDSLPackage extends EPackage {
 	int HOSPEDAGEM__RECEPCIONISTA = SUPER_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Hospede</b></em>' reference list.
+	 * The feature id for the '<em><b>Hospedes</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPEDAGEM__HOSPEDE = SUPER_FEATURE_COUNT + 1;
+	int HOSPEDAGEM__HOSPEDES = SUPER_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Quarto</b></em>' reference.
@@ -369,13 +369,13 @@ public interface HotelariaDSLPackage extends EPackage {
 	int HOSPEDAGEM_PAGO__RECEPCIONISTA = HOSPEDAGEM__RECEPCIONISTA;
 
 	/**
-	 * The feature id for the '<em><b>Hospede</b></em>' reference list.
+	 * The feature id for the '<em><b>Hospedes</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPEDAGEM_PAGO__HOSPEDE = HOSPEDAGEM__HOSPEDE;
+	int HOSPEDAGEM_PAGO__HOSPEDES = HOSPEDAGEM__HOSPEDES;
 
 	/**
 	 * The feature id for the '<em><b>Quarto</b></em>' reference.
@@ -488,13 +488,13 @@ public interface HotelariaDSLPackage extends EPackage {
 	int HOSPEDAGEM_COMUNITARIO__RECEPCIONISTA = HOSPEDAGEM__RECEPCIONISTA;
 
 	/**
-	 * The feature id for the '<em><b>Hospede</b></em>' reference list.
+	 * The feature id for the '<em><b>Hospedes</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPEDAGEM_COMUNITARIO__HOSPEDE = HOSPEDAGEM__HOSPEDE;
+	int HOSPEDAGEM_COMUNITARIO__HOSPEDES = HOSPEDAGEM__HOSPEDES;
 
 	/**
 	 * The feature id for the '<em><b>Quarto</b></em>' reference.
@@ -589,7 +589,7 @@ public interface HotelariaDSLPackage extends EPackage {
 	int ATRIBUTO__NOME = 0;
 
 	/**
-	 * The feature id for the '<em><b>Tipo</b></em>' reference list.
+	 * The feature id for the '<em><b>Tipo</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -784,15 +784,15 @@ public interface HotelariaDSLPackage extends EPackage {
 	EAttribute getAtributo_Nome();
 
 	/**
-	 * Returns the meta object for the reference list '{@link hotelariaDSL.Atributo#getTipo <em>Tipo</em>}'.
+	 * Returns the meta object for the attribute '{@link hotelariaDSL.Atributo#getTipo <em>Tipo</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Tipo</em>'.
+	 * @return the meta object for the attribute '<em>Tipo</em>'.
 	 * @see hotelariaDSL.Atributo#getTipo()
 	 * @see #getAtributo()
 	 * @generated
 	 */
-	EReference getAtributo_Tipo();
+	EAttribute getAtributo_Tipo();
 
 	/**
 	 * Returns the meta object for class '{@link hotelariaDSL.Hospedagem <em>Hospedagem</em>}'.
@@ -816,15 +816,15 @@ public interface HotelariaDSLPackage extends EPackage {
 	EReference getHospedagem_Recepcionista();
 
 	/**
-	 * Returns the meta object for the reference list '{@link hotelariaDSL.Hospedagem#getHospede <em>Hospede</em>}'.
+	 * Returns the meta object for the reference list '{@link hotelariaDSL.Hospedagem#getHospedes <em>Hospedes</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Hospede</em>'.
-	 * @see hotelariaDSL.Hospedagem#getHospede()
+	 * @return the meta object for the reference list '<em>Hospedes</em>'.
+	 * @see hotelariaDSL.Hospedagem#getHospedes()
 	 * @see #getHospedagem()
 	 * @generated
 	 */
-	EReference getHospedagem_Hospede();
+	EReference getHospedagem_Hospedes();
 
 	/**
 	 * Returns the meta object for the reference '{@link hotelariaDSL.Hospedagem#getQuarto <em>Quarto</em>}'.
@@ -1007,12 +1007,12 @@ public interface HotelariaDSLPackage extends EPackage {
 		EAttribute ATRIBUTO__NOME = eINSTANCE.getAtributo_Nome();
 
 		/**
-		 * The meta object literal for the '<em><b>Tipo</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Tipo</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ATRIBUTO__TIPO = eINSTANCE.getAtributo_Tipo();
+		EAttribute ATRIBUTO__TIPO = eINSTANCE.getAtributo_Tipo();
 
 		/**
 		 * The meta object literal for the '{@link hotelariaDSL.impl.HospedagemImpl <em>Hospedagem</em>}' class.
@@ -1033,12 +1033,12 @@ public interface HotelariaDSLPackage extends EPackage {
 		EReference HOSPEDAGEM__RECEPCIONISTA = eINSTANCE.getHospedagem_Recepcionista();
 
 		/**
-		 * The meta object literal for the '<em><b>Hospede</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Hospedes</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference HOSPEDAGEM__HOSPEDE = eINSTANCE.getHospedagem_Hospede();
+		EReference HOSPEDAGEM__HOSPEDES = eINSTANCE.getHospedagem_Hospedes();
 
 		/**
 		 * The meta object literal for the '<em><b>Quarto</b></em>' reference feature.

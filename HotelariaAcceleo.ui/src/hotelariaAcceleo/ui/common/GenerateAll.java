@@ -8,7 +8,7 @@
  * Contributors:
  *     Obeo - initial API and implementation
  *******************************************************************************/
-package HotelariaAcceleo.ui.common;
+package hotelariaAcceleo.ui.common;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -21,7 +21,7 @@ import org.eclipse.emf.common.util.URI;
 
 
 /**
- * Main entry point of the '' generation module.
+ * Main entry point of the 'HotelariaAcceleo to java' generation module.
  */
 public class GenerateAll {
 

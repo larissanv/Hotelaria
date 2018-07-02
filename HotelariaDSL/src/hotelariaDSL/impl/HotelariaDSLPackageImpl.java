@@ -25,8 +25,6 @@ import org.eclipse.emf.ecore.EValidator;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
-import org.eclipse.uml2.uml.UMLPackage;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model <b>Package</b>.
@@ -149,9 +147,6 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 		HotelariaDSLPackageImpl theHotelariaDSLPackage = (HotelariaDSLPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof HotelariaDSLPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new HotelariaDSLPackageImpl());
 
 		isInited = true;
-
-		// Initialize simple dependencies
-		UMLPackage.eINSTANCE.eClass();
 
 		// Create package meta-data objects
 		theHotelariaDSLPackage.createPackageContents();
@@ -326,8 +321,8 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getAtributo_Tipo() {
-		return (EReference)atributoEClass.getEStructuralFeatures().get(1);
+	public EAttribute getAtributo_Tipo() {
+		return (EAttribute)atributoEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -353,7 +348,7 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getHospedagem_Hospede() {
+	public EReference getHospedagem_Hospedes() {
 		return (EReference)hospedagemEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -418,11 +413,11 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 
 		atributoEClass = createEClass(ATRIBUTO);
 		createEAttribute(atributoEClass, ATRIBUTO__NOME);
-		createEReference(atributoEClass, ATRIBUTO__TIPO);
+		createEAttribute(atributoEClass, ATRIBUTO__TIPO);
 
 		hospedagemEClass = createEClass(HOSPEDAGEM);
 		createEReference(hospedagemEClass, HOSPEDAGEM__RECEPCIONISTA);
-		createEReference(hospedagemEClass, HOSPEDAGEM__HOSPEDE);
+		createEReference(hospedagemEClass, HOSPEDAGEM__HOSPEDES);
 		createEReference(hospedagemEClass, HOSPEDAGEM__QUARTO);
 	}
 
@@ -448,9 +443,6 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 		setName(eNAME);
 		setNsPrefix(eNS_PREFIX);
 		setNsURI(eNS_URI);
-
-		// Obtain other dependent packages
-		UMLPackage theUMLPackage = (UMLPackage)EPackage.Registry.INSTANCE.getEPackage(UMLPackage.eNS_URI);
 
 		// Create type parameters
 
@@ -490,36 +482,19 @@ public class HotelariaDSLPackageImpl extends EPackageImpl implements HotelariaDS
 
 		initEClass(atributoEClass, Atributo.class, "Atributo", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAtributo_Nome(), ecorePackage.getEString(), "nome", null, 1, 1, Atributo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getAtributo_Tipo(), theUMLPackage.getType(), null, "tipo", null, 1, -1, Atributo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAtributo_Tipo(), ecorePackage.getEString(), "tipo", null, 0, 1, Atributo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(hospedagemEClass, Hospedagem.class, "Hospedagem", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getHospedagem_Recepcionista(), this.getRecepcionista(), null, "recepcionista", null, 1, 1, Hospedagem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getHospedagem_Hospede(), this.getHospede(), null, "hospede", null, 1, -1, Hospedagem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getHospedagem_Hospedes(), this.getHospede(), null, "hospedes", null, 1, -1, Hospedagem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getHospedagem_Quarto(), this.getQuarto(), null, "quarto", null, 1, 1, Hospedagem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);
 
 		// Create annotations
-		// https://www.eclipse.org/emf/2002/GenModel
-		createGenModelAnnotations();
 		// http://www.eclipse.org/emf/2002/Ecore
 		createEcoreAnnotations();
-	}
-
-	/**
-	 * Initializes the annotations for <b>https://www.eclipse.org/emf/2002/GenModel</b>.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void createGenModelAnnotations() {
-		String source = "https://www.eclipse.org/emf/2002/GenModel";	
-		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] {
-		   });
 	}
 
 	/**

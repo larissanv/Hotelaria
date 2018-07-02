@@ -8,7 +8,7 @@
  * Contributors:
  *     Obeo - initial API and implementation
  *******************************************************************************/
-package HotelariaAcceleo.ui.popupMenus;
+package hotelariaAcceleo.ui.popupMenus;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
@@ -28,16 +28,16 @@ import org.eclipse.jface.action.IAction;
 import org.eclipse.jface.operation.IRunnableWithProgress;
 import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.jface.viewers.IStructuredSelection;
-import HotelariaAcceleo.ui.Activator;
-import HotelariaAcceleo.ui.common.GenerateAll;
+import hotelariaAcceleo.ui.Activator;
+import hotelariaAcceleo.ui.common.GenerateAll;
 import org.eclipse.ui.IActionDelegate;
 import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.actions.ActionDelegate;
 
 /**
- *  code generation.
+ * HotelariaAcceleo to java code generation.
  */
-public class AcceleoGenerateAction extends ActionDelegate implements IActionDelegate {
+public class AcceleoGenerateHotelariaAcceleotojavaAction extends ActionDelegate implements IActionDelegate {
 	
 	/**
 	 * Selected model files.
@@ -71,7 +71,7 @@ public class AcceleoGenerateAction extends ActionDelegate implements IActionDele
 							IFile model = (IFile)filesIt.next();
 							URI modelURI = URI.createPlatformResourceURI(model.getFullPath().toString(), true);
 							try {
-								IContainer target = model.getProject().getFolder("src");
+								IContainer target = model.getProject().getFolder("src-gen");
 								GenerateAll generator = new GenerateAll(modelURI, target, getArguments());
 								generator.doGenerate(monitor);
 							} catch (IOException e) {

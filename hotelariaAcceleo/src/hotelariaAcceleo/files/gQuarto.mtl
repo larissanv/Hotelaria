@@ -4,7 +4,7 @@
 
 [template public gQuarto(aQuarto : Quarto)]
 
-[file (aQuarto.nome, false, 'UTF-8')]
+[file (aQuarto.nome  + '.java', false, 'UTF-8')]
 
 public class [aQuarto.nome.toUpperFirst()/] extends Super {
 

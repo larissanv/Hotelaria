@@ -4,7 +4,7 @@
 
 [template public gHospede(aHospede : Hospede)]
 
-[file (aHospede.nome, false, 'UTF-8')]
+[file (aHospede.nome  + '.java', false, 'UTF-8')]
 
 public class [aHospede.nome.toUpperFirst()/] extends Super {
 

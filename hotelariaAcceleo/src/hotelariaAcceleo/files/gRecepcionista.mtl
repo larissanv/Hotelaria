@@ -4,7 +4,7 @@
 
 [template public gRecepcionista(aRecepcionista : Recepcionista)]
 
-[file (aRecepcionista.nome, false, 'UTF-8')]
+[file (aRecepcionista.nome  + '.java', false, 'UTF-8')]
 
 public class [aRecepcionista.nome.toUpperFirst()/] extends Super {
 

@@ -4,10 +4,10 @@
 
 [template public gHospedagemComunitario(aHospedagemComunitario : HospedagemComunitario)]
 
-[file (aHospedagemComunitario.nome, false, 'UTF-8')]
+[file (aHospedagemComunitario.nome  + '.java', false, 'UTF-8')]
 
 
-public class [aHospedagemComunitario.nome.toUpperFirst()/] extends Super {
+public class [aHospedagemComunitario.nome.toUpperFirst()/] extends Hospedagem {
 
 	[for (p: Atributo | aHospedagemComunitario.atributos) separator('\n')]
      private [p.tipo/] [p.nome/];

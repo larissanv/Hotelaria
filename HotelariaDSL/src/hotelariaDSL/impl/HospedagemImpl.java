@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  * </p>
  * <ul>
  *   <li>{@link hotelariaDSL.impl.HospedagemImpl#getRecepcionista <em>Recepcionista</em>}</li>
- *   <li>{@link hotelariaDSL.impl.HospedagemImpl#getHospede <em>Hospede</em>}</li>
+ *   <li>{@link hotelariaDSL.impl.HospedagemImpl#getHospedes <em>Hospedes</em>}</li>
  *   <li>{@link hotelariaDSL.impl.HospedagemImpl#getQuarto <em>Quarto</em>}</li>
  * </ul>
  *
@@ -48,14 +48,14 @@ public abstract class HospedagemImpl extends SuperImpl implements Hospedagem {
 	protected Recepcionista recepcionista;
 
 	/**
-	 * The cached value of the '{@link #getHospede() <em>Hospede</em>}' reference list.
+	 * The cached value of the '{@link #getHospedes() <em>Hospedes</em>}' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHospede()
+	 * @see #getHospedes()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Hospede> hospede;
+	protected EList<Hospede> hospedes;
 
 	/**
 	 * The cached value of the '{@link #getQuarto() <em>Quarto</em>}' reference.
@@ -129,11 +129,11 @@ public abstract class HospedagemImpl extends SuperImpl implements Hospedagem {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Hospede> getHospede() {
-		if (hospede == null) {
-			hospede = new EObjectResolvingEList<Hospede>(Hospede.class, this, HotelariaDSLPackage.HOSPEDAGEM__HOSPEDE);
+	public EList<Hospede> getHospedes() {
+		if (hospedes == null) {
+			hospedes = new EObjectResolvingEList<Hospede>(Hospede.class, this, HotelariaDSLPackage.HOSPEDAGEM__HOSPEDES);
 		}
-		return hospede;
+		return hospedes;
 	}
 
 	/**
@@ -185,8 +185,8 @@ public abstract class HospedagemImpl extends SuperImpl implements Hospedagem {
 			case HotelariaDSLPackage.HOSPEDAGEM__RECEPCIONISTA:
 				if (resolve) return getRecepcionista();
 				return basicGetRecepcionista();
-			case HotelariaDSLPackage.HOSPEDAGEM__HOSPEDE:
-				return getHospede();
+			case HotelariaDSLPackage.HOSPEDAGEM__HOSPEDES:
+				return getHospedes();
 			case HotelariaDSLPackage.HOSPEDAGEM__QUARTO:
 				if (resolve) return getQuarto();
 				return basicGetQuarto();
@@ -206,9 +206,9 @@ public abstract class HospedagemImpl extends SuperImpl implements Hospedagem {
 			case HotelariaDSLPackage.HOSPEDAGEM__RECEPCIONISTA:
 				setRecepcionista((Recepcionista)newValue);
 				return;
-			case HotelariaDSLPackage.HOSPEDAGEM__HOSPEDE:
-				getHospede().clear();
-				getHospede().addAll((Collection<? extends Hospede>)newValue);
+			case HotelariaDSLPackage.HOSPEDAGEM__HOSPEDES:
+				getHospedes().clear();
+				getHospedes().addAll((Collection<? extends Hospede>)newValue);
 				return;
 			case HotelariaDSLPackage.HOSPEDAGEM__QUARTO:
 				setQuarto((Quarto)newValue);
@@ -228,8 +228,8 @@ public abstract class HospedagemImpl extends SuperImpl implements Hospedagem {
 			case HotelariaDSLPackage.HOSPEDAGEM__RECEPCIONISTA:
 				setRecepcionista((Recepcionista)null);
 				return;
-			case HotelariaDSLPackage.HOSPEDAGEM__HOSPEDE:
-				getHospede().clear();
+			case HotelariaDSLPackage.HOSPEDAGEM__HOSPEDES:
+				getHospedes().clear();
 				return;
 			case HotelariaDSLPackage.HOSPEDAGEM__QUARTO:
 				setQuarto((Quarto)null);
@@ -248,8 +248,8 @@ public abstract class HospedagemImpl extends SuperImpl implements Hospedagem {
 		switch (featureID) {
 			case HotelariaDSLPackage.HOSPEDAGEM__RECEPCIONISTA:
 				return recepcionista != null;
-			case HotelariaDSLPackage.HOSPEDAGEM__HOSPEDE:
-				return hospede != null && !hospede.isEmpty();
+			case HotelariaDSLPackage.HOSPEDAGEM__HOSPEDES:
+				return hospedes != null && !hospedes.isEmpty();
 			case HotelariaDSLPackage.HOSPEDAGEM__QUARTO:
 				return quarto != null;
 		}

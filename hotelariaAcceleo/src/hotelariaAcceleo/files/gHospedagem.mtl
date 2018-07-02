@@ -4,7 +4,7 @@
 
 [template public gHospedagem(aHospedagem : Hospedagem)]
 
-[file (aHospedagem.nome, false, 'UTF-8')]
+[file (aHospedagem.nome + '.java', false, 'UTF-8')]
 
 
 public abstract class [aHospedagem.nome.toUpperFirst()/] extends Super {

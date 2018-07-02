@@ -182,7 +182,7 @@ public class SuperItemProvider
 	 */
 	@Override
 	public ResourceLocator getResourceLocator() {
-		return HotelariaDSLEditPlugin.INSTANCE;
+		return HotelariaEditPlugin.INSTANCE;
 	}
 
 }

@@ -104,8 +104,8 @@ public class AtributoItemProvider
 				 HotelariaDSLPackage.Literals.ATRIBUTO__TIPO,
 				 true,
 				 false,
-				 true,
-				 null,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -149,6 +149,7 @@ public class AtributoItemProvider
 
 		switch (notification.getFeatureID(Atributo.class)) {
 			case HotelariaDSLPackage.ATRIBUTO__NOME:
+			case HotelariaDSLPackage.ATRIBUTO__TIPO:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}
@@ -175,7 +176,7 @@ public class AtributoItemProvider
 	 */
 	@Override
 	public ResourceLocator getResourceLocator() {
-		return HotelariaDSLEditPlugin.INSTANCE;
+		return HotelariaEditPlugin.INSTANCE;
 	}
 
 }

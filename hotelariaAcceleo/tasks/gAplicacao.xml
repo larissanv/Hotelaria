@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project default="gAplicacao" name="hotelariaAcceleo">
+<project default="gAplicacao" name="HotelariaAcceleo">
     <property name="ECLIPSE_HOME" value="../../../../../eclipse"/>
     <property name="ECLIPSE_WORKSPACE" value="../../../../../eclipse-workspace"/>
 
     <!-- The classpath with only the dependencies used by the project -->
-    <path id="hotelariaAcceleo.libraryclasspath">
-        <pathelement location="${ECLIPSE_WORKSPACE}/hotelariaAcceleo/bin"/>
+    <path id="HotelariaAcceleo.libraryclasspath">
+        <pathelement location="${ECLIPSE_WORKSPACE}/HotelariaAcceleo/bin"/>
         <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.core.runtime_3.13.0.v20170207-1030.jar"/>
         <pathelement location="${ECLIPSE_HOME}/plugins/javax.inject_1.0.0.v20091030.jar"/>
         <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.osgi_3.12.100.v20180210-1608.jar"/>
@@ -32,23 +32,23 @@
         <pathelement location="${ECLIPSE_HOME}/plugins/com.google.guava_21.0.0.v20170206-1425.jar"/>
     </path>
 
-    <path id="hotelariaAcceleo.classpath">
-        <path refid="hotelariaAcceleo.libraryclasspath"/>
+    <path id="HotelariaAcceleo.classpath">
+        <path refid="HotelariaAcceleo.libraryclasspath"/>
     </path>
 
     <!-- The classpath with only the jars available in the plugin folder of Eclipse -->
-    <path id="hotelariaAcceleo.libraryclasspath.alljars">
-        <pathelement location="../hotelariaAcceleo/bin"/>
+    <path id="HotelariaAcceleo.libraryclasspath.alljars">
+        <pathelement location="../HotelariaAcceleo/bin"/>
         <fileset dir="${ECLIPSE_HOME}/plugins/" includes="*.jar"/>
     </path>
 
-    <path id="hotelariaAcceleo.classpath.alljars">
-        <path refid="hotelariaAcceleo.libraryclasspath.alljars"/>
+    <path id="HotelariaAcceleo.classpath.alljars">
+        <path refid="HotelariaAcceleo.libraryclasspath.alljars"/>
     </path>
 
     <!-- The default task with the jars used by this project -->
     <target name="gAplicacao">
-        <java classname="hotelariaAcceleo.main.GAplicacao" classpathref="hotelariaAcceleo.classpath">
+        <java classname="hotelariaAcceleo.main.GAplicacao" classpathref="HotelariaAcceleo.classpath">
             <arg value="${model}"/>
             <arg value="${target}"/>
         </java>
@@ -59,7 +59,7 @@
         Keep in mind that having two versions of the same jar can create problems
     -->
     <target name="gAplicacao.alljars">
-        <java classname="hotelariaAcceleo.main.GAplicacao" classpathref="hotelariaAcceleo.classpath">
+        <java classname="hotelariaAcceleo.main.GAplicacao" classpathref="HotelariaAcceleo.classpath">
             <arg value="${model}"/>
             <arg value="${target}"/>
         </java>

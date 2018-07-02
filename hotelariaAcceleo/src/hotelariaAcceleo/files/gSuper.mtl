@@ -4,7 +4,7 @@
 
 [template public gSuper(aSuper : Super)]
 
-[file (aSuper.nome, false, 'UTF-8')]
+[file (aSuper.nome + '.java', false, 'UTF-8')]
 
 
 public abstract class [aSuper.nome.toUpperFirst()/] {

@@ -44,7 +44,7 @@ public class HospedagemItemProvider extends SuperItemProvider {
 			super.getPropertyDescriptors(object);
 
 			addRecepcionistaPropertyDescriptor(object);
-			addHospedePropertyDescriptor(object);
+			addHospedesPropertyDescriptor(object);
 			addQuartoPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
@@ -73,19 +73,19 @@ public class HospedagemItemProvider extends SuperItemProvider {
 	}
 
 	/**
-	 * This adds a property descriptor for the Hospede feature.
+	 * This adds a property descriptor for the Hospedes feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addHospedePropertyDescriptor(Object object) {
+	protected void addHospedesPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Hospedagem_hospede_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Hospedagem_hospede_feature", "_UI_Hospedagem_type"),
-				 HotelariaDSLPackage.Literals.HOSPEDAGEM__HOSPEDE,
+				 getString("_UI_Hospedagem_hospedes_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Hospedagem_hospedes_feature", "_UI_Hospedagem_type"),
+				 HotelariaDSLPackage.Literals.HOSPEDAGEM__HOSPEDES,
 				 true,
 				 false,
 				 true,
