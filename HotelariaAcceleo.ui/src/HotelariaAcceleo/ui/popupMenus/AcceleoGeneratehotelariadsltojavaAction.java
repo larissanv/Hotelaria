@@ -8,7 +8,7 @@
  * Contributors:
  *     Obeo - initial API and implementation
  *******************************************************************************/
-package hotelariaAcceleo.ui.popupMenus;
+package HotelariaAcceleo.ui.popupMenus;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
@@ -28,16 +28,16 @@ import org.eclipse.jface.action.IAction;
 import org.eclipse.jface.operation.IRunnableWithProgress;
 import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.jface.viewers.IStructuredSelection;
-import hotelariaAcceleo.ui.Activator;
-import hotelariaAcceleo.ui.common.GenerateAll;
+import HotelariaAcceleo.ui.Activator;
+import HotelariaAcceleo.ui.common.GenerateAll;
 import org.eclipse.ui.IActionDelegate;
 import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.actions.ActionDelegate;
 
 /**
- * HotelariaAcceleo to java code generation.
+ * hotelariadsl to java code generation.
  */
-public class AcceleoGenerateHotelariaAcceleotojavaAction extends ActionDelegate implements IActionDelegate {
+public class AcceleoGeneratehotelariadsltojavaAction extends ActionDelegate implements IActionDelegate {
 	
 	/**
 	 * Selected model files.

@@ -1,5 +1,6 @@
 package hotelaria;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Super {
@@ -7,8 +8,12 @@ public class Super {
 	String nome;
 	private List<Atributo> atributos;
 	
+	public Super() {
+		this.nome = "";
+		this.atributos = new ArrayList<Atributo>();
+	}
+
 	public Super(String nome, List<Atributo> atributos) {
-		super();
 		this.nome = nome;
 		this.atributos = atributos;
 	}

@@ -13,7 +13,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="Recepcionista" eSuperTypes="#//Super"/>
   <eClassifiers xsi:type="ecore:EClass" name="Quarto" eSuperTypes="#//Super">
     <eStructuralFeatures xsi:type="ecore:EReference" name="categorias" lowerBound="1"
-        upperBound="-1" eType="#//CategoriaQuarto"/>
+        eType="#//CategoriaQuarto"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="HospedagemPago" eSuperTypes="#//Hospedagem"/>
   <eClassifiers xsi:type="ecore:EClass" name="CategoriaQuarto" eSuperTypes="#//Super"/>

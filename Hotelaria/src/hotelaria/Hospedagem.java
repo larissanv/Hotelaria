@@ -9,6 +9,13 @@ public abstract class Hospedagem extends Super{
 	private List<Hospede> hospedes;
 	private Quarto quarto;
 	
+	public Hospedagem(Recepcionista recepcionista, List<Hospede> hospedes, Quarto quarto) {
+		super();
+		this.recepcionista = recepcionista;
+		this.hospedes = hospedes;
+		this.quarto = quarto;
+	}
+
 	public Hospedagem(String nome, List<Atributo> atributos, Recepcionista recepcionista, List<Hospede> hospedes,
 			Quarto quarto) {
 		super(nome, atributos);

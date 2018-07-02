@@ -8,7 +8,7 @@
  * Contributors:
  *     Obeo - initial API and implementation
  *******************************************************************************/
-package hotelariaAcceleo.ui.common;
+package HotelariaAcceleo.ui.common;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -21,7 +21,7 @@ import org.eclipse.emf.common.util.URI;
 
 
 /**
- * Main entry point of the 'HotelariaAcceleo to java' generation module.
+ * Main entry point of the 'hotelariadsl to java' generation module.
  */
 public class GenerateAll {
 
@@ -72,14 +72,6 @@ public class GenerateAll {
 		if (!targetFolder.getLocation().toFile().exists()) {
 			targetFolder.getLocation().toFile().mkdirs();
 		}
-		
-		monitor.subTask("Loading...");
-		hotelariaAcceleo.main.GAplicacao gen0 = new hotelariaAcceleo.main.GAplicacao(modelURI, targetFolder.getLocation().toFile(), arguments);
-		monitor.worked(1);
-		String generationID = org.eclipse.acceleo.engine.utils.AcceleoLaunchingUtil.computeUIProjectID("hotelariaAcceleo", "hotelariaAcceleo.main.GAplicacao", modelURI.toString(), targetFolder.getFullPath().toString(), new ArrayList<String>());
-		gen0.setGenerationID(generationID);
-		gen0.doGenerate(BasicMonitor.toMonitor(monitor));
-			
 		
 	}
 
