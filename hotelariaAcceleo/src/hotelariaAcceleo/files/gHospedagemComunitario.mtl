@@ -1,6 +1,6 @@
 [comment encoding = UTF-8 /]
 [module gHospedagemComunitario('hotelariaDSL')]
-
+[import hotelariaAcceleo::files::gHospedagem/]
 
 [template public gHospedagemComunitario(aHospedagemComunitario : HospedagemComunitario)]
 
@@ -11,13 +11,13 @@ package hotelaria;
 import java.util.Date;
 import java.util.List;
 
-public class [aHospedagemComunitario.nome.toUpperFirst()/] extends Hospedagem {
+public class [aHospedagemComunitario.nome.toUpperFirst()/] extends [aHospedagem().nome.toUpperFirst() /] {
 
 	[for (p: Atributo | aHospedagemComunitario.atributos) separator('\n')]
     private [p.tipo/] [p.nome/];
     [/for]
 	
-	public HospedagemComunitario(Recepcionista recepcionista, List<Hospede> hospedes, Quarto quarto) {
+	public [aHospedagemComunitario.nome.toUpperFirst()/](Recepcionista recepcionista, List<Hospede> hospedes, Quarto quarto) {
 		super(recepcionista, hospedes, quarto);
 		// TODO Auto-generated constructor stub
 	}
