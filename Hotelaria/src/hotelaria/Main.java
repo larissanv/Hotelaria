@@ -160,7 +160,11 @@ public class Main {
 						
 						cat = sc.nextInt();
 						
+						System.out.println("Número do Quarto:");
+						int numero = sc.nextInt();
+						
 						quarto.setCategorias(categoriasQuarto.get(cat));
+						quarto.setNumero(numero);
 						
 						
 						break;

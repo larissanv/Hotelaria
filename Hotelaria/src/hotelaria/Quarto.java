@@ -5,15 +5,18 @@ import java.util.List;
 public class Quarto extends Super{
 
 	CategoriaQuarto categorias;
-
-	public Quarto(CategoriaQuarto categorias) {
-		super();
-		this.categorias = categorias;
-	}
-
+	int numero;
+	float precoEstadia;
+	
 	public Quarto() {
 		super();
-		// TODO Auto-generated constructor stub
+	}
+
+	public Quarto(CategoriaQuarto categorias, int numero, float precoEstadia) {
+		super();
+		this.categorias = categorias;
+		this.numero = numero;
+		this.precoEstadia = precoEstadia;
 	}
 
 	public CategoriaQuarto getCategorias() {
@@ -24,4 +27,19 @@ public class Quarto extends Super{
 		this.categorias = categorias;
 	}
 
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public float getPrecoEstadia() {
+		return precoEstadia;
+	}
+
+	public void setPrecoEstadia(float precoEstadia) {
+		this.precoEstadia = precoEstadia;
+	}
 }
