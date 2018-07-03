@@ -11,7 +11,7 @@ package hotelaria;
 import java.util.Date;
 import java.util.List;
 
-public class [aHospedagemComunitario.nome.toUpperFirst()/] extends [aHospedagem().nome.toUpperFirst() /] {
+public class [aHospedagemComunitario.nome.toUpperFirst()/] {
 
 	[for (p: Atributo | aHospedagemComunitario.atributos) separator('\n')]
     private [p.tipo/] [p.nome/];

@@ -14,9 +14,11 @@ public class [aQuarto.nome.toUpperFirst()/] extends Super {
 
 	private int numero;
 	[for (p: Atributo | aQuarto.atributos) separator('\n')]
-     private [p.tipo/] [p.nome/];
+    private [p.tipo/] [p.nome/];
     [/for]
-	[gCategoriaQuarto().nome.toUpperFirst()/] [gCategoriaQuarto().nome.toLowerFirst()/];
+	[for (categoria : CategoriaQuarto | aQuarto.categorias)]
+	private	[categoria.nome.toUpperFirst()/] [categoria.nome.tolowerFirst()/];
+	[/for]
 
 	public [aQuarto.nome.toUpperFirst()/]([aCategoriaQuarto().nome.toUpperFirst()/] [aCategoriaQuarto().nome.toLowerFirst()/]) {
 		super();
