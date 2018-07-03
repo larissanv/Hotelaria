@@ -1,7 +1,5 @@
 package hotelaria;
 
-import java.util.List;
-
 public class Recepcionista extends Super{
 	
 	String nome;
@@ -13,11 +11,6 @@ public class Recepcionista extends Super{
 
 	public Recepcionista() {
 		super();
-		// TODO Auto-generated constructor stub
-	}
-
-	public Recepcionista(String nome, List<Atributo> atributos) {
-		super(nome, atributos);
 		// TODO Auto-generated constructor stub
 	}
 

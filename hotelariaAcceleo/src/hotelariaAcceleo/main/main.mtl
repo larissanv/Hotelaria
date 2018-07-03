@@ -1,5 +1,6 @@
 [comment encoding = UTF-8 /]
 [module main('hotelariaDSL')/]
+[import hotelariaAcceleo::files::gAplicacao /]
 [import hotelariaAcceleo::files::gAtributo/]
 [import hotelariaAcceleo::files::gCategoriaQuarto/]
 [import hotelariaAcceleo::files::gHospedagem/]

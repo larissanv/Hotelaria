@@ -4,16 +4,48 @@
 
 [template public gQuarto(aQuarto : Quarto)]
 
-[file (aQuarto.nome  + '.java', false, 'UTF-8')]
+[file (aQuarto.nome.toUpperFirst()  + '.java', false, 'UTF-8')]
+
+package hotelaria;
+
+import java.util.List;
 
 public class [aQuarto.nome.toUpperFirst()/] extends Super {
 
 	[for (p: Atributo | aQuarto.atributos) separator('\n')]
      private [p.tipo/] [p.nome/];
     [/for]
+	CategoriaQuarto categorias;
+
+	public Quarto(CategoriaQuarto categorias) {
+		super();
+		this.categorias = categorias;
+	}
+
+	public Quarto() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public CategoriaQuarto getCategorias() {
+		return categorias;
+	}
+
+	public void setCategorias(CategoriaQuarto categorias) {
+		this.categorias = categorias;
+	}
+
+	[for (p: Atributo | aQuarto.atributos) separator('\n')]
+	public [p.tipo/] get[p.nome.toUpperFirst()/]() {
+		return [p.nome/];
+	}
+
+	public void set[p.nome.toUpperFirst()/]([p.tipo/] [p.nome/]) {
+		this.[p.nome/] = [p.nome/];
+	}
+    [/for]
 
 }
-
 
 [/file]
 [/template]

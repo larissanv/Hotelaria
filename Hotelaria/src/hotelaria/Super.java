@@ -13,11 +13,6 @@ public class Super {
 		this.atributos = new ArrayList<Atributo>();
 	}
 
-	public Super(String nome, List<Atributo> atributos) {
-		this.nome = nome;
-		this.atributos = atributos;
-	}
-	
 	public String getNome() {
 		return nome;
 	}

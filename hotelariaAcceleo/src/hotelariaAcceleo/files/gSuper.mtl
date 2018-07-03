@@ -6,7 +6,6 @@
 
 [file ('Super.java', false, 'UTF-8')]
 
-
 package hotelaria;
 
 import java.util.List;

@@ -1,20 +1,58 @@
 [comment encoding = UTF-8 /]
 [module gHospede('hotelariaDSL')]
 
-
 [template public gHospede(aHospede : Hospede)]
 
-[file (aHospede.nome  + '.java', false, 'UTF-8')]
+[file (aHospede.nome.toUpperFirst()  + '.java', false, 'UTF-8')]
+
+package hotelaria;
 
 public class [aHospede.nome.toUpperFirst()/] extends Super {
 
 	[for (p: Atributo | aHospede.atributos) separator('\n')]
-     private [p.tipo/] [p.nome/];
+    private [p.tipo/] [p.nome/];
     [/for]
+	private String contaBanco;
+	private String nome;
+	
+	public Hospede(String contaBanco, String nome) {
+		super();
+		this.contaBanco = contaBanco;
+		this.nome = nome;
+	}
 
+	public Hospede() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public String getContaBanco() {
+		return contaBanco;
+	}
+
+	public void setContaBanco(String contaBanco) {
+		this.contaBanco = contaBanco;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	[for (p: Atributo | aHospede.atributos) separator('\n')]
+	public [p.tipo/] get[p.nome.toUpperFirst()/]() {
+		return [p.nome/];
+	}
+
+	public void set[p.nome.toUpperFirst()/]([p.tipo/] [p.nome/]) {
+		this.[p.nome/] = [p.nome/];
+	}
+    [/for]
+	
 }
-
-
 
 [/file]
 [/template]

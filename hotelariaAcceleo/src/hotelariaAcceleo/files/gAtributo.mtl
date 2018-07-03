@@ -4,7 +4,7 @@
 
 [template public gAtributo(anAtributo : Atributo)]
 
-[file (anAtributo.nome  + '.java', false, 'UTF-8')]
+[file ('Atributo.java', false, 'UTF-8')]
 
 package hotelaria;
 

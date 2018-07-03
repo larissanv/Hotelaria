@@ -16,14 +16,6 @@ public abstract class Hospedagem extends Super{
 		this.quarto = quarto;
 	}
 
-	public Hospedagem(String nome, List<Atributo> atributos, Recepcionista recepcionista, List<Hospede> hospedes,
-			Quarto quarto) {
-		super(nome, atributos);
-		this.recepcionista = recepcionista;
-		this.hospedes = hospedes;
-		this.quarto = quarto;
-	}
-
 	public Recepcionista getRecepcionista() {
 		return recepcionista;
 	}

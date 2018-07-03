@@ -4,16 +4,33 @@
 
 [template public gRecepcionista(aRecepcionista : Recepcionista)]
 
-[file (aRecepcionista.nome  + '.java', false, 'UTF-8')]
+[file (aRecepcionista.nome.toUpperFirst()  + '.java', false, 'UTF-8')]
+
+package hotelaria;
 
 public class [aRecepcionista.nome.toUpperFirst()/] extends Super {
+	
+	String nome;
 
-	[for (p: Atributo | aRecepcionista.atributos) separator('\n')]
-     private [p.tipo/] [p.nome/];
-    [/for]
+	public Recepcionista(String nome) {
+		super();
+		this.nome = nome;
+	}
 
+	public Recepcionista() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
 }
-
 
 [/file]
 [/template]

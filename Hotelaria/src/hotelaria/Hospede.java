@@ -1,7 +1,5 @@
 package hotelaria;
 
-import java.util.List;
-
 public class Hospede extends Super {
 
 	private String contaBanco;
@@ -15,11 +13,6 @@ public class Hospede extends Super {
 
 	public Hospede() {
 		super();
-		// TODO Auto-generated constructor stub
-	}
-
-	public Hospede(String nome, List<Atributo> atributos) {
-		super(nome, atributos);
 		// TODO Auto-generated constructor stub
 	}
 
