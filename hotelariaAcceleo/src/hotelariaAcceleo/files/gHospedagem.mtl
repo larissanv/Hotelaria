@@ -18,7 +18,7 @@ public abstract class [aHospedagem.nome.toUpperFirst()/] extends Super {
     private [p.tipo/] [p.nome/];
     [/for]
 
-	public Hospedagem(Recepcionista recepcionista, List<Hospede> hospedes, Quarto quarto) {
+	public [aHospedagem.nome.toUpperFirst()/](Recepcionista recepcionista, List<Hospede> hospedes, Quarto quarto) {
 		super();
 		this.recepcionista = recepcionista;
 		this.hospedes = hospedes;

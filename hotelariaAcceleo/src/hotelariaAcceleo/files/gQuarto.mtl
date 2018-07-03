@@ -1,6 +1,6 @@
 [comment encoding = UTF-8 /]
 [module gQuarto('hotelariaDSL')]
-
+[import hotelariaAcceleo::files::gCategoriaQuarto/]
 
 [template public gQuarto(aQuarto : Quarto)]
 
@@ -16,24 +16,24 @@ public class [aQuarto.nome.toUpperFirst()/] extends Super {
 	[for (p: Atributo | aQuarto.atributos) separator('\n')]
      private [p.tipo/] [p.nome/];
     [/for]
-	CategoriaQuarto categorias;
+	[gCategoriaQuarto().nome.toUpperFirst()/] [gCategoriaQuarto().nome.toLowerFirst()/];
 
-	public Quarto(CategoriaQuarto categorias) {
+	public [aQuarto.nome.toUpperFirst()/]([aCategoriaQuarto().nome.toUpperFirst()/] [aCategoriaQuarto().nome.toLowerFirst()/]) {
 		super();
-		this.categorias = categorias;
+		this.[aCategoriaQuarto().nome.toLowerFirst()/] = [aCategoriaQuarto().nome.toLowerFirst()/];
 	}
 
-	public Quarto() {
+	public [aQuarto.nome.toUpperFirst()/]() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public CategoriaQuarto getCategorias() {
-		return categorias;
+	public [aCategoriaQuarto().nome.toUpperFirst()/] get[aCategoriaQuarto().nome.toUpperFirst()/]() {
+		return [aCategoriaQuarto().nome.toLowerFirst()/];
 	}
 
-	public void setCategorias(CategoriaQuarto categorias) {
-		this.categorias = categorias;
+	public void setCategorias([aCategoriaQuarto().nome.toUpperFirst()/] [aCategoriaQuarto().nome.toLowerFirst()/]) {
+		this.[aCategoriaQuarto().nome.toLowerFirst()/] = [aCategoriaQuarto().nome.toLowerFirst()/];
 	}
 
 	[for (p: Atributo | aQuarto.atributos) separator('\n')]

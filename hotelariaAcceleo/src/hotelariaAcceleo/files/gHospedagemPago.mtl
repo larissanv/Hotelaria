@@ -16,7 +16,7 @@ public class [aHospedagemPago.nome.toUpperFirst()/] extends Hospedagem {
      private [p.tipo/] [p.nome/];
     [/for]
 	
-	public HospedagemPago(Recepcionista recepcionista, List<Hospede> hospedes, Quarto quarto) {
+	public [aHospedagemPago.nome.toUpperFirst()/](Recepcionista recepcionista, List<Hospede> hospedes, Quarto quarto) {
 		super(recepcionista, hospedes, quarto);
 		// TODO Auto-generated constructor stub
 	}

@@ -11,13 +11,16 @@ package hotelaria;
 public class [aRecepcionista.nome.toUpperFirst()/] extends Super {
 	
 	String nome;
+	[for (p: Atributo | aRecepcionista.atributos) separator('\n')]
+     private [p.tipo/] [p.nome/];
+    [/for]
 
-	public Recepcionista(String nome) {
+	public [aRecepcionista.nome.toUpperFirst()/](String nome) {
 		super();
 		this.nome = nome;
 	}
-
-	public Recepcionista() {
+	
+	public [aRecepcionista.nome.toUpperFirst()/]() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -29,6 +32,16 @@ public class [aRecepcionista.nome.toUpperFirst()/] extends Super {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+	
+	[for (p: Atributo | aRecepcionista.atributos) separator('\n')]
+	public [p.tipo/] get[p.nome.toUpperFirst()/]() {
+		return [p.nome/];
+	}
+
+	public void set[p.nome.toUpperFirst()/]([p.tipo/] [p.nome/]) {
+		this.[p.nome/] = [p.nome/];
+	}
+    [/for]
 	
 }
 
