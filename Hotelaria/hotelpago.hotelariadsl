@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hotelariaDSL:Aplicacao xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hotelariaDSL="hotelariaDSL" titulo="hotel 5 estrelas">
+  <classes xsi:type="hotelariaDSL:Hospede" nome="hospede" contaBanco="123"/>
+  <classes xsi:type="hotelariaDSL:Recepcionista" nome="recepcionista"/>
+  <classes xsi:type="hotelariaDSL:Quarto" nome="quarto"/>
+  <classes xsi:type="hotelariaDSL:HospedagemPago" nome="hospedagemp" recepcionista="//@classes.1" hospedes="//@classes.0" quarto="//@classes.2"/>
+  <classes xsi:type="hotelariaDSL:CategoriaQuarto" nome="solteiro"/>
+</hotelariaDSL:Aplicacao>

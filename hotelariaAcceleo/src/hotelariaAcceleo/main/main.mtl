@@ -17,8 +17,8 @@
 [comment @main/]
 
 [for (aSuper : Super | aSuper.classes)]
-	[gAtributo(aSuper)/]
-	[gSuper(aSuper)/]
+	[comment [gAtributo(aSuper)/]
+	[comment [gSuper(aSuper)/]
 	[gRecepcionista(aSuper)/]
 	[gQuarto(aSuper)/]
 	[gCategoriaQuarto(aSuper)/]
