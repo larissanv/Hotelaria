@@ -4,20 +4,23 @@
 
 [template public gHospedagemPago(aHospedagemPago : HospedagemPago)]
 
-[file (aHospedagemPago.nome  + '.java', false, 'UTF-8')]
+[file (aHospedagemPago.nome.toUpperFirst()  + '.java', false, 'UTF-8')]
 
 package hotelaria;
 
 import java.util.List;
 
-public class [aHospedagemPago.nome.toUpperFirst()/] extends Hospedagem {
+public class [aHospedagemPago.nome.toUpperFirst()/]{
 
 	[for (p: Atributo | aHospedagemPago.atributos) separator('\n')]
      private [p.tipo/] [p.nome/];
     [/for]
 	
-	public [aHospedagemPago.nome.toUpperFirst()/](Recepcionista recepcionista, List<Hospede> hospedes, Quarto quarto) {
-		super(recepcionista, hospedes, quarto);
+	public [aHospedagemPago.nome.toUpperFirst()/](
+	[aHospedagemPago.recepcionista.nome.toUpperFirst() /] [aHospedagemPago.recepcionista.nome.toLowerFirst() /], 
+	List<[aHospedagemPago.hospedes.nome.toUpperFirst() /]> [aHospedagemPago.hospedes.nome.toLowerFirst() /], 
+	[aHospedagemPago.quarto.nome.toUpperFirst() /] [aHospedagemPago.quarto.nome.toLowerFirst() /]) {
+		super([aHospedagemPago.recepcionista.nome.toLowerFirst() /], [aHospedagemPago.hospedes.nome.toLowerFirst() /], [aHospedagemPago.quarto.nome.toLowerFirst() /]);
 		// TODO Auto-generated constructor stub
 	}
 

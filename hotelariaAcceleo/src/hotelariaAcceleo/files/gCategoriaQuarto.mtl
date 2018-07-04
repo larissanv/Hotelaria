@@ -7,7 +7,7 @@
 
 package hotelaria;
 
-public class [aCategoriaQuarto.nome.toUpperFirst()/] extends Super {
+public class [aCategoriaQuarto.nome.toUpperFirst()/]{
 
 	[for (p: Atributo | aCategoriaQuarto.atributos) separator('\n')]
     private [p.tipo/] [p.nome/];

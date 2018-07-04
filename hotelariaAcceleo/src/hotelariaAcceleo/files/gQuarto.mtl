@@ -7,35 +7,35 @@
 [file (aQuarto.nome.toUpperFirst()  + '.java', false, 'UTF-8')]
 
 package hotelaria;
-
 import java.util.List;
 
-public class [aQuarto.nome.toUpperFirst()/] extends Super {
+public class [aQuarto.nome.toUpperFirst()/]{
 
 	private int numero;
 	[for (p: Atributo | aQuarto.atributos) separator('\n')]
     private [p.tipo/] [p.nome/];
     [/for]
 	[for (categoria : CategoriaQuarto | aQuarto.categorias)]
-	private	[categoria.nome.toUpperFirst()/] [categoria.nome.tolowerFirst()/];
-	[/for]
+	private	[categoria.nome.toUpperFirst()/] [categoria.nome.toLowerFirst()/]; 
+	
 
-	public [aQuarto.nome.toUpperFirst()/]([aCategoriaQuarto().nome.toUpperFirst()/] [aCategoriaQuarto().nome.toLowerFirst()/]) {
+	public [aQuarto.nome.toUpperFirst()/]([categoria.nome.toUpperFirst()/] [categoria.nome.toLowerFirst()/]) {
 		super();
-		this.[aCategoriaQuarto().nome.toLowerFirst()/] = [aCategoriaQuarto().nome.toLowerFirst()/];
+		this.[categoria.nome.toLowerFirst()/] = [categoria.nome.toLowerFirst()/];
 	}
+	public [categoria.nome.toUpperFirst()/] get[categoria.nome.toUpperFirst()/]() {
+		return [categoria.nome.toLowerFirst()/];
+	}
+
+	public void setCategorias([categoria.nome.toUpperFirst()/]  [categoria.nome.toLowerFirst()/]) {
+		this.[categoria.nome.toLowerFirst()/] = [categoria.nome.toLowerFirst()/];
+	}
+
+	[/for]
 
 	public [aQuarto.nome.toUpperFirst()/]() {
 		super();
 		// TODO Auto-generated constructor stub
-	}
-
-	public [aCategoriaQuarto().nome.toUpperFirst()/] get[aCategoriaQuarto().nome.toUpperFirst()/]() {
-		return [aCategoriaQuarto().nome.toLowerFirst()/];
-	}
-
-	public void setCategorias([aCategoriaQuarto().nome.toUpperFirst()/] [aCategoriaQuarto().nome.toLowerFirst()/]) {
-		this.[aCategoriaQuarto().nome.toLowerFirst()/] = [aCategoriaQuarto().nome.toLowerFirst()/];
 	}
 
 	[for (p: Atributo | aQuarto.atributos) separator('\n')]

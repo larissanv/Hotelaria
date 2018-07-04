@@ -8,16 +8,16 @@
 
 package hotelaria;
 
-public class [aRecepcionista.nome.toUpperFirst()/] extends Super {
+public class [aRecepcionista.nome.toUpperFirst()/]{
 	
-	String nome;
+	String nomeCompleto;
 	[for (p: Atributo | aRecepcionista.atributos) separator('\n')]
      private [p.tipo/] [p.nome/];
     [/for]
 
-	public [aRecepcionista.nome.toUpperFirst()/](String nome) {
+	public [aRecepcionista.nome.toUpperFirst()/](String nomeCompleto) {
 		super();
-		this.nome = nome;
+		this.nomeCompleto = nomeCompleto;
 	}
 	
 	public [aRecepcionista.nome.toUpperFirst()/]() {
@@ -25,12 +25,12 @@ public class [aRecepcionista.nome.toUpperFirst()/] extends Super {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public String getNome() {
-		return nome;
+	public String getNomeCompleto() {
+		return nomeCompleto;
 	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setNomeCompleto(String nomeCompleto) {
+		this.nomeCompleto = nomeCompleto;
 	}
 	
 	[for (p: Atributo | aRecepcionista.atributos) separator('\n')]
