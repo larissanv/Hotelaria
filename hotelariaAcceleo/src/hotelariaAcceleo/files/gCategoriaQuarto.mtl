@@ -12,11 +12,11 @@ public class [aCategoriaQuarto.nome.toUpperFirst()/]{
 	[for (p: Atributo | aCategoriaQuarto.atributos) separator('\n')]
     private [p.tipo/] [p.nome/];
     [/for]
-	String nome;
+	String tipo;
 
-	public  [aCategoriaQuarto.nome.toUpperFirst()/](String nome) {
+	public  [aCategoriaQuarto.nome.toUpperFirst()/](String tipo) {
 		super();
-		this.nome = nome;
+		this.tipo = tipo;
 	}
 
 	public  [aCategoriaQuarto.nome.toUpperFirst()/]() {
@@ -24,12 +24,12 @@ public class [aCategoriaQuarto.nome.toUpperFirst()/]{
 		// TODO Auto-generated constructor stub
 	}
 
-	public String getNome() {
-		return nome;
+	public String getTipo() {
+		return tipo;
 	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
 	}
 
 	[for (p: Atributo | aCategoriaQuarto.atributos) separator('\n')]

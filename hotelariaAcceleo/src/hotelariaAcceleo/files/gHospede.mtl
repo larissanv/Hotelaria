@@ -13,12 +13,12 @@ public class [aHospede.nome.toUpperFirst()/]{
     private [p.tipo/] [p.nome/];
     [/for]
 	private String contaBanco;
-	private String nome;
+	private String nomeCompleto;
 	
-	public [aHospede.nome.toUpperFirst()/](String contaBanco, String nome) {
+	public [aHospede.nome.toUpperFirst()/](String contaBanco, String nomeCompleto) {
 		super();
 		this.contaBanco = contaBanco;
-		this.nome = nome;
+		this.nomeCompleto = nomeCompleto;
 	}
 
 	public [aHospede.nome.toUpperFirst()/]() {
@@ -34,12 +34,12 @@ public class [aHospede.nome.toUpperFirst()/]{
 		this.contaBanco = contaBanco;
 	}
 
-	public String getNome() {
-		return nome;
+	public String getNomeCompleto() {
+		return nomeCompleto;
 	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setNomeCompleto(String nomeCompleto) {
+		this.nomeCompleto = nomeCompleto;
 	}
 
 	[for (p: Atributo | aHospede.atributos) separator('\n')]

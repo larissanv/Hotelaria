@@ -16,11 +16,12 @@ public class [aHospedagemPago.nome.toUpperFirst()/]{
      private [p.tipo/] [p.nome/];
     [/for]
 	
-	public [aHospedagemPago.nome.toUpperFirst()/](
+	public [aHospedagemPago.nome.toUpperFirst()/]( 
 	[aHospedagemPago.recepcionista.nome.toUpperFirst() /] [aHospedagemPago.recepcionista.nome.toLowerFirst() /], 
 	List<[aHospedagemPago.hospedes.nome.toUpperFirst() /]> [aHospedagemPago.hospedes.nome.toLowerFirst() /], 
-	[aHospedagemPago.quarto.nome.toUpperFirst() /] [aHospedagemPago.quarto.nome.toLowerFirst() /]) {
-		super([aHospedagemPago.recepcionista.nome.toLowerFirst() /], [aHospedagemPago.hospedes.nome.toLowerFirst() /], [aHospedagemPago.quarto.nome.toLowerFirst() /]);
+	[aHospedagemPago.quarto.nome.toUpperFirst() /] [aHospedagemPago.quarto.nome.toLowerFirst() /],
+	int dias) {
+		super([aHospedagemPago.recepcionista.nome.toLowerFirst() /], [aHospedagemPago.hospedes.nome.toLowerFirst() /], [aHospedagemPago.quarto.nome.toLowerFirst() /], dias);
 		// TODO Auto-generated constructor stub
 	}
 

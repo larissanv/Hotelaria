@@ -20,11 +20,13 @@ public class [aHospedagemComunitario.nome.toUpperFirst()/] {
 	public [aHospedagemComunitario.nome.toUpperFirst()/](
 		[aHospedagemComunitario.recepcionista.nome.toUpperFirst() /] [aHospedagemComunitario.recepcionista.nome.toLowerFirst() /], 
 		List<[aHospedagemComunitario.hospedes.nome.toUpperFirst() /]> [aHospedagemComunitario.hospedes.nome.toLowerFirst() /], 
-		[aHospedagemComunitario.quarto.nome.toUpperFirst() /] [aHospedagemComunitario.quarto.nome.toLowerFirst() /]) {
+		[aHospedagemComunitario.quarto.nome.toUpperFirst() /] [aHospedagemComunitario.quarto.nome.toLowerFirst() /],
+		int dias) {
 
-		super([aHospedagemComunitario.recepcionista.nome.toLowerFirst() /], [aHospedagemComunitario.hospedes.nome.toLowerFirst() /], [aHospedagemComunitario.quarto.nome.toLowerFirst() /]);
+		super([aHospedagemComunitario.recepcionista.nome.toLowerFirst() /], [aHospedagemComunitario.hospedes.nome.toLowerFirst() /], [aHospedagemComunitario.quarto.nome.toLowerFirst() /], dias);
 		// TODO Auto-generated constructor stub
 	}
+
 	[for (p: Atributo | aHospedagemComunitario.atributos) separator('\n')]
 	public [p.tipo/] get[p.nome.toUpperFirst()/]() {
 		return [p.nome/];

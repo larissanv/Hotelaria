@@ -12,6 +12,8 @@ import java.util.List;
 public class [aQuarto.nome.toUpperFirst()/]{
 
 	private int numero;
+	float precoEstadia;
+	boolean ocupado;
 	[for (p: Atributo | aQuarto.atributos) separator('\n')]
     private [p.tipo/] [p.nome/];
     [/for]
@@ -23,6 +25,15 @@ public class [aQuarto.nome.toUpperFirst()/]{
 		super();
 		this.[categoria.nome.toLowerFirst()/] = [categoria.nome.toLowerFirst()/];
 	}
+
+	public Quarto([categoria.nome.toUpperFirst()/] [categoria.nome.toLowerFirst()/], int numero, float precoEstadia, boolean ocupado) {
+		super();
+		this.[categoria.nome.toLowerFirst()/] = [categoria.nome.toLowerFirst()/];
+		this.numero = numero;
+		this.precoEstadia = precoEstadia;
+		this.ocupado = ocupado;
+	}
+
 	public [categoria.nome.toUpperFirst()/] get[categoria.nome.toUpperFirst()/]() {
 		return [categoria.nome.toLowerFirst()/];
 	}
@@ -47,6 +58,30 @@ public class [aQuarto.nome.toUpperFirst()/]{
 		this.[p.nome/] = [p.nome/];
 	}
     [/for]
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public float getPrecoEstadia() {
+		return precoEstadia;
+	}
+
+	public void setPrecoEstadia(float precoEstadia) {
+		this.precoEstadia = precoEstadia;
+	}
+
+	public boolean isOcupado() {
+		return ocupado;
+	}
+
+	public void setOcupado(boolean ocupado) {
+		this.ocupado = ocupado;
+	}
 
 }
 
