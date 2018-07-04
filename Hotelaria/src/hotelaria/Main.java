@@ -42,9 +42,9 @@ public class Main {
 				while(innerLoop) {
 					System.out.println("-- Gerenciar Hospedagens --");
 					System.out.println(
-							"1 - Adicionar Hospedagem\n" +
+							"1 - Fazer Checkin\n" +
 							"2 - Editar Hospesagem\n" +
-							"3 - Remover Hospedagem\n" +
+							"3 - Fazer Checkout\n" +
 							"0 - sair");
 					
 					opt = sc.nextInt();
@@ -55,12 +55,59 @@ public class Main {
 						break;
 						
 					case 1:
+						
+						int recep;
+						int quarto;
+						int hosp;
+						int dias;
+						
+						System.out.println("Recepcionista:");
+						for(int i = 0; i < recepcionistas.size(); i++) {
+							System.out.println();
+						}
+						
+						recep = sc.nextInt();
+						
+						System.out.println("Quarto:");
+						for(int i = 0; i < quartos.size(); i++) {
+							System.out.println(quartos.get(i).getNumero());
+						}
+						
+						quarto = sc.nextInt();
+						quartos.get(quarto).setOcupado(true);
+						
+						System.out.println("Hóspede");
+						for(int i = 0; i < hospedes.size(); i++) {
+							System.out.println(i + " - " + hospedes.get(i).getNome());
+						}
+						
+						hosp = sc.nextInt();
+						List<Hospede> lhosp = new ArrayList<Hospede>();
+						lhosp.add(hospedes.get(hosp));
+						
+						System.out.println("Qunatos dias?");
+						dias = sc.nextInt();
+						
+						Hospedagem hospedagem = new HospedagemPago(recepcionistas.get(recep), lhosp, quartos.get(quarto), dias);
+						hospedagens.add(hospedagem);
+						
 						break;
 						
 					case 2:
 						break;
 						
 					case 3:
+						System.out.println("Qual hospedagem?");
+						for(int i = 0; i < hospedagens.size(); i++) {
+							System.out.println(i + hospedagens.get(i).getHospedes().get(0).getNome());
+						}
+						
+						opt = sc.nextInt();
+						
+						System.out.println("Valor: R$" + hospedagens.get(opt).getDias() * hospedagens.get(opt).getQuarto().getPrecoEstadia());
+						hospedagens.get(opt).getQuarto().setOcupado(false);
+						hospedagens.remove(opt);
+						
 						break;
 						
 					default:
@@ -163,8 +210,12 @@ public class Main {
 						System.out.println("Número do Quarto:");
 						int numero = sc.nextInt();
 						
+						System.out.println("Número do Quarto:");
+						float valor = sc.nextFloat();
+						
 						quarto.setCategorias(categoriasQuarto.get(cat));
 						quarto.setNumero(numero);
+						quarto.setPrecoEstadia(valor);
 						
 						
 						break;
@@ -173,6 +224,19 @@ public class Main {
 						break;
 						
 					case 3:
+						System.out.println("Qual Quarto você deseja remover?");
+						for(int i = 0; i < quartos.size(); i++) {
+							System.out.println(quartos.get(i).getNumero());
+						}
+						
+						opt = sc.nextInt();
+						
+						if(opt >= 0 && opt < quartos.size()) {
+							quartos.remove(opt);
+							System.out.println("Quarto removido com sucesso!");
+						}else {
+							System.out.println("Opção inválida");
+						}
 						break;
 						
 					case 4:
@@ -188,19 +252,6 @@ public class Main {
 						break;
 						
 					case 5:
-						System.out.println("Qual Quarto você deseja remover?");
-						for(int i = 0; i < quartos.size(); i++) {
-							System.out.println(i);
-						}
-						
-						opt = sc.nextInt();
-						
-						if(opt >= 0 && opt < quartos.size()) {
-							quartos.remove(opt);
-							System.out.println("Quarto removido com sucesso!");
-						}else {
-							System.out.println("Opção inválida");
-						}
 						break;
 						
 					case 6:
