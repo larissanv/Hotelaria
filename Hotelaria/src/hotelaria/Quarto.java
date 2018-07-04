@@ -7,16 +7,18 @@ public class Quarto extends Super{
 	CategoriaQuarto categorias;
 	int numero;
 	float precoEstadia;
+	boolean ocupado;
 	
 	public Quarto() {
 		super();
 	}
 
-	public Quarto(CategoriaQuarto categorias, int numero, float precoEstadia) {
+	public Quarto(CategoriaQuarto categorias, int numero, float precoEstadia, boolean ocupado) {
 		super();
 		this.categorias = categorias;
 		this.numero = numero;
 		this.precoEstadia = precoEstadia;
+		this.ocupado = ocupado;
 	}
 
 	public CategoriaQuarto getCategorias() {
@@ -41,5 +43,13 @@ public class Quarto extends Super{
 
 	public void setPrecoEstadia(float precoEstadia) {
 		this.precoEstadia = precoEstadia;
+	}
+
+	public boolean isOcupado() {
+		return ocupado;
+	}
+
+	public void setOcupado(boolean ocupado) {
+		this.ocupado = ocupado;
 	}
 }
