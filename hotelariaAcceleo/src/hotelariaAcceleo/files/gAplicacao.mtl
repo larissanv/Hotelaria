@@ -28,6 +28,8 @@ public class Main {
 		[if (aClasse.oclIsTypeOf(Recepcionista))]
 		List<[anAplicacao.classes.oclAsType(Recepcionista).nome.toUpperFirst()/]> [anAplicacao.classes.oclAsType(Recepcionista).nome.toLowerFirst()/] = new ArrayList<[anAplicacao.classes.oclAsType(Recepcionista).nome.toUpperFirst()/]>();
 		[/if]
+		[/for]
+
 		Scanner sc = new Scanner(System.in);
 		boolean mainLoop = true;
 		boolean innerLoop;
@@ -76,21 +78,29 @@ public class Main {
 						int dias;
 						
 						System.out.println("Recepcionista:");
+						[for (aClasse : Super | anAplicacao.classes)] 
+						[if (aClasse.oclIsTypeOf(Recepcionista))]
 						for(int i = 0; i < [anAplicacao.classes.oclAsType(Recepcionista).nome.toLowerFirst()/].size(); i++) {
 							System.out.println();
 						}
-						
+						[/if]
+						[/for]
 						recep = sc.nextInt();
 						
 						System.out.println("Quarto:");
+						[for (aClasse : Super | anAplicacao.classes)] 
+						[if (aClasse.oclIsTypeOf(Quarto))]
 						for(int i = 0; i < [anAplicacao.classes.oclAsType(Quarto).nome.toLowerFirst()/].size(); i++) {
 							System.out.println([anAplicacao.classes.oclAsType(Quarto).nome.toLowerFirst()/].get(i).getNumero());
 						}
 						
 						quarto = sc.nextInt();
 						[anAplicacao.classes.oclAsType(Quarto).nome.toLowerFirst()/].get(quarto).setOcupado(true);
-						
+						[/if]
+						[/for]
 						System.out.println("Hóspede");
+						[for (aClasse : Super | anAplicacao.classes)] 
+						[if (aClasse.oclIsTypeOf(Hospede))]
 						for(int i = 0; i < [anAplicacao.classes.oclAsType(Hospede).nome.toLowerFirst()/].size(); i++) {
 							System.out.println(i + " - " + [anAplicacao.classes.oclAsType(Hospede).nome.toLowerFirst()/].get(i).getNome());
 						}
@@ -98,13 +108,16 @@ public class Main {
 						hosp = sc.nextInt();
 						List<[anAplicacao.classes.oclAsType(Hospede).nome.toUpperFirst()/]> lhosp = new ArrayList<[anAplicacao.classes.oclAsType(Hospede).nome.toUpperFirst()/]>();
 						lhosp.add([anAplicacao.classes.oclAsType(Hospede).nome.toLowerFirst()/].get(hosp));
-						
+						[/if]
+						[/for]
 						System.out.println("Qunatos dias?");
 						dias = sc.nextInt();
-						
+						[for (aClasse : Super | anAplicacao.classes)] 
+						[if (aClasse.oclIsTypeOf(Hospedagem))]
 						[anAplicacao.classes.oclAsType(Hospedagem).nome.toUpperFirst()/] hospedagem = new [anAplicacao.classes.oclAsType(HospedagemPago).nome.toUpperFirst()/](recepcionistas.get(recep), lhosp, [anAplicacao.classes.oclAsType(Quarto).nome.toLowerFirst()/].get(quarto), dias);
 						[anAplicacao.classes.oclAsType(Hospedagem).nome.toLowerFirst()/].add(hospedagem);
-						
+						[/if]
+						[/for]
 						break;
 						
 					case 2:
@@ -112,6 +125,8 @@ public class Main {
 						
 					case 3:
 						System.out.println("Qual hospedagem?");
+						[for (aClasse : Super | anAplicacao.classes)] 
+						[if (aClasse.oclIsTypeOf(Hospedagem))]
 						for(int i = 0; i < [anAplicacao.classes.oclAsType(Hospedagem).nome.toLowerFirst()/].size(); i++) {
 							System.out.println(i + [anAplicacao.classes.oclAsType(Hospedagem).nome.toLowerFirst()/].get(i).get[anAplicacao.classes.oclAsType(Hospede).nome.toLowerFirst()/]().get(0).getNome());
 						}
@@ -121,7 +136,8 @@ public class Main {
 						System.out.println("Valor: R$" + [anAplicacao.classes.oclAsType(Hospedagem).nome.toLowerFirst()/].get(opt).getDias() * [anAplicacao.classes.oclAsType(Hospedagem).nome.toLowerFirst()/].get(opt).get[anAplicacao.classes.oclAsType(Quarto).nome.toUpperFirst()/]().getPrecoEstadia());
 						[anAplicacao.classes.oclAsType(Hospedagem).nome.toLowerFirst()/].get(opt).get[anAplicacao.classes.oclAsType(Quarto).nome.toUpperFirst()/]().setOcupado(false);
 						[anAplicacao.classes.oclAsType(Hospedagem).nome.toLowerFirst()/].remove(opt);
-						
+						[/if]
+						[/for]
 						break;
 						
 					default:
@@ -158,9 +174,12 @@ public class Main {
 						
 						System.out.println("Conta Bancária:");
 						String conta = sc.nextLine();
-						
+						[for (aClasse : Super | anAplicacao.classes)] 
+						[if (aClasse.oclIsTypeOf(Hospede))]
 						[anAplicacao.classes.oclAsType(Hospede).nome.toUpperFirst()/] hospede = new [anAplicacao.classes.oclAsType(Hospede).nome.toUpperFirst()/](conta, nome);
 						[anAplicacao.classes.oclAsType(Hospede).nome.toLowerFirst()/].add(hospede);
+						[/if]
+						[/for]
 						break;
 						
 					case 2:
@@ -168,6 +187,8 @@ public class Main {
 						
 					case 3:
 						System.out.println("Qual Hóspede você deseja remover?");
+						[for (aClasse : Super | anAplicacao.classes)] 
+						[if (aClasse.oclIsTypeOf(Hospede))]
 						for(int i = 0; i < [anAplicacao.classes.oclAsType(Hospede).nome.toLowerFirst()/].size(); i++) {
 							System.out.println(i + " - " + [anAplicacao.classes.oclAsType(Hospede).nome.toLowerFirst()/].get(i).getNome());
 						}
@@ -180,7 +201,8 @@ public class Main {
 						}else {
 							System.out.println("Opção inválida");
 						}
-						
+						[/if]
+						[/for]
 						break;
 						
 					default:
@@ -210,15 +232,19 @@ public class Main {
 						break;
 						
 					case 1:
+						[for (aClasse : Super | anAplicacao.classes)] 
+						[if (aClasse.oclIsTypeOf(Quarto))]
 						[anAplicacao.classes.oclAsType(Quarto).nome.toUpperFirst()/] quarto = new [anAplicacao.classes.oclAsType(Quarto).nome.toUpperFirst()/]();
 						int cat;
 						
 						System.out.println("Escolha uma categoria:");
-						
+						[/if]
+						[if (aClasse.oclIsTypeOf(CategoriaQuarto))]
 						for(int i = 0; i < [anAplicacao.classes.oclAsType(CategoriaQuarto).nome.toLowerFirst()/].size(); i++) {
 							System.out.println(i + " - " + [anAplicacao.classes.oclAsType(CategoriaQuarto).nome.toLowerFirst()/].get(i).getNome());
 						}
-						
+						[/if]
+						[/for]
 						cat = sc.nextInt();
 						
 						System.out.println("Número do Quarto:");
@@ -239,6 +265,8 @@ public class Main {
 						
 					case 3:
 						System.out.println("Qual Quarto você deseja remover?");
+						[for (aClasse : Super | anAplicacao.classes)] 
+						[if (aClasse.oclIsTypeOf(Quarto))]
 						for(int i = 0; i < [anAplicacao.classes.oclAsType(Quarto).nome.toLowerFirst()/].size(); i++) {
 							System.out.println([anAplicacao.classes.oclAsType(Quarto).nome.toLowerFirst()/].get(i).getNumero());
 						}
@@ -251,6 +279,8 @@ public class Main {
 						}else {
 							System.out.println("Opção inválida");
 						}
+						[/if]
+						[/for]
 						break;
 						
 					case 4:
@@ -259,10 +289,12 @@ public class Main {
 						System.out.println("Nome da Categoria");
 						
 						String nome = sc.nextLine();
-						
-						CategoriaQuarto categoriaQuarto = new CategoriaQuarto(nome);
-						
+						[for (aClasse : Super | anAplicacao.classes)] 
+						[if (aClasse.oclIsTypeOf(CategoriaQuarto))]
+						[anAplicacao.classes.oclAsType(CategoriaQuarto).nome.toUpperFirst()/] categoriaQuarto = new [anAplicacao.classes.oclAsType(CategoriaQuarto).nome.toUpperFirst()/](nome);
 						[anAplicacao.classes.oclAsType(CategoriaQuarto).nome.toLowerFirst()/].add(categoriaQuarto);
+						[/if]
+						[/for]
 						break;
 						
 					case 5:
@@ -270,6 +302,8 @@ public class Main {
 						
 					case 6:
 						System.out.println("Qual Categoria você deseja remover?");
+						[for (aClasse : Super | anAplicacao.classes)] 
+						[if (aClasse.oclIsTypeOf(CategoriaQuarto))]
 						for(int i = 0; i < [anAplicacao.classes.oclAsType(CategoriaQuarto).nome.toLowerFirst()/].size(); i++) {
 							System.out.println(i + " - " + [anAplicacao.classes.oclAsType(CategoriaQuarto).nome.toLowerFirst()/].get(i).getNome());
 						}
@@ -282,6 +316,8 @@ public class Main {
 						}else {
 							System.out.println("Opção inválida");
 						}
+						[/if]
+						[/for]
 						break;
 						
 					default:
@@ -301,7 +337,7 @@ public class Main {
 							"0 - sair");
 					
 					opt = sc.nextInt();
-					
+
 					switch(opt) {
 					case 0:
 						innerLoop = false;
@@ -313,9 +349,12 @@ public class Main {
 						System.out.println("Nome do Recepcionista");
 						
 						String nome = sc.nextLine();
-						
+						[for (aClasse : Super | anAplicacao.classes)] 
+						[if (aClasse.oclIsTypeOf(Recepcionista))]
 						[anAplicacao.classes.oclAsType(Recepcionista).nome.toUpperFirst()/] recepcionista = new [anAplicacao.classes.oclAsType(Recepcionista).nome.toUpperFirst()/](nome);
 						[anAplicacao.classes.oclAsType(Recepcionista).nome.toLowerFirst()/].add(recepcionista);
+						[/if]
+						[/for]
 						break;
 						
 					case 2:
@@ -323,8 +362,10 @@ public class Main {
 						
 					case 3:
 						System.out.println("Qual Recepcionista você deseja remover?");
+						[for (aClasse : Super | anAplicacao.classes)] 
+						[if (aClasse.oclIsTypeOf(Recepcionista))]
 						for(int i = 0; i < [anAplicacao.classes.oclAsType(Recepcionista).nome.toLowerFirst()/].size(); i++) {
-							System.out.println(i + " - " + [anAplicacao.classes.oclAsType(Recepcionista).nome.toLowerFirst()/].get(i).getNome());
+							System.out.println(i + " - " + [anAplicacao.classes.oclAsType(Recepcionista).nome.toLowerFirst()/].get(i).getNomeCompleto());
 						}
 						
 						opt = sc.nextInt();
@@ -335,6 +376,8 @@ public class Main {
 						}else {
 							System.out.println("Opção inválida");
 						}
+						[/if]
+						[/for]
 						break;
 						
 					default:
@@ -353,7 +396,6 @@ public class Main {
 	}
 	
 }
-[/for]
 
 [/file]
 [/template]
